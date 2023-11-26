@@ -1,0 +1,77 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Tokenizers documentation
+
+Tokenizers
+
+#
+
+Tokenizers
+
+Search documentation
+
+mainv0.13.4.rc2v0.10.0v0.9.4 EN
+
+Getting started
+
+🤗 Tokenizers Quicktour Installation The tokenization pipeline Components
+Training from memory
+
+API
+
+Input Sequences Encode Inputs Tokenizer Encoding Added Tokens Models
+Normalizers Pre-tokenizers Post-processors Trainers Decoders Visualizer
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  Tokenizers
+
+Fast State-of-the-art tokenizers, optimized for both research and production
+
+🤗 Tokenizers provides an implementation of today’s most used tokenizers, with
+a focus on performance and versatility. These tokenizers are also used in 🤗
+Transformers.
+
+#  Main features:
+
+  * Train new vocabularies and tokenize, using today’s most used tokenizers.
+  * Extremely fast (both training and tokenization), thanks to the Rust implementation. Takes less than 20 seconds to tokenize a GB of text on a server’s CPU.
+  * Easy to use, but also extremely versatile.
+  * Designed for both research and production.
+  * Full alignment tracking. Even with destructive normalization, it’s always possible to get the part of the original sentence that corresponds to any token.
+  * Does all the pre-processing: Truncation, Padding, add the special tokens your model needs.
+
+Quicktour→
+
+Tokenizers
+

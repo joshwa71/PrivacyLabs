@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class=" scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta name="description" content="We’re on a journey to advance and democratize artificial intelligence through open source and open science." />
+		<meta property="fb:app_id" content="1321688464574422" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@huggingface" />
+		<meta property="og:title" content="Safetensors" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://huggingface.co/docs/safetensors/index" />
+		<meta property="og:image" content="https://huggingface.co/front/thumbnails/docs/safetensors.png" />
+
+		<link rel="stylesheet" href="/front/build/kube-a4585b2/style.css" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<noscript>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" />
+		</noscript>
+
+		  
+
+
+
+		<title>Safetensors</title>
+
+		<script defer data-domain="huggingface.co" src="/js/script.js"></script>
+		<script type="text/javascript" src="https://de5282c3ca0c.edge.sdk.awswaf.com/de5282c3ca0c/526cf06acb0d/challenge.js" defer></script>
+	</head>
+	<body class="flex flex-col min-h-screen bg-white dark:bg-gray-950 text-black DocBuilderPage">
+		<div class="flex min-h-screen flex-col">
+	<div class="SVELTE_HYDRATER contents" data-props="{&quot;classNames&quot;:&quot;&quot;,&quot;isWide&quot;:true,&quot;isZh&quot;:false}" data-target="MainHeader"><header class="border-b border-gray-100 "><div class="w-full px-4  flex h-16 items-center"><div class="flex flex-1 items-center"><a class="mr-5 flex flex-none items-center lg:mr-6" href="/"><img alt="Hugging Face's logo" class="w-7 md:mr-2" src="/front/assets/huggingface_logo-noborder.svg">
+				<span class="hidden whitespace-nowrap text-lg font-bold md:block">Hugging Face</span></a>
+			<div class="relative flex-1 lg:max-w-sm mr-2 sm:mr-4 lg:mr-6"><input autocomplete="off" class="w-full dark:bg-gray-950 pl-8 form-input-alt h-9 pr-3 focus:shadow-xl" name="" placeholder="Search models, datasets, users..."  spellcheck="false" type="text" value="">
+	<svg class="absolute left-2.5 text-gray-400 top-1/2 transform -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z" fill="currentColor"></path></svg>
+	</div>
+			<div class="flex flex-none items-center justify-center p-0.5 place-self-stretch lg:hidden"><button class="relative z-40 flex h-6 w-8 items-center justify-center" type="button"><svg width="1em" height="1em" viewBox="0 0 10 10" class="text-xl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" preserveAspectRatio="xMidYMid meet" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.65039 2.9999C1.65039 2.8066 1.80709 2.6499 2.00039 2.6499H8.00039C8.19369 2.6499 8.35039 2.8066 8.35039 2.9999C8.35039 3.1932 8.19369 3.3499 8.00039 3.3499H2.00039C1.80709 3.3499 1.65039 3.1932 1.65039 2.9999ZM1.65039 4.9999C1.65039 4.8066 1.80709 4.6499 2.00039 4.6499H8.00039C8.19369 4.6499 8.35039 4.8066 8.35039 4.9999C8.35039 5.1932 8.19369 5.3499 8.00039 5.3499H2.00039C1.80709 5.3499 1.65039 5.1932 1.65039 4.9999ZM2.00039 6.6499C1.80709 6.6499 1.65039 6.8066 1.65039 6.9999C1.65039 7.1932 1.80709 7.3499 2.00039 7.3499H8.00039C8.19369 7.3499 8.35039 7.1932 8.35039 6.9999C8.35039 6.8066 8.19369 6.6499 8.00039 6.6499H2.00039Z"></path></svg>
+		</button>
+
+	</div></div>
+		<nav aria-label="Main" class="ml-auto hidden lg:block"><ul class="flex items-center space-x-2"><li><a class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-indigo-700" href="/models"><svg class="mr-1.5 text-gray-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-quaternary" d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z" opacity=".25" fill="currentColor"></path><path class="uim-tertiary" d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z" fill="currentColor"></path></svg>
+					Models</a>
+			</li><li><a class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-red-700" href="/datasets"><svg class="mr-1.5 text-gray-400 group-hover:text-red-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25"><ellipse cx="12.5" cy="5" fill="currentColor" fill-opacity="0.25" rx="7.5" ry="2"></ellipse><path d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z" fill="currentColor" opacity="0.5"></path><path d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z" fill="currentColor" opacity="0.5"></path><path d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z" fill="currentColor"></path></svg>
+					Datasets</a>
+			</li><li><a class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-blue-700" href="/spaces"><svg class="mr-1.5 text-gray-400 group-hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" viewBox="0 0 25 25"><path opacity=".5" d="M6.016 14.674v4.31h4.31v-4.31h-4.31ZM14.674 14.674v4.31h4.31v-4.31h-4.31ZM6.016 6.016v4.31h4.31v-4.31h-4.31Z" fill="currentColor"></path><path opacity=".75" fill-rule="evenodd" clip-rule="evenodd" d="M3 4.914C3 3.857 3.857 3 4.914 3h6.514c.884 0 1.628.6 1.848 1.414a5.171 5.171 0 0 1 7.31 7.31c.815.22 1.414.964 1.414 1.848v6.514A1.914 1.914 0 0 1 20.086 22H4.914A1.914 1.914 0 0 1 3 20.086V4.914Zm3.016 1.102v4.31h4.31v-4.31h-4.31Zm0 12.968v-4.31h4.31v4.31h-4.31Zm8.658 0v-4.31h4.31v4.31h-4.31Zm0-10.813a2.155 2.155 0 1 1 4.31 0 2.155 2.155 0 0 1-4.31 0Z" fill="currentColor"></path><path opacity=".25" d="M16.829 6.016a2.155 2.155 0 1 0 0 4.31 2.155 2.155 0 0 0 0-4.31Z" fill="currentColor"></path></svg>
+					Spaces</a>
+			</li><li><a class="group flex items-center px-2 py-0.5 dark:hover:text-gray-400 hover:text-yellow-700" href="/docs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="mr-1.5 text-gray-400 group-hover:text-yellow-500" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path opacity="0.5" d="M20.9022 5.10334L10.8012 10.8791L7.76318 9.11193C8.07741 8.56791 8.5256 8.11332 9.06512 7.7914L15.9336 3.73907C17.0868 3.08811 18.5002 3.26422 19.6534 3.91519L19.3859 3.73911C19.9253 4.06087 20.5879 4.56025 20.9022 5.10334Z" fill="currentColor"></path><path d="M10.7999 10.8792V28.5483C10.2136 28.5475 9.63494 28.4139 9.10745 28.1578C8.5429 27.8312 8.074 27.3621 7.74761 26.7975C7.42122 26.2327 7.24878 25.5923 7.24756 24.9402V10.9908C7.25062 10.3319 7.42358 9.68487 7.74973 9.1123L10.7999 10.8792Z" fill="currentColor" fill-opacity="0.75"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.3368 10.8499V6.918C21.3331 6.25959 21.16 5.61234 20.8346 5.03949L10.7971 10.8727L10.8046 10.874L21.3368 10.8499Z" fill="currentColor"></path><path opacity="0.5" d="M21.7937 10.8488L10.7825 10.8741V28.5486L21.7937 28.5234C23.3344 28.5234 24.5835 27.2743 24.5835 25.7335V13.6387C24.5835 12.0979 23.4365 11.1233 21.7937 10.8488Z" fill="currentColor"></path></svg>
+					Docs</a>
+			</li>
+		<li><div class="relative ">
+	<button class="px-2 py-0.5 group hover:text-green-700 dark:hover:text-gray-400 flex items-center " type="button">
+		<svg class="mr-1.5 text-gray-400 group-hover:text-green-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-tertiary" d="M19 6H5a3 3 0 0 0-3 3v2.72L8.837 14h6.326L22 11.72V9a3 3 0 0 0-3-3z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M10 6V5h4v1h2V5a2.002 2.002 0 0 0-2-2h-4a2.002 2.002 0 0 0-2 2v1h2zm-1.163 8L2 11.72V18a3.003 3.003 0 0 0 3 3h14a3.003 3.003 0 0 0 3-3v-6.28L15.163 14H8.837z" fill="currentColor"></path></svg>
+			Solutions
+		</button>
+	
+	
+	</div></li>
+		<li><a class="group flex items-center px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400" href="/pricing">Pricing
+			</a></li>
+
+		<li><div class="relative group">
+	<button class="px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-600 flex items-center " type="button">
+		<svg class="mr-1.5 text-gray-500 w-5 group-hover:text-gray-400 dark:text-gray-300 dark:group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" viewBox="0 0 32 18" preserveAspectRatio="xMidYMid meet"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 3.30221C14.4504 2.836 14.8284 2.45807 15.2946 2.45807H28.4933C28.9595 2.45807 29.3374 2.836 29.3374 3.30221C29.3374 3.76842 28.9595 4.14635 28.4933 4.14635H15.2946C14.8284 4.14635 14.4504 3.76842 14.4504 3.30221Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 9.00002C14.4504 8.53382 14.8284 8.15588 15.2946 8.15588H28.4933C28.9595 8.15588 29.3374 8.53382 29.3374 9.00002C29.3374 9.46623 28.9595 9.84417 28.4933 9.84417H15.2946C14.8284 9.84417 14.4504 9.46623 14.4504 9.00002Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 14.6978C14.4504 14.2316 14.8284 13.8537 15.2946 13.8537H28.4933C28.9595 13.8537 29.3374 14.2316 29.3374 14.6978C29.3374 15.164 28.9595 15.542 28.4933 15.542H15.2946C14.8284 15.542 14.4504 15.164 14.4504 14.6978Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M1.94549 6.87377C2.27514 6.54411 2.80962 6.54411 3.13928 6.87377L6.23458 9.96907L9.32988 6.87377C9.65954 6.54411 10.194 6.54411 10.5237 6.87377C10.8533 7.20343 10.8533 7.73791 10.5237 8.06756L6.23458 12.3567L1.94549 8.06756C1.61583 7.73791 1.61583 7.20343 1.94549 6.87377Z" fill="currentColor"></path></svg>
+			
+		</button>
+	
+	
+	</div></li>
+		<li><hr class="h-5 w-0.5 border-none bg-gray-100 dark:bg-gray-800"></li>
+		<li><a class="block cursor-pointer px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400" href="/login">Log In
+				</a></li>
+			<li><a class="rounded-full border border-transparent bg-gray-900 px-3 py-1 leading-none text-white hover:border-black hover:bg-white hover:text-black" href="/join">Sign Up
+					</a></li></ul></nav></div></header></div>
+	
+	<div class="SVELTE_HYDRATER contents" data-props="{}" data-target="GoogleAnalyticsTracker"></div>
+	
+	
+	<div class="SVELTE_HYDRATER contents" data-props="{}" data-target="SSOBanner"></div>
+
+	<main class="flex flex-1 flex-col"><div class="relative lg:flex"><div class="sticky top-0 z-20 self-start"><div class="SVELTE_HYDRATER contents" data-props="{&quot;chapters&quot;:[{&quot;title&quot;:&quot;Getting started&quot;,&quot;isExpanded&quot;:true,&quot;sections&quot;:[{&quot;title&quot;:&quot;🤗 Safetensors&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;index&quot;,&quot;url&quot;:&quot;/docs/safetensors/index&quot;},{&quot;title&quot;:&quot;Speed Comparison&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;speed&quot;,&quot;url&quot;:&quot;/docs/safetensors/speed&quot;},{&quot;title&quot;:&quot;Tensor Sharing in Pytorch&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;torch_shared_tensors&quot;,&quot;url&quot;:&quot;/docs/safetensors/torch_shared_tensors&quot;},{&quot;title&quot;:&quot;Metadata Parsing&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;metadata_parsing&quot;,&quot;url&quot;:&quot;/docs/safetensors/metadata_parsing&quot;},{&quot;title&quot;:&quot;Convert weights to safetensors&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;convert-weights&quot;,&quot;url&quot;:&quot;/docs/safetensors/convert-weights&quot;}]},{&quot;title&quot;:&quot;API&quot;,&quot;isExpanded&quot;:true,&quot;sections&quot;:[{&quot;title&quot;:&quot;Torch API&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;api/torch&quot;,&quot;url&quot;:&quot;/docs/safetensors/api/torch&quot;},{&quot;title&quot;:&quot;Tensorflow API&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;api/tensorflow&quot;,&quot;url&quot;:&quot;/docs/safetensors/api/tensorflow&quot;},{&quot;title&quot;:&quot;PaddlePaddle API&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;api/paddle&quot;,&quot;url&quot;:&quot;/docs/safetensors/api/paddle&quot;},{&quot;title&quot;:&quot;Flax API&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;api/flax&quot;,&quot;url&quot;:&quot;/docs/safetensors/api/flax&quot;},{&quot;title&quot;:&quot;Numpy API&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;api/numpy&quot;,&quot;url&quot;:&quot;/docs/safetensors/api/numpy&quot;}]}],&quot;chapterId&quot;:&quot;index&quot;,&quot;docType&quot;:&quot;docs&quot;,&quot;isLoggedIn&quot;:false,&quot;lang&quot;:&quot;en&quot;,&quot;langs&quot;:[&quot;en&quot;],&quot;library&quot;:&quot;safetensors&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;version&quot;:&quot;main&quot;,&quot;versions&quot;:[{&quot;version&quot;:&quot;main&quot;},{&quot;version&quot;:&quot;v0.3.2&quot;},{&quot;version&quot;:&quot;v0.3.2rc1&quot;},{&quot;version&quot;:&quot;v0.3.1rc1&quot;},{&quot;version&quot;:&quot;v0.3.0&quot;},{&quot;version&quot;:&quot;v0.3.0rc1&quot;},{&quot;version&quot;:&quot;v0.2.9&quot;},{&quot;version&quot;:&quot;v0.2.8&quot;},{&quot;version&quot;:&quot;v0.2.7&quot;},{&quot;version&quot;:&quot;v0.2.6&quot;},{&quot;version&quot;:&quot;v0.2.5&quot;}],&quot;title&quot;:&quot;Safetensors&quot;}" data-target="SideMenu">
+
+
+
+
+
+
+
+<div class="z-2 w-full flex-none lg:block lg:h-screen lg:w-[270px] 2xl:w-[300px] false"><div class="shadow-alternate flex h-16 w-full items-center rounded-b-xl border-b bg-white text-lg leading-tight lg:hidden">
+		<div class="flex flex-1 cursor-pointer flex-col justify-center self-stretch pl-6"><p class="text-sm text-gray-400 first-letter:capitalize">Safetensors documentation
+			</p>
+			<div class="flex items-center"><p class="font-semibold">Safetensors</p>
+				<svg class="text-xl false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" fill="currentColor"></path></svg></div></div>
+		<button class="hover:shadow-alternate group ml-auto mr-6 inline-flex flex-none cursor-pointer rounded-xl border p-2"><svg class="text-gray-500 group-hover:text-gray-700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z" fill="currentColor"></path></svg></button></div>
+	<div class="hidden h-32 flex-col justify-between border-b border-r bg-white bg-gradient-to-r p-4 lg:flex from-violet-50 to-white dark:from-gray-900 dark:to-gray-950"><div class="relative ">
+	<button class=" " type="button">
+		
+				<h1 class="flex items-center text-lg font-bold leading-tight first-letter:capitalize"><div class="mr-1.5 h-1.5 w-1.5 rounded-full bg-violet-500 flex-none"></div>
+					Safetensors
+					<span><svg class="opacity-70 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" fill="currentColor"></path></svg></span></h1>
+			
+		</button>
+	
+	
+	</div>
+		<button class="shadow-alternate flex w-full items-center rounded-full border bg-white px-2 py-1 text-left text-sm text-gray-400 ring-indigo-200 hover:bg-indigo-50 hover:ring-2 dark:border-gray-700 dark:ring-yellow-600 dark:hover:bg-gray-900 dark:hover:text-yellow-500"><svg class="flex-none mr-1.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z" fill="currentColor"></path></svg>
+			<div>Search documentation</div>
+			</button>
+		<div class="flex items-center">
+				<select class="form-input !mt-0 mr-1 !w-20 rounded !border border-gray-200 p-1 text-xs uppercase dark:!text-gray-400"><option value="0" selected>main</option><option value="1" >v0.3.2</option><option value="2" >v0.2.9</option></select>
+			
+			<select class="form-input mr-1 rounded border-gray-200 p-1 text-xs dark:!text-gray-400 !w-12 !mt-0 !border"><option value="en" selected>EN</option></select>
+			
+<div class="relative inline-block">
+	<button class="rounded-full border border-gray-100 py-1 pl-2 pr-0.5 flex items-center text-sm text-gray-500 bg-white hover:bg-yellow-50 hover:border-yellow-200 dark:hover:bg-gray-800 dark:hover:border-gray-950 " type="button">
+		<svg class="mr-1.5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="currentColor"><path d="M6.05 4.14l-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4zM3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1zm9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99zm7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4zm-1.81 15.1l.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41zM20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99zM12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6zm-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99zm-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41z"></path></svg>
+			
+		</button>
+	
+	
+	</div>
+			<a href="https://github.com/huggingface/safetensors" class="group ml-auto text-xs text-gray-500 hover:text-gray-700 hover:underline dark:hover:text-gray-300"><svg class="inline-block text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-300 mr-1.5 -mt-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1.03em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 250"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0zm-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931zm6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66zm4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08zm7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403z" fill="currentColor"></path></svg>
+				</a></div></div>
+
+	<nav class="top-32 hidden lg:flex absolute bottom-0 left-0 w-full flex-col overflow-y-auto border-r px-4 pb-16 pt-3 text-[0.95rem] lg:w-[270px] 2xl:w-[300px]">
+		
+		<div class="group flex cursor-pointer items-center pl-2 text-[0.8rem] font-semibold uppercase leading-9 hover:text-gray-700 dark:hover:text-gray-300 ml-0"><div class="flex after:absolute after:right-4 after:text-gray-500 group-hover:after:content-['▶'] after:rotate-90 after:transform"><span><span class="inline-block space-x-1 leading-5"><span><!-- HTML_TAG_START -->Getting started<!-- HTML_TAG_END --></span>
+						
+					</span></span>
+			</div></div>
+		<div class="flex flex-col"><a class="rounded-xl bg-gradient-to-br from-black to-gray-900 py-1 pl-2 pr-2 text-white first:mt-1 last:mb-4 dark:from-gray-800 dark:to-gray-900 ml-2" href="/docs/safetensors/index"><!-- HTML_TAG_START -->🤗 Safetensors<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/speed"><!-- HTML_TAG_START -->Speed Comparison<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/torch_shared_tensors"><!-- HTML_TAG_START -->Tensor Sharing in Pytorch<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/metadata_parsing"><!-- HTML_TAG_START -->Metadata Parsing<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/convert-weights"><!-- HTML_TAG_START -->Convert weights to safetensors<!-- HTML_TAG_END -->
+		</a>
+			</div>
+		<div class="group flex cursor-pointer items-center pl-2 text-[0.8rem] font-semibold uppercase leading-9 hover:text-gray-700 dark:hover:text-gray-300 ml-0"><div class="flex after:absolute after:right-4 after:text-gray-500 group-hover:after:content-['▶'] after:rotate-90 after:transform"><span><span class="inline-block space-x-1 leading-5"><span><!-- HTML_TAG_START -->API<!-- HTML_TAG_END --></span>
+						
+					</span></span>
+			</div></div>
+		<div class="flex flex-col"><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/api/torch"><!-- HTML_TAG_START -->Torch API<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/api/tensorflow"><!-- HTML_TAG_START -->Tensorflow API<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/api/paddle"><!-- HTML_TAG_START -->PaddlePaddle API<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/api/flax"><!-- HTML_TAG_START -->Flax API<!-- HTML_TAG_END -->
+		</a><a class="transform py-1 pl-2 pr-2 text-gray-500 first:mt-1 last:mb-4 hover:translate-x-px hover:text-black dark:hover:text-gray-300 ml-2" href="/docs/safetensors/api/numpy"><!-- HTML_TAG_START -->Numpy API<!-- HTML_TAG_END -->
+		</a>
+			</div></nav></div></div></div>
+		<div class="z-1 min-w-0 flex-1"><div class="flex justify-center bg-blue-50 px-6 py-1.5 text-xs text-blue-600 dark:bg-blue-900 dark:text-blue-200 sm:text-sm"><div>You are viewing <span class="italic">main</span> version, which requires <!-- HTML_TAG_START -->installation from source<!-- HTML_TAG_END -->. If you&#39;d like
+			regular pip install, checkout the latest stable version (<a class="underline" href="/docs/safetensors/v0.3.2/index">v0.3.2</a>).
+		</div></div>
+			<div class="px-6 pt-6 md:px-12 md:pb-16 md:pt-16"><div class="max-w-4xl mx-auto mb-10"><div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-orange-300/10 px-4 py-5 ring-1 ring-orange-100/70 md:px-6 md:py-8"><img alt="Hugging Face's logo" class="absolute -bottom-6 -right-6 w-28 -rotate-45 md:hidden" src="/front/assets/huggingface_logo-noborder.svg">
+		<div class="mb-2 text-2xl font-bold dark:text-gray-200 md:mb-0">Join the Hugging Face community</div>
+		<p class="mb-4 text-lg text-gray-400 dark:text-gray-300 md:mb-8">and get access to the augmented documentation experience
+		</p>
+		<div class="mb-8 hidden space-y-4 md:block xl:flex xl:space-x-6 xl:space-y-0"><div class="flex items-center"><div class="mr-3 flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gradient-to-br from-indigo-100 to-indigo-100/20 dark:to-indigo-100"><svg class="text-indigo-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-quaternary" d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z" opacity=".25" fill="currentColor"></path><path class="uim-tertiary" d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z" fill="currentColor"></path></svg></div>
+				<div class="text-smd leading-tight text-gray-500 dark:text-gray-300 xl:max-w-[200px] 2xl:text-base">Collaborate on models, datasets and Spaces
+				</div></div>
+			<div class="flex items-center"><div class="mr-3 flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gradient-to-br from-orange-100 to-orange-100/20 dark:to-orange-50"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" class="text-xl text-yellow-400" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8z" fill="currentColor"></path></svg></div>
+				<div class="text-smd leading-tight text-gray-500 dark:text-gray-300 xl:max-w-[200px] 2xl:text-base">Faster examples with accelerated inference
+				</div></div>
+			<div class="flex items-center"><div class="mr-3 flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gradient-to-br from-gray-500/10 to-gray-500/5"><svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M14.9804 3C14.9217 3.0002 14.8631 3.00555 14.8054 3.016C11.622 3.58252 8.76073 5.30669 6.77248 7.85653C4.78422 10.4064 3.80955 13.6016 4.03612 16.8271C4.26268 20.0525 5.67447 23.0801 7.99967 25.327C10.3249 27.5738 13.3991 28.8811 16.6304 28.997C16.7944 29.003 16.9584 28.997 17.1204 28.997C19.2193 28.9984 21.2877 28.4943 23.1507 27.5274C25.0137 26.5605 26.6164 25.1592 27.8234 23.442C27.9212 23.294 27.9783 23.1229 27.9889 22.9458C27.9995 22.7687 27.9633 22.592 27.884 22.4333C27.8046 22.2747 27.6848 22.1397 27.5367 22.0421C27.3887 21.9444 27.2175 21.8875 27.0404 21.877C25.0426 21.7017 23.112 21.0693 21.3976 20.0288C19.6832 18.9884 18.231 17.5676 17.1533 15.8764C16.0756 14.1852 15.4011 12.2688 15.1822 10.2754C14.9632 8.28193 15.2055 6.26484 15.8904 4.38C15.9486 4.22913 15.97 4.06652 15.9527 3.90572C15.9354 3.74492 15.8799 3.59059 15.7909 3.45557C15.7019 3.32055 15.5819 3.20877 15.4409 3.12952C15.2999 3.05028 15.142 3.00587 14.9804 3Z" fill="currentColor"></path></svg></div>
+				<div class="text-smd leading-tight text-gray-500 dark:text-gray-300 xl:max-w-[200px] 2xl:text-base">Switch between documentation themes
+				</div></div></div>
+		<div class="flex items-center space-x-2.5"><a href="/join"><button class="rounded-lg bg-white bg-gradient-to-br from-gray-100/20 to-gray-200/60 px-5 py-1.5 font-semibold text-gray-700 shadow-sm ring-1 ring-gray-300/60 hover:to-gray-100/70 hover:ring-gray-300/30 active:shadow-inner">Sign Up</button></a>
+			<p class="text-gray-500 dark:text-gray-300">to get started</p></div></div></div>
+				<div class="prose-doc prose relative mx-auto max-w-4xl break-words"><!-- HTML_TAG_START -->		<link href="/docs/safetensors/main/en/_app/immutable/assets/0.e3b0c442.css" rel="modulepreload">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/entry/start.4f44d2f7.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/scheduler.7da89386.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/singletons.f1da015c.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/paths.de1e930d.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/entry/app.e0eb9f30.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/index.0b7befd3.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/nodes/0.fe4d4ee8.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/each.e59479a4.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/nodes/8.574ac55d.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/CodeBlock.ce33a881.js">
+		<link rel="modulepreload" href="/docs/safetensors/main/en/_app/immutable/chunks/Heading.8a936589.js"><!-- HEAD_svelte-u9bgzb_START --><meta name="hf:doc:metadata" content="{&quot;title&quot;:&quot;Safetensors&quot;,&quot;local&quot;:&quot;safetensors&quot;,&quot;sections&quot;:[{&quot;title&quot;:&quot;Installation&quot;,&quot;local&quot;:&quot;installation&quot;,&quot;sections&quot;:[],&quot;depth&quot;:2},{&quot;title&quot;:&quot;Usage&quot;,&quot;local&quot;:&quot;usage&quot;,&quot;sections&quot;:[{&quot;title&quot;:&quot;Load tensors&quot;,&quot;local&quot;:&quot;load-tensors&quot;,&quot;sections&quot;:[],&quot;depth&quot;:3},{&quot;title&quot;:&quot;Save tensors&quot;,&quot;local&quot;:&quot;save-tensors&quot;,&quot;sections&quot;:[],&quot;depth&quot;:3}],&quot;depth&quot;:2},{&quot;title&quot;:&quot;Format&quot;,&quot;local&quot;:&quot;format&quot;,&quot;sections&quot;:[],&quot;depth&quot;:2},{&quot;title&quot;:&quot;Featured Projects&quot;,&quot;local&quot;:&quot;featured-projects&quot;,&quot;sections&quot;:[],&quot;depth&quot;:2}],&quot;depth&quot;:1}"><!-- HEAD_svelte-u9bgzb_END -->      <p></p>  <div class="flex justify-center" data-svelte-h="svelte-1cog2jy"><img class="block dark:hidden" src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/safetensors/safetensors-logo-light.svg"> <img class="hidden dark:block" src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/safetensors/safetensors-logo-dark.svg"></div>  <h1 class="relative group"><a id="safetensors" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#safetensors"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Safetensors</span></h1> <p data-svelte-h="svelte-t0cre5">Safetensors is a new simple format for storing tensors safely (as opposed to pickle) and that is still fast (zero-copy). Safetensors is really <a href="./speed">fast 🚀</a>.</p>  <h2 class="relative group"><a id="installation" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#installation"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Installation</span></h2> <p data-svelte-h="svelte-delq61">with pip:</p> <div class="code-block relative"><div class="absolute top-2.5 right-4"><button class="inline-flex items-center relative text-sm focus:text-green-500 cursor-pointer focus:outline-none transition duration-200 ease-in-out opacity-0 mx-0.5   text-gray-600 " title="code excerpt" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg> <div class="absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow left-1/2 top-full transform -translate-x-1/2 translate-y-2 opacity-0"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="border-left-color: transparent; border-right-color: transparent; "></div> Copied</div></button></div> <pre class=""><!-- HTML_TAG_START -->pip <span class="hljs-keyword">install</span> safetensors<!-- HTML_TAG_END --></pre></div> <p data-svelte-h="svelte-os2i0n">with conda:</p> <div class="code-block relative"><div class="absolute top-2.5 right-4"><button class="inline-flex items-center relative text-sm focus:text-green-500 cursor-pointer focus:outline-none transition duration-200 ease-in-out opacity-0 mx-0.5   text-gray-600 " title="code excerpt" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg> <div class="absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow left-1/2 top-full transform -translate-x-1/2 translate-y-2 opacity-0"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="border-left-color: transparent; border-right-color: transparent; "></div> Copied</div></button></div> <pre class=""><!-- HTML_TAG_START -->conda <span class="hljs-keyword">install</span> -c huggingface safetensors<!-- HTML_TAG_END --></pre></div>  <h2 class="relative group"><a id="usage" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#usage"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Usage</span></h2>  <h3 class="relative group"><a id="load-tensors" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#load-tensors"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Load tensors</span></h3> <div class="code-block relative"><div class="absolute top-2.5 right-4"><button class="inline-flex items-center relative text-sm focus:text-green-500 cursor-pointer focus:outline-none transition duration-200 ease-in-out opacity-0 mx-0.5   text-gray-600 " title="code excerpt" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg> <div class="absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow left-1/2 top-full transform -translate-x-1/2 translate-y-2 opacity-0"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="border-left-color: transparent; border-right-color: transparent; "></div> Copied</div></button></div> <pre class=""><!-- HTML_TAG_START --><span class="hljs-keyword">from</span> safetensors <span class="hljs-keyword">import</span> safe_open
+
+tensors = {}
+<span class="hljs-keyword">with</span> safe_open(<span class="hljs-string">&quot;model.safetensors&quot;</span>, framework=<span class="hljs-string">&quot;pt&quot;</span>, device=<span class="hljs-number">0</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> f.keys():
+        tensors[k] = f.get_tensor(k)<!-- HTML_TAG_END --></pre></div> <p data-svelte-h="svelte-lnpduk">Loading only part of the tensors (interesting when running on multiple GPU)</p> <div class="code-block relative"><div class="absolute top-2.5 right-4"><button class="inline-flex items-center relative text-sm focus:text-green-500 cursor-pointer focus:outline-none transition duration-200 ease-in-out opacity-0 mx-0.5   text-gray-600 " title="code excerpt" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg> <div class="absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow left-1/2 top-full transform -translate-x-1/2 translate-y-2 opacity-0"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="border-left-color: transparent; border-right-color: transparent; "></div> Copied</div></button></div> <pre class=""><!-- HTML_TAG_START --><span class="hljs-keyword">from</span> safetensors <span class="hljs-keyword">import</span> safe_open
+
+tensors = {}
+<span class="hljs-keyword">with</span> safe_open(<span class="hljs-string">&quot;model.safetensors&quot;</span>, framework=<span class="hljs-string">&quot;pt&quot;</span>, device=<span class="hljs-number">0</span>) <span class="hljs-keyword">as</span> f:
+    tensor_slice = f.get_slice(<span class="hljs-string">&quot;embedding&quot;</span>)
+    vocab_size, hidden_dim = tensor_slice.get_shape()
+    tensor = tensor_slice[:, :hidden_dim]<!-- HTML_TAG_END --></pre></div>  <h3 class="relative group"><a id="save-tensors" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#save-tensors"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Save tensors</span></h3> <div class="code-block relative"><div class="absolute top-2.5 right-4"><button class="inline-flex items-center relative text-sm focus:text-green-500 cursor-pointer focus:outline-none transition duration-200 ease-in-out opacity-0 mx-0.5   text-gray-600 " title="code excerpt" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg> <div class="absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow left-1/2 top-full transform -translate-x-1/2 translate-y-2 opacity-0"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="border-left-color: transparent; border-right-color: transparent; "></div> Copied</div></button></div> <pre class=""><!-- HTML_TAG_START --><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> safetensors.torch <span class="hljs-keyword">import</span> save_file
+
+tensors = {
+    <span class="hljs-string">&quot;embedding&quot;</span>: torch.zeros((<span class="hljs-number">2</span>, <span class="hljs-number">2</span>)),
+    <span class="hljs-string">&quot;attention&quot;</span>: torch.zeros((<span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+}
+save_file(tensors, <span class="hljs-string">&quot;model.safetensors&quot;</span>)<!-- HTML_TAG_END --></pre></div>  <h2 class="relative group"><a id="format" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#format"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Format</span></h2> <p data-svelte-h="svelte-c38z7s">Let’s say you have safetensors file named <code>model.safetensors</code>, then <code>model.safetensors</code> will have the following internal format:</p> <div class="flex justify-center" data-svelte-h="svelte-1w2gy5p"><img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/safetensors/safetensors-format.svg"></div>  <h2 class="relative group"><a id="featured-projects" class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" href="#featured-projects"><span><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z" fill="currentColor"></path></svg></span></a> <span>Featured Projects</span></h2> <p data-svelte-h="svelte-w5ack4">Safetensors is being used widely at leading AI enterprises, such as <a href="https://huggingface.co/" rel="nofollow">Hugging Face</a>, <a href="https://www.eleuther.ai/" rel="nofollow">EleutherAI</a>, and <a href="https://stability.ai/" rel="nofollow">StabilityAI</a>. Here is a non-exhaustive list of projects that are using safetensors:</p> <ul data-svelte-h="svelte-19e5f8j"><li><a href="https://github.com/huggingface/transformers" rel="nofollow">huggingface/transformers</a></li> <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">AUTOMATIC1111/stable-diffusion-webui</a></li> <li><a href="https://github.com/ggerganov/llama.cpp/blob/e6a46b0ed1884c77267dc70693183e3b7164e0e0/convert.py#L537" rel="nofollow">Llama-cpp</a></li> <li><a href="https://github.com/microsoft/TaskMatrix" rel="nofollow">microsoft/TaskMatrix</a></li> <li><a href="https://github.com/hpcaitech/ColossalAI" rel="nofollow">hpcaitech/ColossalAI</a></li> <li><a href="https://github.com/huggingface/pytorch-image-models" rel="nofollow">huggingface/pytorch-image-models</a></li> <li><a href="https://civitai.com/" rel="nofollow">CivitAI</a></li> <li><a href="https://github.com/huggingface/diffusers" rel="nofollow">huggingface/diffusers</a></li> <li><a href="https://github.com/coreylowman/dfdx" rel="nofollow">coreylowman/dfdx</a></li> <li><a href="https://github.com/invoke-ai/InvokeAI" rel="nofollow">invoke-ai/InvokeAI</a></li> <li><a href="https://github.com/oobabooga/text-generation-webui" rel="nofollow">oobabooga/text-generation-webui</a></li> <li><a href="https://github.com/Sanster/lama-cleaner" rel="nofollow">Sanster/lama-cleaner</a></li> <li><a href="https://github.com/PaddlePaddle/PaddleNLP" rel="nofollow">PaddlePaddle/PaddleNLP</a></li> <li><a href="https://github.com/AIGC-Audio/AudioGPT" rel="nofollow">AIGC-Audio/AudioGPT</a></li> <li><a href="https://github.com/brycedrennan/imaginAIry" rel="nofollow">brycedrennan/imaginAIry</a></li> <li><a href="https://github.com/comfyanonymous/ComfyUI" rel="nofollow">comfyanonymous/ComfyUI</a></li> <li><a href="https://github.com/LianjiaTech/BELLE" rel="nofollow">LianjiaTech/BELLE</a></li> <li><a href="https://github.com/alvarobartt/safejax" rel="nofollow">alvarobartt/safejax</a></li> <li><a href="https://github.com/MaartenGr/BERTopic" rel="nofollow">MaartenGr/BERTopic</a></li> <li><a href="https://github.com/LaurentMazare/tch-rs" rel="nofollow">LaurentMazare/tch-rs</a></li> <li><a href="https://github.com/chainyo/tensorshare" rel="nofollow">chainyo/tensorshare</a></li></ul>  <p></p> 
+			
+			<script>
+				{
+					__sveltekit_snfpli = {
+						assets: "/docs/safetensors/main/en",
+						base: "/docs/safetensors/main/en",
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/docs/safetensors/main/en/_app/immutable/entry/start.4f44d2f7.js"),
+						import("/docs/safetensors/main/en/_app/immutable/entry/app.e0eb9f30.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+<!-- HTML_TAG_END --></div>
+				<div class="SVELTE_HYDRATER contents" data-props="{&quot;classNames&quot;:&quot;mx-auto mt-16 flex max-w-4xl items-center pb-8 font-sans font-medium leading-6 xl:mt-32&quot;,&quot;chapterNext&quot;:{&quot;title&quot;:&quot;Speed Comparison&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;speed&quot;,&quot;url&quot;:&quot;/docs/safetensors/speed&quot;},&quot;isCourse&quot;:false,&quot;isLoggedIn&quot;:false}" data-target="DocFooterNav"><div class="mx-auto mt-16 flex max-w-4xl items-center pb-8 font-sans font-medium leading-6 xl:mt-32">
+	<a href="/docs/safetensors/speed" class="ml-auto flex transform items-center text-right text-gray-600 transition-all hover:translate-x-px hover:text-gray-900 dark:hover:text-gray-300">Speed Comparison<span class="ml-2 translate-y-px">→</span></a></div></div></div></div>
+		<div class="sticky top-0 self-start"><div class="SVELTE_HYDRATER contents" data-props="{&quot;chapter&quot;:{&quot;title&quot;:&quot;Safetensors&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;safetensors&quot;,&quot;url&quot;:&quot;#safetensors&quot;,&quot;sections&quot;:[{&quot;title&quot;:&quot;Installation&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;installation&quot;,&quot;url&quot;:&quot;#installation&quot;,&quot;sections&quot;:[]},{&quot;title&quot;:&quot;Usage&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;usage&quot;,&quot;url&quot;:&quot;#usage&quot;,&quot;sections&quot;:[{&quot;title&quot;:&quot;Load tensors&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;load-tensors&quot;,&quot;url&quot;:&quot;#load-tensors&quot;,&quot;sections&quot;:[]},{&quot;title&quot;:&quot;Save tensors&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;save-tensors&quot;,&quot;url&quot;:&quot;#save-tensors&quot;,&quot;sections&quot;:[]}]},{&quot;title&quot;:&quot;Format&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;format&quot;,&quot;url&quot;:&quot;#format&quot;,&quot;sections&quot;:[]},{&quot;title&quot;:&quot;Featured Projects&quot;,&quot;isExpanded&quot;:true,&quot;id&quot;:&quot;featured-projects&quot;,&quot;url&quot;:&quot;#featured-projects&quot;,&quot;sections&quot;:[]}]}}" data-target="SubSideMenu">
+
+<nav class="hidden h-screen w-[270px] flex-none flex-col space-y-3 overflow-y-auto break-words border-l pb-16 pl-6 pr-10 pt-24 text-sm lg:flex 2xl:w-[305px]"><a href="#safetensors" class=" text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-safetensors"><!-- HTML_TAG_START --><wbr>Safetensors<!-- HTML_TAG_END --></a>
+	<a href="#installation" class="pl-4 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-installation"><!-- HTML_TAG_START --><wbr>Installation<!-- HTML_TAG_END --></a>
+			<a href="#usage" class="pl-4 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-usage"><!-- HTML_TAG_START --><wbr>Usage<!-- HTML_TAG_END --></a>
+			<a href="#load-tensors" class="pl-8 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-load-tensors"><!-- HTML_TAG_START --><wbr>Load tensors<!-- HTML_TAG_END --></a>
+					<a href="#save-tensors" class="pl-8 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-save-tensors"><!-- HTML_TAG_START --><wbr>Save tensors<!-- HTML_TAG_END --></a>
+					<a href="#format" class="pl-4 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-format"><!-- HTML_TAG_START --><wbr>Format<!-- HTML_TAG_END --></a>
+			<a href="#featured-projects" class="pl-4 text-gray-400 transform hover:translate-x-px hover:text-gray-700 dark:hover:text-gray-300" id="nav-featured-projects"><!-- HTML_TAG_START --><wbr>Featured <wbr>Projects<!-- HTML_TAG_END --></a>
+			</nav></div></div></div>
+	<div id="doc-footer"></div></main>
+	</div>
+		
+		<script>
+			import("/front/build/kube-a4585b2/index.js");
+			window.moonSha = "kube-a4585b2/";
+			window.hubConfig = JSON.parse(`{"features":{"signupDisabled":false},"sshGitUrl":"git@hf.co","moonHttpUrl":"https://huggingface.co","captchaApiKey":"bd5f2066-93dc-4bdd-a64b-a24646ca3859","captchaDisabledOnSignup":true,"datasetsServerPublicUrl":"https://datasets-server.huggingface.co","stripePublicKey":"pk_live_x2tdjFXBCvXo2FFmMybezpeM00J6gPCAAc","environment":"production","userAgent":"HuggingFace (production)"}`);
+		</script>
+
+		<!-- Stripe -->
+		<script>
+			if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+				const script = document.createElement("script");
+				script.src = "https://js.stripe.com/v3/";
+				script.async = true;
+				document.head.appendChild(script);
+			}
+		</script>
+
+		<!-- Google analytics v4 -->
+		<script>
+			if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+				const script = document.createElement("script");
+				script.src = "https://www.googletagmanager.com/gtag/js?id=G-8Q63TH4CSL";
+				script.async = true;
+				document.head.appendChild(script);
+
+				window.dataLayer = window.dataLayer || [];
+				function gtag() {
+					if (window.dataLayer !== undefined) {
+						window.dataLayer.push(arguments);
+					}
+				}
+				gtag("js", new Date());
+				gtag("config", "G-8Q63TH4CSL", { page_path: "/docs/safetensors/index" });
+				/// ^ See https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+				gtag("consent", "default", { ad_storage: "denied", analytics_storage: "denied" });
+				/// ^ See https://developers.google.com/tag-platform/gtagjs/reference#consent
+				/// TODO: ask the user for their consent and update this with gtag('consent', 'update')
+			}
+		</script>
+	</body>
+</html>

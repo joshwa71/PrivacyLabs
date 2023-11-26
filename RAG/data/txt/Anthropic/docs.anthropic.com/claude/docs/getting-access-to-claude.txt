@@ -1,0 +1,92 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Getting access to Claude
+
+ __Suggest Edits
+
+Anthropic is rolling out Claude slowly and incrementally, as we work to ensure
+the safety and scalability of it, in alignment with our company values.
+
+We're working with select partners to roll out Claude in their products. If
+you're interested in becoming one of those partners, we are accepting
+applications. Keep in mind that, due to the overwhelming interest we've
+received so far, we may take a while to reply.
+
+If you have been interacting with Claude via one interface (e.g. Claude in
+Slack), and wish to move to another interface (e.g. API access), you may
+reapply for access to each product separately.
+
+ __Updated 6 months ago
+
+* * *
+

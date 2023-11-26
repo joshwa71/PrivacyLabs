@@ -1,0 +1,171 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Safetensors documentation
+
+Safetensors
+
+#
+
+Safetensors
+
+Search documentation
+
+mainv0.3.2v0.2.9 EN
+
+Getting started
+
+🤗 Safetensors Speed Comparison Tensor Sharing in Pytorch Metadata Parsing
+Convert weights to safetensors
+
+API
+
+Torch API Tensorflow API PaddlePaddle API Flax API Numpy API
+
+You are viewing main version, which requires installation from source. If
+you'd like regular pip install, checkout the latest stable version (v0.3.2).
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/safetensors/safetensors-logo-light.svg)
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/safetensors/safetensors-logo-dark.svg)
+
+#  Safetensors
+
+Safetensors is a new simple format for storing tensors safely (as opposed to
+pickle) and that is still fast (zero-copy). Safetensors is really fast 🚀.
+
+##  Installation
+
+with pip:
+
+Copied
+
+    
+    
+    pip install safetensors
+
+with conda:
+
+Copied
+
+    
+    
+    conda install -c huggingface safetensors
+
+##  Usage
+
+###  Load tensors
+
+Copied
+
+    
+    
+    from safetensors import safe_open
+    
+    tensors = {}
+    with safe_open("model.safetensors", framework="pt", device=0) as f:
+        for k in f.keys():
+            tensors[k] = f.get_tensor(k)
+
+Loading only part of the tensors (interesting when running on multiple GPU)
+
+Copied
+
+    
+    
+    from safetensors import safe_open
+    
+    tensors = {}
+    with safe_open("model.safetensors", framework="pt", device=0) as f:
+        tensor_slice = f.get_slice("embedding")
+        vocab_size, hidden_dim = tensor_slice.get_shape()
+        tensor = tensor_slice[:, :hidden_dim]
+
+###  Save tensors
+
+Copied
+
+    
+    
+    import torch
+    from safetensors.torch import save_file
+    
+    tensors = {
+        "embedding": torch.zeros((2, 2)),
+        "attention": torch.zeros((2, 3))
+    }
+    save_file(tensors, "model.safetensors")
+
+##  Format
+
+Let’s say you have safetensors file named `model.safetensors`, then
+`model.safetensors` will have the following internal format:
+
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/safetensors/safetensors-format.svg)
+
+##  Featured Projects
+
+Safetensors is being used widely at leading AI enterprises, such as Hugging
+Face, EleutherAI, and StabilityAI. Here is a non-exhaustive list of projects
+that are using safetensors:
+
+  * huggingface/transformers
+  * AUTOMATIC1111/stable-diffusion-webui
+  * Llama-cpp
+  * microsoft/TaskMatrix
+  * hpcaitech/ColossalAI
+  * huggingface/pytorch-image-models
+  * CivitAI
+  * huggingface/diffusers
+  * coreylowman/dfdx
+  * invoke-ai/InvokeAI
+  * oobabooga/text-generation-webui
+  * Sanster/lama-cleaner
+  * PaddlePaddle/PaddleNLP
+  * AIGC-Audio/AudioGPT
+  * brycedrennan/imaginAIry
+  * comfyanonymous/ComfyUI
+  * LianjiaTech/BELLE
+  * alvarobartt/safejax
+  * MaartenGr/BERTopic
+  * LaurentMazare/tch-rs
+  * chainyo/tensorshare
+
+Speed Comparison→
+
+Safetensors Installation Usage Load tensors Save tensors Format Featured
+Projects
+

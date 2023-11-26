@@ -1,0 +1,146 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+#  Documentations
+
+Hub
+
+Host Git-based models, datasets and Spaces on the Hugging Face Hub.
+
+Transformers
+
+State-of-the-art ML for Pytorch, TensorFlow, and JAX.
+
+Diffusers
+
+State-of-the-art diffusion models for image and audio generation in PyTorch.
+
+Datasets
+
+Access and share datasets for computer vision, audio, and NLP tasks.
+
+Gradio
+
+Build machine learning demos and other web apps, in just a few lines of
+Python.
+
+Hub Python Library
+
+Client library for the HF Hub: manage repositories from your Python runtime.
+
+Huggingface.js
+
+A collection of JS libraries to interact with Hugging Face, with TS types
+included.
+
+Transformers.js
+
+Community library to run pretrained models from Transformers in your browser.
+
+Inference API
+
+Experiment with over 200k models easily using our free Inference API.
+
+Inference Endpoints
+
+Easily deploy models to production on dedicated, fully managed infrastructure.
+
+PEFT
+
+Parameter efficient finetuning methods for large models
+
+Accelerate
+
+Easily train and use PyTorch models with multi-GPU, TPU, mixed-precision.
+
+Optimum
+
+Fast training and inference of HF Transformers with easy to use hardware
+optimization tools.
+
+AWS Trainium & Inferentia
+
+Train and Deploy Transformers & Diffusers with AWS Trainium and AWS
+Inferentia.
+
+Tokenizers
+
+Fast tokenizers, optimized for both research and production.
+
+Evaluate
+
+Evaluate and report model performance easier and more standardized.
+
+Tasks
+
+All things about ML tasks: demos, use cases, models, datasets, and more!
+
+Datasets-server
+
+API to access the contents, metadata and basic statistics of all Hugging Face
+Hub datasets.
+
+TRL
+
+Train transformer language models with reinforcement learning.
+
+Amazon SageMaker
+
+Train and Deploy Transformer models with Amazon SageMaker and Hugging Face
+DLCs.
+
+timm
+
+State-of-the-art computer vision models, layers, optimizers,
+training/evaluation, and utilities.
+
+Safetensors
+
+Simple, safe way to store and distribute neural networks weights safely and
+quickly.
+
+Text Generation Inference
+
+Toolkit to serve Large Language Models.
+
+AutoTrain
+
+AutoTrain API and UI
+
+Text Embeddings Inference
+
+Toolkit to serve Text Embedding Models.
+
+## Community
+
+  * Blog 
+  * Learn 
+  * Discord 
+  * Forum 
+  * Github 
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

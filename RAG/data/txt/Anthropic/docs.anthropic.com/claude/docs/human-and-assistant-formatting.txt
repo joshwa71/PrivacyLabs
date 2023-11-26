@@ -1,0 +1,190 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Human: and Assistant: formatting
+
+ __Suggest Edits
+
+`Human:` and `Assistant:` are special terms that Claude has been trained to
+think of as indicators of who is speaking. This means you should never have a
+human message that gives examples of dialogue containing `Human:` and
+`Assistant:`.
+
+* * *
+
+#
+
+Use H: and A: for examples
+
+Consider the following prompt:
+
+Bad Prompt
+
+    
+    
+    
+    Human: I’m going to show you a sample dialogue and I want you to tell me if the response from the assistant is good. Here is the sample:
+    
+    <sample_dialogue>
+    Human: What is your favorite color?
+    Assistant: I don’t have a favorite color.
+    </sample_dialogue>
+    
+    What do you think of this dialogue?
+    
+    Assistant:
+    
+
+You may think that the assistant will read this as a single message from the
+human just like we do, but the assistant will read the dialogue above as
+follows:
+
+  1. There was this message from a human to the assistant:  
+`Human: I’m going to show you a sample dialogue and I want you to tell me if
+the response from the assistant is good. Here is the sample:
+<sample_dialogue>`
+
+  2. Then there was this second message from the human to the assistant:  
+`Human: What is your favorite color?`
+
+  3. Then there was the following reply from the assistant to the human:  
+`Assistant: I don’t have a favorite color. </sample_dialogue> What do you
+think of this dialogue?`
+
+  4. And finally there was a prompt for the assistant to give another reply to the human:  
+`Assistant:`
+
+This is very confusing to the assistant.
+
+This is why, if you give examples of dialogue, you must replace `Human:` and
+`Assistant:` with something else, such as `User:` and `AI:` or `H:` and `A:`.
+
+For example, the following edited version of the prompt above will work just
+fine:
+
+Good Prompt
+
+    
+    
+    
+    Human: I’m going to show you a sample dialogue and I want you to tell me if the response from the assistant is good. Here is the sample:
+    
+    <sample_dialogue>
+    H: What is your favorite color?
+    A: I don’t have a favorite color.
+    </sample_dialogue>
+    
+    What do you think of this dialogue?
+    
+    Assistant:
+    
+
+In this case the assistant sees a single message from the human that includes
+a sample dialogue, and it then sees a prompt for it to respond at the end,
+which is what we wanted.
+
+* * *
+
+#
+
+Use Human: and Assistant: to put words in Claude's mouth
+
+You should use `Human:` and `Assistant:` tokens in your prompt if you want to
+pass Claude a previous conversation. One way to get Claude to do something is
+to show it previously asking or agreeing to do so, like this:
+
+Good Prompt
+
+    
+    
+    
+    Human: I have two pet cats. One of them is missing a leg. The other one has a normal number of legs for a cat to have. In total, how many legs do my cats have?
+    
+    Assistant: Can I think step-by-step?
+    
+    Human: Yes, please do.
+    
+    Assistant:
+    
+
+In this case, you want Claude to think it actually asked to think step-by-step
+and you gave it permission to do so. Proper usage of the `Human:` and
+`Assistant:` tokens will accomplish this.
+
+ __Updated 12 days ago
+
+* * *
+
+  * __Table of Contents
+  *     * Use H: and A: for examples
+    * Use Human: and Assistant: to put words in Claude's mouth
+

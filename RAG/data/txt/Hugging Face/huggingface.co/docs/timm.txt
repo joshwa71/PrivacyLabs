@@ -1,0 +1,89 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+timm documentation
+
+timm
+
+#
+
+timm
+
+Search documentation
+
+mainv0.9.10 EN
+
+Get started
+
+Home Quickstart Installation
+
+Tutorials
+
+Using Pretrained Models as Feature Extractors Training With The Official
+Training Script Share and Load Models from the 🤗 Hugging Face Hub
+
+Model Pages
+
+Reference
+
+Models Data Optimizers Learning Rate Schedulers
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  timm
+
+![](https://huggingface.co/front/thumbnails/docs/timm.png)
+
+`timm` is a library containing SOTA computer vision models, layers, utilities,
+optimizers, schedulers, data-loaders, augmentations, and training/evaluation
+scripts.
+
+It comes packaged with >700 pretrained models, and is designed to be flexible
+and easy to use.
+
+Read the quick start guide to get up and running with the `timm` library. You
+will learn how to load, discover, and use pretrained models included in the
+library.
+
+Tutorials
+
+Learn the basics and become familiar with timm. Start here if you are using
+timm for the first time!
+
+Reference
+
+Technical descriptions of how timm classes and methods work.
+
+Quickstart→
+
+timm
+

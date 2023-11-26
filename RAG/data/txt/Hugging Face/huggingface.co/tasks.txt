@@ -1,0 +1,174 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+# Tasks
+
+Hugging Face is the home for all Machine Learning tasks. Here you can find
+what you need to get started with a task: demos, use cases, models, datasets,
+and more!
+
+## Computer Vision
+
+Depth Estimation
+
+86 models
+
+Image Classification
+
+7,064 models
+
+Image Segmentation
+
+330 models
+
+Image-to-Image
+
+230 models
+
+Object Detection
+
+1,256 models
+
+Video Classification
+
+415 models
+
+Unconditional Image Generation
+
+950 models
+
+Zero-Shot Image Classification
+
+231 models
+
+## Natural Language Processing
+
+Conversational
+
+2,591 models
+
+Fill-Mask
+
+9,369 models
+
+Question Answering
+
+8,432 models
+
+Sentence Similarity
+
+2,656 models
+
+Summarization
+
+1,407 models
+
+Table Question Answering
+
+80 models
+
+Text Classification
+
+39,289 models
+
+Text Generation
+
+32,753 models
+
+Token Classification
+
+13,577 models
+
+Translation
+
+2,981 models
+
+Zero-Shot Classification
+
+185 models
+
+## Audio
+
+Audio Classification
+
+1,421 models
+
+Audio-to-Audio
+
+3,625 models
+
+Automatic Speech Recognition
+
+12,619 models
+
+Text-to-Speech
+
+1,676 models
+
+## Tabular
+
+Tabular Classification
+
+167 models
+
+Tabular Regression
+
+102 models
+
+## Multimodal
+
+Document Question Answering
+
+117 models
+
+Feature Extraction
+
+6,344 models
+
+Image-to-Text
+
+311 models
+
+Text-to-Image
+
+12,253 models
+
+Text-to-Video
+
+70 models
+
+Visual Question Answering
+
+96 models
+
+## Reinforcement Learning
+
+Reinforcement Learning
+
+32,109 models
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

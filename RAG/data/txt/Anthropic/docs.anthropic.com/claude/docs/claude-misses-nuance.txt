@@ -1,0 +1,156 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Claude misses nuance
+
+ __Suggest Edits
+
+#
+
+Add contrasting conceptual distinction to your instructions
+
+Sometimes it is helpful to create and explain binary or n-ary concepts and
+contrast them with one another in order to get the kind of response you want
+from Claude. This can be done for fairly nuanced concepts, so if there’s a
+specific kind of response you want, it can be useful to think of what
+distinguishes it from other kinds of responses, giving it a name, and then
+specifically requesting that kind of response.
+
+Example:
+
+Prompt
+
+    
+    
+    
+    Human: We can divide responses into polite and impolite response. Polite responses are those that {{polite response features}}. Impolite responses are those that {{impolite response features}}. It’s good to give polite responses in {{circumstances}} but less important in {{circumstances}}. Do you understand?
+    
+    Assistant:
+    
+
+Then have the assistant explain back the conceptual distinction and when one
+kind of response is useful.
+
+Given this, you can ask the model to do things like classify responses into
+one of the multiple conceptual buckets (e.g polite or impolite), or to give a
+response of one type and not the other.
+
+* * *
+
+#
+
+List examples of incorrect responses and describe bad examples
+
+In your prompt, try listing examples of incorrect responses, especially kinds
+of incorrect responses you see that the model often gives.
+
+You can list these in your instructions _(”Here is an incorrect example: “)_ ,
+or as part of a few-shot conversation prompt:
+
+Prompt
+
+    
+    
+    
+    Human: <description of rules>
+    
+    <task description>
+    
+    First, to make sure you understand the task, please list some answers that would violate the restrictions I described.
+    
+    Assistant: <response>
+    
+    Human: Yes, exactly. Here is another task.
+    
+    <task description>
+    
+    Please now list some answers that *do not violate* the restrictions I described.
+    
+    Assistant: <response>
+    
+    Human: Yes, exactly. Here is another task
+    
+    <task description>
+    
+    Please now list some answers that *do not violate* the restrictions I described.
+    
+    Assistant:
+    
+
+__Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Add contrasting conceptual distinction to your instructions
+    * List examples of incorrect responses and describe bad examples
+

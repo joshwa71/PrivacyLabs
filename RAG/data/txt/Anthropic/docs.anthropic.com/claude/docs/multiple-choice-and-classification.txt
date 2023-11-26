@@ -1,0 +1,127 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Multiple Choice and Classification
+
+ __Suggest Edits
+
+You can ask Claude to classify inputs as follows.
+
+> 💡
+>
+> Future development
+>
+> We will probably offer a simpler “multiple choice endpoint” in the future.
+
+* * *
+
+Claude is a conversational agent, so often it will explain at length why it
+selected a given option. If you just want a fast multiple-choice answer and no
+explanation, you can use the "`Human:`"/"`Assistant:`" formatting in the API
+to put words in Claude's mouth and have Claude respond in a particular way.
+
+For example, if the available options start with `(`, you can end your prompt
+with "`Assistant: My answer is (`". That way you can immediately get a
+response in the first token.
+
+Classification Prompt
+
+    
+    
+    
+    Human: You are a customer service agent that is classifying emails by type.
+    
+    Email:
+    <email>
+    Hi -- My Mixmaster4000 is producing a strange noise when I operate it. It also smells a bit smoky and plasticky, like burning electronics.  I need a replacement.
+    </email>
+    
+    Categories are:
+    (A) Pre-sale question
+    (B) Broken or defective item
+    (C) Billing question
+    (D) Other (please explain)
+    
+    Assistant: My answer is (
+    
+
+Output
+
+    
+    
+    B) Broken or defective item
+    
+
+__Updated 6 months ago
+
+* * *
+

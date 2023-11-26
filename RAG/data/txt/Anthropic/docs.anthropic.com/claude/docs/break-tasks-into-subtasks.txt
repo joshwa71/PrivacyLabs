@@ -1,0 +1,118 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Break complex tasks into subtasks
+
+ __Suggest Edits
+
+Claude performs worse at "complex" tasks which are composed of several
+subtasks. If you already know what those subtasks are (i.e. you understand the
+problem well) you can help Claude by breaking the prompt down into steps.
+
+Bad Prompt
+
+    
+    
+    
+    Human: I want you to write an essay about the statement {{STATEMENT}}, with three topic sentences arguing for the statement, three topic sentences arguing against the statement, and a conclusion at the end.
+    
+    Assistant:
+    
+
+Putting all the steps in one sentence can confuse Claude and cause it to
+follow instructions inconsistently. Here is a better version of this prompt:
+
+Good Prompt
+
+    
+    
+    
+    Human: Please follow these steps:
+    1. Write three topic sentences arguing for {{STATEMENT}}.
+    2. Write three topic sentences arguing against {{STATEMENT}}.
+    3. Write an essay by expanding each topic sentence from Steps 1 and 2, and adding a conclusion to synthesize the arguments. Please enclose the essay in <essay></essay> tags.
+    
+    Assistant:
+    
+
+> 💡
+>
+> Going further
+>
+> If you can't get reliable results by breaking the prompt into subtasks, you
+> may need to split it into multiple prompts. Outputs from earlier prompts can
+> be fed into other ones in a process called Prompt Chaining.
+
+ __Updated 6 months ago
+
+* * *
+

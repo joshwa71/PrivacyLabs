@@ -1,0 +1,103 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Inference API documentation
+
+🤗 Hosted Inference API
+
+#
+
+Inference API
+
+Search documentation
+
+main EN
+
+Getting started
+
+🤗 Accelerated Inference API Overview Detailed parameters Parallelism and batch
+jobs Detailed usage and pinned models More information about the API
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Hosted Inference API
+
+Test and evaluate, for free, over 150,000 publicly accessible machine learning
+models, or your own private models, via simple HTTP requests, with fast
+inference hosted on Hugging Face shared infrastructure.
+
+The Inference API is free to use, and rate limited. If you need an inference
+solution for production, check out our Inference Endpoints service. With
+Inference Endpoints, you can easily deploy any machine learning model on
+dedicated and fully managed infrastructure. Select the cloud, region, compute
+instance, autoscaling range and security level to match your model, latency,
+throughput, and compliance needs.
+
+##  Main features:
+
+  * Get predictions from **150,000+ Transformers, Diffusers, or Timm models** (T5, Blenderbot, Bart, GPT-2, Pegasus...)
+  * Use built-in integrations with **over 20 Open-Source libraries** (spaCy, SpeechBrain, Keras, etc).
+  * Switch from one model to the next by just switching the model ID
+  * Upload, manage and serve your **own models privately**
+  * Run Classification, Image Segmentation, Automatic Speech Recognition, NER, Conversational, Summarization, Translation, Question-Answering, Embeddings Extraction tasks
+  * Out of the box accelerated inference on **CPU** powered by Intel Xeon Ice Lake
+
+##  Third-party library models:
+
+  * The Hub supports many new libraries, such as SpaCy, Timm, Keras, fastai, and more. You can read the full list here.
+
+  * Those models are enabled on the API thanks to some docker integration api-inference-community.
+
+Please note however, that these models will not allow you (tracking issue):
+
+  * To get full optimization
+  * To run private models
+  * To get access to GPU inference
+
+##  If you are looking for custom support from the Hugging Face team
+
+![HuggingFace Expert Acceleration Program](https://cdn-
+media.huggingface.co/marketing/transformers/new-support-improved.png)  
+
+##  Hugging Face is trusted in production by over 10,000 companies
+
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/inference-api/companies-light.png)
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/inference-api/companies-dark.png)
+
+Overview→
+
+🤗 Hosted Inference API Main features: Third-party library models: If you are
+looking for custom support from the Hugging Face team Hugging Face is trusted
+in production by over 10,000 companies
+

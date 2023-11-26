@@ -1,0 +1,265 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Claude is hallucinating
+
+ __Suggest Edits
+
+Though this is not fully solved yet, there are ways to minimize
+hallucinations.
+
+#
+
+Ask Claude multiple times
+
+One feature of hallucinations is that they tend to be different across
+different outputs. So if you’re worried about Claude generating
+hallucinations, you can create multiple outputs and ask the model if the two
+outputs are consistent.
+
+For example, suppose you want the model to extract dollar amounts from a
+document and to produce a summary like _“The cost of the house is $500k and
+it’s located in the state of Texas”._ If you generate two outputs and the
+dollar amount and state are the same, it’s less likely to be a hallucination.
+
+If there are inconsistent facts in the two outputs, it’s likely that one of
+them contains a hallucination. You can ask the model if the two responses
+contain any inconsistencies and use this as a way to flag potential
+hallucinations.
+
+You should check the accuracy of this technique using your own examples, since
+its success (and efficiency relative to alternatives) will vary by task type.
+
+#
+
+Give Claude a "way out" if it doesn't know the answer
+
+Try explicitly giving Claude permission to say "I don't know", especially when
+asking it fact-based (rather than analytical) questions.
+
+See Let Claude say "I don't know" for more details.
+
+> 💡
+>
+> Reminder
+>
+> While Claude has read a lot on the internet and knows things about the real
+> world, it does not have internet access. Claude was trained on data that can
+> be two years out of date. It also does not know today's date, nor anything
+> about current events.
+
+#
+
+Ask Claude for direct quotes
+
+> 🚧
+>
+> Warning
+>
+> This applies to extracting information from documents you provide in the
+> prompt. This is better for longer documents and _worse_ for short ones (<300
+> words). Claude is more likely to hallucinate fake quotes if documents are
+> short.
+
+Models seem less likely to hallucinate direct quotes from long documents than
+to hallucinate content of documents if asked a question about them.
+
+If you have a document with various statistics about cats and you say `What is
+the average weight of a Russian Blue?`, the model is more likely to
+hallucinate an answer than if you say `Please extract word-for-word quotes
+from this document that are relevant to the question ‘What is the average
+weight of a Russian Blue?`
+
+This is especially true if you can have a few shot prompt that contains
+examples where there are no relevant quotes to which the model responds `“I
+can’t find any quotes relevant to that”`. But this might not be possible if
+you’re extracting quotes from very long documents (since it’s costly to have
+very long few-shot prompts in this case).
+
+Additionally, direct quotes are easier to verify the accuracy of than other
+answers. If you have a document and you request word-for-word quotes, you can
+do a string match on the model quotes to check that they appear in the
+document and check for percentage of overlap.
+
+> 💡
+>
+> Note
+>
+> You might not get 100% overlap but want it to be high, e.g. the model might
+> add "[sic.]" if there is an error in the document or might add context to
+> the quotes like `he [Brian] asked her [Diana] to dinner` which is fine as
+> long as the added content is accurate.
+>
+> If you think it’s adding inaccurate content then you may want to just filter
+> for a very high degree of overlap and make the instructions more rigorous,
+> e.g. by adding something like `Please ensure your quotes are directly from
+> the document, and do not add any additional content like disambiguations or
+> comments.`
+
+Some examples of ways to do overlap checks in Python:
+
+Python
+
+    
+    
+    # edit distance
+    import nltk
+    surplus = max(0, len(doc) - len(quote))
+    edit_distance = nltk.edit_distance(quote, doc) - surplus
+    
+    # block matching
+    from difflib import SequenceMatcher
+    max([b[-1] for b in SequenceMatcher(None, doc, quote).get_matching_blocks()]) / len(quote)
+    
+
+What you want is quotes that appear in the document and are relevant to the
+question. If the model is good at identifying _relevant_ quotes for your use
+case (which it often is but you should check), this ensures that it’s not
+hallucinating the quotes.
+
+##
+
+Example: zero-shot prompt to generate direct quotes
+
+Prompt for Relevant Quotes
+
+    
+    
+    
+    Human: Consider the following document:
+    
+    {{DOCUMENT}}
+    
+    Please identify the quotes in this article most relevant to the question "{{QUESTION}}" and copy them out word-for-word. If there are no quotes in this document that seem relevant to this question, please just say "I can’t find any relevant quotes".
+    
+    Assistant:
+    
+
+##
+
+Document summary
+
+Document summary or text + direct quotes often make answers more accurate.
+Sometimes the model might need the full text plus the direct quotes to give an
+answer, but sometimes a summary plus the direct quotes will be enough.
+
+For example, one can ask for:
+
+  1. A summary of the article:
+
+Prompt for Article Summary
+
+    
+    
+    
+    Human: Consider the following article:
+    
+    {{DOCUMENT}}
+    
+    Please write a one paragraph, high level summary of this article.
+    
+    Assistant: Here is a summary of the document:
+    
+
+  2. Separately, direct quotes from the article relevant to the question (see previous section)
+
+  3. Then request an answer based on these:
+
+Combined Prompt
+
+    
+    
+    
+    Human: I want you to use a summary of a document and quotes from the document to answer the question “{{QUESTION}}”
+    
+    Here is a summary of the document: {{SUMMARY}}
+    
+    Here are direct quotes from the document that are most relevant to the question "{{QUESTION}}": {{QUOTES}} 
+    
+    Please use these to construct an answer to the question "{{QUESTION}}" as though you were answering the question directly. Ensure that your answer is accurate and doesn’t contain any information not directly supported by the summary and quotes.
+    
+    Assistant:
+    
+
+This can be more accurate than extracting quotes alone.
+
+ __Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Ask Claude multiple times
+    * Give Claude a "way out" if it doesn't know the answer
+    * Ask Claude for direct quotes
+      * Example: zero-shot prompt to generate direct quotes
+      * Document summary
+

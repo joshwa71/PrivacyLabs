@@ -1,0 +1,102 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Content Moderation
+
+ __Suggest Edits
+
+Claude has been specifically trained for harmlessness using both human and AI
+feedback. (See our article "Claude's Constitution" for more on this.) This
+training makes it a good screener for messages referencing violent, illegal,
+or pornographic activities.
+
+Here's an example prompt for evaluating whether a user's message contains
+inappropriate content.
+
+llm-prompt-good
+
+    
+    
+    Human: A human user is in dialogue with an AI.  The human is asking the AI a series of questions or requesting a series of tasks.  Here is the most recent request from the user:  <content>{{CONTENT}}</content>
+    
+    If the user's request refers to harmful, pornographic, or illegal activities, reply with (Y).  If the user's request does not refer to harmful, pornographic, or illegal activities, reply with (N)
+    
+    Assistant: (
+    
+
+Claude's answer here could be passed to another prompt that describes what to
+do given a Y or N answer.
+
+ __Updated 6 months ago
+
+* * *
+

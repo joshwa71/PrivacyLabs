@@ -1,0 +1,106 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Getting started with Claude
+
+ __Suggest Edits
+
+#
+
+What is Claude?
+
+Claude is a large language model (LLM) built by Anthropic. It's trained to be
+a helpful assistant in a conversational tone.
+
+There are a couple of different ways to interact with Claude:
+
+  * **claude.ai** \- Interact with Claude directly in a browser.
+  * **API** \- Allows integrating Claude with your product for your customers.
+
+The common thread behind these interfaces is Claude: the way you talk to it is
+mostly the same, regardless of which interface you use. This makes it easy to,
+for example, experiment with how you prompt Claude in the console, and move
+your prompt into a more automated API-based system.
+
+ __Updated 3 months ago
+
+* * *
+
+What’s Next
+
+  * Getting access to Claude
+  * Introduction to Prompt Design
+  * Getting started with the API
+
+  *  __Table of Contents
+  *     * What is Claude?
+

@@ -1,0 +1,139 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Advanced Text Analysis
+
+ __Suggest Edits
+
+#
+
+Document Q&A with citations
+
+It's relatively simple to get Claude to answer a question based on a piece of
+text (as shown in Basic Text Analysis). Getting answers with cited sources in
+a specific format is more complex.
+
+> 💡
+>
+> Referencing long text
+>
+> If you want Claude to reference a long piece of text, put it in the first
+> part of the prompt, using XML tags such `<text></text>` to clearly mark it.
+> Place your instructions _after_ the long text for best results.
+
+Prompt for Finding Relevant Quotes in a Text, Answering a Question, and Citing
+Sources
+
+    
+    
+    
+    Human: I'm going to give you a document. Then I'm going to ask you a question about it. I'd like you to first write down exact quotes of parts of the document that would help answer the question, and then I'd like you to answer the question using facts from the quoted content. Here is the document:
+    
+    <document>
+    {{TEXT}}
+    </document>
+    
+    Here is the first question:  {{QUESTION}}
+    
+    First, find the quotes from the document that are most relevant to answering the question, and then print them in numbered order. Quotes should be relatively short.
+    
+    If there are no relevant quotes, write "No relevant quotes" instead.
+    
+    Then, answer the question, starting with "Answer:".  Do not include or reference quoted content verbatim in the answer. Don't say "According to Quote [1]" when answering. Instead make references to quotes relevant to each section of the answer solely by adding their bracketed numbers at the end of relevant sentences.
+    
+    Thus, the format of your overall response should look like what's shown between the <example></example> tags.  Make sure to follow the formatting and spacing exactly.
+    
+    <example>
+    
+    Relevant quotes:
+    [1] "Company X reported revenue of $12 million in 2021."
+    [2] "Almost 90% of revenue came from widget sales, with gadget sales making up the remaining 10%."
+    
+    Answer:
+    Company X earned $12 million. [1]  Almost 90% of it was from widget sales. [2]
+    
+    </example>
+    
+    If the question cannot be answered by the document, say so.
+    
+    Answer the question immediately without preamble.
+    
+    Assistant:
+    
+
+__Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Document Q&A with citations
+

@@ -1,0 +1,362 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Configuring GPT prompts for Claude
+
+ __Suggest Edits
+
+Prompts for Claude and GPT are similar in many ways, but there are a few
+slight changes you can make that will immediately help your old GPT prompt
+achieve better results with Claude. Here are six prompting tips to help you
+convert a GPT prompt to a Claude prompt.
+
+#
+
+Adopt the Human/Assistant formatting
+
+Claude is trained to fill in text for the Assistant role as part of an ongoing
+dialogue between a human user (Human:) and an AI assistant (Assistant:).
+Prompts sent via the API must contain \n\nHuman: and \n\nAssistant: as the
+signals of who's speaking. On Claude.ai, we automatically add these for you
+and in console.anthropic.com you are able to see this in action by clicking
+the “Edit Chat” button.
+
+Here’s an example of how the formatting looks:
+
+Good Prompt with Human/Assistant Formatting
+
+    
+    
+    
+    Human: Why is the sky blue?
+    
+    Assistant:
+    
+
+> 💡
+>
+> System Prompts
+>
+> You might notice that there is no notion of a system prompt for Claude. But
+> moving your system prompt over is easy! When using Claude, simply write your
+> system prompt to after `\n\nHuman:` instead.
+>
+> You do not need any separation between the 'system prompt' text and the rest
+> of the prompt (i.e., the user input), but you can use the "BEGIN DIALOGUE"
+> separator if you would like to further delineate the two sections, such as
+> in the following example:
+>
+> System Prompt Example
+>  
+>  
+>  
+>     Human: You are an AI chatbot assistant that helps customers answer
+> prompting questions. When I write BEGIN DIALOGUE, all text that comes
+> afterward will be that of a user interacting with you, asking for prompting
+> help.
+>  
+>     Here are the rules you must follow during the conversation:
+>     <rules>
+>     {{RULES}}
+>     </rules>
+>  
+>     BEGIN DIALOGUE
+>  
+>     How do I format a system prompt for Claude?
+>  
+>     Assistant:
+>  
+
+Claude tends to be more resilient to prompt injection attacks than GPT (New
+York Times, 2023) so there’s no need to worry about any degradation in
+application robustness without a designated system prompt. You can also refer
+to the tip "Keeping Claude in character" for additional tips on keeping
+dialogue agents in character.
+
+* * *
+
+#
+
+Add XML tags
+
+XML tags look like this:
+
+XML Tags
+
+    
+    
+    <tag></tag>
+    
+
+Claude has been fine-tuned to recognize XML tags within prompts. These tags
+can be used to demarcate different subsections of a prompt. This allows Claude
+to compartmentalize a prompt into distinct parts.
+
+For example, suppose we want to add some text from a document to our prompt,
+we would wrap the document in  tags:
+
+XML Tags Example
+
+    
+    
+    <doc>
+    Some piece of text…
+    </doc>
+    
+
+Claude is also able to recognize other structured formats like JSON and YAML,
+but sticking to XML will lead to the best performance in most cases.
+
+> 💡
+>
+> Naming XML tags
+>
+> There are no special or reserved names for these tags. They can be anything
+> you want! It’s the format that matters - as long as you have <> and </>
+> you’re good to go!
+
+* * *
+
+#
+
+Provide clear and unambiguous instructions
+
+Claude responds well to clear and direct instructions. For example, suppose a
+prompt contained a line like this:
+
+Bad Prompt
+
+    
+    
+    Use the context and the question to create an answer.
+    
+
+This line leaves room for Claude to make implicit assumptions. What context?
+What question? An answer to what? Explicitly answering these questions within
+the prompt will focus Claude on the task at hand.
+
+Let’s apply this mindset to rewrite this line:
+
+Good Prompt
+
+    
+    
+    Please read the user’s question supplied within the <question> tags. Then, using only the contextual information provided above within the <context> tags, generate an answer to the question and output it within <answer> tags.
+    
+
+In this rewrite, we expanded on the steps Claude should take to create an
+answer. We also provided specifics of what the context and question are and
+where Claude should look to find them.
+
+When creating prompts for Claude, it’s best to adopt the frame that Claude is
+new to the task and has no prior context other than what is stated in the
+prompt. Providing detailed and unambiguous explanations in the prompt will
+help Claude generate better responses.
+
+* * *
+
+#
+
+Put words in Claude's mouth
+
+When using Anthropic’s API, you are not limited to just the “User” (as in GPT)
+or “Human” part of the request. Claude’s prompt extends to include the
+Assistant response as well. With the `\n\nHuman:` and `\n\nAssistant:`
+formatting, you can provide Claude more instructions after `\n\nAssistant:`.
+Claude will continue the conversation from the last `\n\nAssistant:` token.
+
+Here’s an example:
+
+Good Prompt
+
+    
+    
+    
+    Human: I'd like you to rewrite the following paragraph using the following instructions: "{{INSTRUCTIONS}}".
+    
+    "{{PARAGRAPH}}"
+    
+    Please output your rewrite within <rewrite></rewrite> tags.
+    
+    Assistant: <rewrite>
+    
+
+By inserting `<rewrite>` after the `\n\nAssistant:` we have forced Claude to
+only provide the rest of the rewrite in its response. This avoids some of
+Claude’s chatty tendencies that you may experience when Claude adds a sentence
+or two prior to providing its answer. It’s important to note that if you adopt
+this approach in your own prompt, you will want to pass `</rewrite>` as a stop
+sequence to the API completion method.
+
+This technique can also be used to ensure Claude always begins its answer the
+same way and allow Claude to acknowledge specific rules that have been stated
+previously in the prompt.
+
+* * *
+
+#
+
+Keeping Claude in character
+
+Putting words in Claude’s mouth can also help ensure that Claude stays in
+character in any dialogue based chat application. After `\n\nAssistant:` we
+can insert Claude’s persona within brackets as shown:
+
+Good Prompt
+
+    
+    
+    
+    Human: You will be acting as an AI career coach named Joe created by the company AdAstra Careers. Your goal is to give career advice to users.
+    
+    Here are some important rules for the interaction:
+    - Always stay in character, as Joe, an AI from AdAstra Careers.  
+    - If you are unsure how to respond, say "Sorry, I didn't understand that. Could you rephrase your question?"
+    
+    Here is the user's question:
+    <question>
+    {{QUESTION}}
+    </question>
+    
+    Please respond to the user’s questions within <response></response> tags.
+    
+    Assistant: [Joe from AdAstra] <response>
+    
+
+This technique forces Claude to acknowledge that it is roleplaying as that
+persona and only output responses that logically follow with something the
+persona would say.
+
+* * *
+
+#
+
+Documents before instructions
+
+Claude has a 100k context window (~70k words) which means Claude is great at
+parsing and analyzing long documents and strings of text.
+
+It’s best to provide long documents and text before the instructions. Claude
+pays extra attention to text near the bottom of the prompt so make sure to
+emphasize important instructions near the end of your prompts.
+
+Claude’s long context allows you to experiment with new processes that aren’t
+possible when using other language models with shorter context windows. If
+your application previously required you to split inputs in order to fit
+within a context window, simplify your steps and combine the inputs into one.
+
+* * *
+
+#
+
+Add many examples (at least 3)
+
+Claude learns well through examples of how it should respond and in what
+format. We recommend adding at least three examples to your prompt, but more
+is better!
+
+Examples are especially beneficial for tasks that require consistent and
+reliable structured outputs. Uniform examples will teach Claude to always
+respond in the same way every time.
+
+We often add examples within example tags and structure them to include the
+question and the ideal Claude answer:
+
+Text Example with Proper XML Formatting
+
+    
+    
+    <example>
+    <question>Why is the sky blue?</question>
+    
+    <answer>The sky appears blue due to sunlight's blue wavelengths scattering more easily in the atmosphere. Our eyes' sensitivity to blue light also enhances the sky's blue appearance.</answer>
+    </example>
+    
+
+Be sure to diversify your examples to address all the edge cases of your task.
+Examples work well for clarifying to Claude how to handle tricky situations
+like telling a user "I'm unable to answer that question" when Claude lacks the
+pertinent details to fully answer their question.
+
+ __Updated 18 days ago
+
+* * *
+
+  * __Table of Contents
+  *     * Adopt the Human/Assistant formatting
+    * Add XML tags
+    * Provide clear and unambiguous instructions
+    * Put words in Claude's mouth
+    * Keeping Claude in character
+    * Documents before instructions
+    * Add many examples (at least 3)
+

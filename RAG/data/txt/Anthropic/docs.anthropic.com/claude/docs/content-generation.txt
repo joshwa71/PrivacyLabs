@@ -1,0 +1,192 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Content Generation
+
+ __Suggest Edits
+
+Claude can generate usable content from even simple prompts like "Please write
+me a poem about trees." It can also follow much more precise instructions if
+prompted properly.
+
+You can ask Claude to write in a specific style or for a particular audience.
+For example, you can ask it to be very detailed or more concise. You can also
+ask Claude to generate an approximate number of words, paragraphs or list
+items. (Though it is not so good at complying with character count requests.)
+You can give Claude specific things about a topic to focus on, and more.
+
+* * *
+
+#
+
+Rewriting text
+
+In this example, we want Claude to rewrite some existing text in a particular
+style. We give it two inputs, the text to be rewritten, and instructions about
+how to rewrite it.
+
+Prompt Template:
+
+Rewriting Text Prompt
+
+    
+    
+    
+    Human: I'd like you to rewrite the following paragraph using the following instructions: "{{INSTRUCTIONS}}".
+    
+    "{{PARAGRAPH}}"
+    
+    Please put your rewrite in <rewrite></rewrite> tags.
+    
+    Assistant: <rewrite>
+    
+
+Starting Claude's answer ourselves with the opening `<rewrite>` XML tag can
+preempt any "chattiness".
+
+> 💡
+>
+> Input substitution (Claude in Sheets)
+>
+> In Sheets, we can use the `SUBSTITUTE()` function to replace
+> `{{INSTRUCTIONS}}` and `{{PARAGRAPH}}` in our template with inputs from
+> specific cells. We can then pass Claude in Sheets the assembled prompt with
+> inputs included.
+
+An example assembled prompt:
+
+Rewriting Text Prompt With Substituted Inputs
+
+    
+    
+    
+    Human: I'd like you to rewrite the following paragraph using the following instructions: "less detail".
+    
+    "In 1758, the Swedish botanist and zoologist Carl Linnaeus published in his Systema Naturae, the two-word naming of species (binomial nomenclature). Canis is the Latin word meaning "dog", and under this genus, he listed the domestic dog, the wolf, and the golden jackal."
+    
+    Please put your rewrite in <rewrite></rewrite> tags.
+    
+    Assistant: <rewrite>
+    
+
+Example response:
+
+Output
+
+    
+    
+    In 1758, Carl Linnaeus published a system for naming species using two words. Under the genus Canis, meaning "dog" in Latin, he listed the dog, wolf, and jackal.  
+    </rewrite>
+    
+
+* * *
+
+#
+
+Expanding bullet points
+
+If you want to generate a draft from main points you've written already, you
+can give Claude those main points in a list and ask it to expand them.
+
+For example:
+
+Bullet Point Expansion Prompt
+
+    
+    
+    
+    Human: Here is a list of main points for an essay:
+    <list>
+    {LIST}
+    </list>
+    
+    Please expand the main points one by one, with each point copied word for word above the corresponding expanded content.
+    
+    Assistant:
+    
+
+> 💡
+>
+> Ask Claude for an outline
+>
+> You can also get Claude to write the main points itself, and then expand
+> those points into more content. Please see the article Break Tasks into
+> Subtasks for an example.
+
+ __Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Rewriting text
+    * Expanding bullet points
+

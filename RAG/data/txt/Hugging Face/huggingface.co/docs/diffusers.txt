@@ -1,0 +1,208 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Diffusers documentation
+
+Diffusers
+
+#
+
+Diffusers
+
+Search documentation
+
+mainv0.23.0v0.22.3v0.21.0v0.20.0v0.19.3v0.18.2v0.17.1v0.16.0v0.15.0v0.14.0v0.13.0v0.12.0v0.11.0v0.10.2v0.9.0v0.8.0v0.7.0v0.6.0v0.5.1v0.4.1v0.3.0v0.2.4
+ENJAKOPTZH
+
+Get started
+
+🧨 Diffusers Quicktour Effective and efficient diffusion Installation
+
+Tutorials
+
+Overview Understanding pipelines, models and schedulers AutoPipeline Train a
+diffusion model Inference with PEFT
+
+Using Diffusers
+
+Loading & Hub
+
+Overview Load pipelines, models, and schedulers Load and compare different
+schedulers Load community pipelines and components Load safetensors Load
+different Stable Diffusion formats Load adapters Push files to the Hub
+
+Tasks
+
+Overview Unconditional image generation Text-to-image Image-to-image
+Inpainting Depth-to-image
+
+Techniques
+
+Textual inversion Distributed inference with multiple GPUs Improve image
+quality with deterministic generation Control image brightness Prompt
+weighting Improve generation quality with FreeU
+
+Specific pipeline examples
+
+Overview Stable Diffusion XL Latent Consistency Models Kandinsky ControlNet
+Callback Shap-E DiffEdit Distilled Stable Diffusion inference Create
+reproducible pipelines Community pipelines Contribute a community pipeline
+
+Training
+
+Overview Create a dataset for training Adapt a model to a new task
+Unconditional image generation Textual Inversion DreamBooth Text-to-image Low-
+Rank Adaptation of Large Language Models (LoRA) ControlNet InstructPix2Pix
+Training Custom Diffusion T2I-Adapters Reinforcement learning training with
+DDPO
+
+Taking Diffusers Beyond Images
+
+Other Modalities
+
+Optimization
+
+Overview
+
+General optimizations
+
+Speed up inference Reduce memory usage Torch 2.0 xFormers Token merging
+
+Optimized model types
+
+JAX/Flax ONNX OpenVINO Core ML
+
+Optimized hardware
+
+Metal Performance Shaders (MPS) Habana Gaudi
+
+Conceptual Guides
+
+Philosophy Controlled generation How to contribute? Diffusers' Ethical
+Guidelines Evaluating Diffusion Models
+
+API
+
+Main Classes
+
+Configuration Loaders Logging Outputs
+
+Models
+
+Overview UNet1DModel UNet2DModel UNet2DConditionModel UNet3DConditionModel
+UNetMotionModel VQModel AutoencoderKL AsymmetricAutoencoderKL Tiny AutoEncoder
+ConsistencyDecoderVAE Transformer2D Transformer Temporal Prior Transformer
+ControlNet
+
+Pipelines
+
+Overview AltDiffusion AnimateDiff Attend-and-Excite Audio Diffusion AudioLDM
+AudioLDM 2 AutoPipeline BLIP Diffusion Consistency Models ControlNet
+ControlNet with Stable Diffusion XL Cycle Diffusion Dance Diffusion DDIM DDPM
+DeepFloyd IF DiffEdit DiT InstructPix2Pix Kandinsky 2.1 Kandinsky 2.2 Latent
+Consistency Models Latent Diffusion MultiDiffusion MusicLDM Paint By Example
+Parallel Sampling of Diffusion Models Pix2Pix Zero PixArt PNDM RePaint Score
+SDE VE Self-Attention Guidance Semantic Guidance Shap-E Spectrogram Diffusion
+
+Stable Diffusion
+
+Overview Text-to-image Image-to-image Inpainting Depth-to-image Image
+variation Safe Stable Diffusion Stable Diffusion 2 Stable Diffusion XL Latent
+upscaler Super-resolution LDM3D Text-to-(RGB, Depth) Stable Diffusion
+T2I-Adapter GLIGEN (Grounded Language-to-Image Generation)
+
+Stable unCLIP Stochastic Karras VE Text-to-image model editing Text-to-video
+Text2Video-Zero unCLIP Unconditional Latent Diffusion UniDiffuser Value-guided
+sampling Versatile Diffusion VQ Diffusion Wuerstchen
+
+Schedulers
+
+Overview CMStochasticIterativeScheduler ConsistencyDecoderScheduler
+DDIMInverseScheduler DDIMScheduler DDPMScheduler DEISMultistepScheduler
+DPMSolverMultistepInverse DPMSolverMultistepScheduler DPMSolverSDEScheduler
+DPMSolverSinglestepScheduler EulerAncestralDiscreteScheduler
+EulerDiscreteScheduler HeunDiscreteScheduler IPNDMScheduler KarrasVeScheduler
+KDPM2AncestralDiscreteScheduler KDPM2DiscreteScheduler LCMScheduler
+LMSDiscreteScheduler PNDMScheduler RePaintScheduler ScoreSdeVeScheduler
+ScoreSdeVpScheduler UniPCMultistepScheduler VQDiffusionScheduler
+
+Internal classes
+
+Overview Attention Processor Custom activation functions Custom normalization
+layers Utilities VAE Image Processor
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+  
+![](https://raw.githubusercontent.com/huggingface/diffusers/77aadfee6a891ab9fcfb780f87c693f7a5beeb8e/docs/source/imgs/diffusers_library.jpg)  
+
+#  Diffusers
+
+🤗 Diffusers is the go-to library for state-of-the-art pretrained diffusion
+models for generating images, audio, and even 3D structures of molecules.
+Whether you’re looking for a simple inference solution or want to train your
+own diffusion model, 🤗 Diffusers is a modular toolbox that supports both. Our
+library is designed with a focus on usability over performance, simple over
+easy, and customizability over abstractions.
+
+The library has three main components:
+
+  * State-of-the-art diffusion pipelines for inference with just a few lines of code. There are many pipelines in 🤗 Diffusers, check out the table in the pipeline overview for a complete list of available pipelines and the task they solve.
+  * Interchangeable noise schedulers for balancing trade-offs between generation speed and quality.
+  * Pretrained models that can be used as building blocks, and combined with schedulers, for creating your own end-to-end diffusion systems.
+
+Tutorials
+
+Learn the fundamental skills you need to start generating outputs, build your
+own diffusion system, and train a diffusion model. We recommend starting here
+if you're using 🤗 Diffusers for the first time!
+
+How-to guides
+
+Practical guides for helping you load pipelines, models, and schedulers.
+You'll also learn how to use pipelines for specific tasks, control how outputs
+are generated, optimize for inference speed, and different training
+techniques.
+
+Conceptual guides
+
+Understand why the library was designed the way it was, and learn more about
+the ethical guidelines and safety implementations for using the library.
+
+Reference
+
+Technical descriptions of how 🤗 Diffusers classes and methods work.
+
+Quicktour→
+
+Diffusers
+

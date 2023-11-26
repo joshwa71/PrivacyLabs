@@ -1,0 +1,121 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+AutoTrain documentation
+
+AutoTrain
+
+#
+
+AutoTrain
+
+Search documentation
+
+mainv0.6.10v0.5.2 EN
+
+Get started
+
+🤗 AutoTrain Installation How much does it cost? Get help and support
+
+Selecting Models and Parameters
+
+Model Selection Parameter Selection
+
+Text Tasks
+
+Text Classification LLM Finetuning
+
+Image Tasks
+
+Image Classification DreamBooth
+
+You are viewing main version, which requires installation from source. If
+you'd like regular pip install, checkout the latest stable version (v0.6.10).
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  AutoTrain
+
+🤗 AutoTrain is a no-code tool for training state-of-the-art models for Natural
+Language Processing (NLP) tasks, for Computer Vision (CV) tasks, and for
+Speech tasks and even for Tabular tasks. It is built on top of the awesome
+tools developed by the Hugging Face team, and it is designed to be easy to
+use.
+
+##  Who should use AutoTrain?
+
+AutoTrain is for anyone who wants to train a state-of-the-art model for a NLP,
+CV, Speech or Tabular task, but doesn’t want to spend time on the technical
+details of training a model. AutoTrain is also for anyone who wants to train a
+model for a custom dataset, but doesn’t want to spend time on the technical
+details of training a model. Our goal is to make it easy for anyone to train a
+state-of-the-art model for any task and our focus is not just data scientists
+or machine learning engineers, but also non-technical users.
+
+##  How to use AutoTrain?
+
+We offer several ways to use AutoTrain:
+
+  * No code users can use `AutoTrain Advanced` by creating a new space with AutoTrain Docker image: https://huggingface.co/new-space?template=autotrain-projects/autotrain-advanced. Please make sure you keep the space private.
+
+  * Developers can access and build on top of AutoTrain using python api or run AutoTrain Advanced UI locally. The python api is available in the `autotrain-advanced` package. You can install it using pip:
+
+Copied
+
+    
+    
+    pip install autotrain-advanced
+
+##  What is AutoTrain Advanced?
+
+AutoTrain Advanced processes your data either in a Hugging Face Space or
+locally (if installed locally using pip). This saves one time since the data
+processing is not done by the AutoTrain backend, resulting in your job not
+being queued. AutoTrain Advanced also allows you to use your own hardware
+(better CPU and RAM) to process the data, thus, making the data processing
+faster.
+
+Using AutoTrain Advanced, advanced users can also control the hyperparameters
+used for training per job. This allows you to train multiple models with
+different hyperparameters and compare the results.
+
+Everything else is the same as AutoTrain. You can use AutoTrain Advanced to
+train models for NLP, CV, Speech and Tabular tasks.
+
+We recommend using AutoTrain Advanced since it is faster, more flexible and
+will have more supported tasks and features in the future.
+
+Installation→
+
+AutoTrain Who should use AutoTrain? How to use AutoTrain? What is AutoTrain
+Advanced?
+

@@ -1,0 +1,266 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Claude for Google Sheets
+
+ __Suggest Edits
+
+You can now call Claude in Google Sheets with the Claude for Sheets extension.
+Claude for Sheets enables seamless integration between Claude and Google
+Sheets, allowing you to execute interactions with Claude directly in cells.
+
+##
+
+Installing Claude for Sheets
+
+Easily enable Claude for Sheets using the following steps:
+
+  1. **Get your Claude API key** \- You will not be able to use Claude for Sheets without a developer API key. For more information on how to acquire an API key, see Getting access to Claude.
+
+  2. **Install the Claude for Sheets extension**
+
+    1. Click here to access the Claude for Sheets extension
+    2. Click "Install"
+  3. **Enable Claude for Sheets**
+
+    1. Open a fresh workbook
+    2. Go to _Extensions_ > _Add-ons_ > _Manage add-ons_
+    3. Click on the triple dot menu at the top right corner of the Claude for Sheets extension and make sure "Use in this document" is checked  
+![](https://files.readme.io/9cce371-Screenshot_2023-10-03_at_7.17.39_PM.png)
+
+> 🚧
+>
+> You will have to enable Claude for Sheets every time you make a new workbook
+
+  4. **Connect your API key** Enter your _API key at Extensions_ > _Claude for Sheets™_ > _Enter your Anthropic API Key_. You may need to wait or refresh for "Enter your Anthropic API key" to appear as an option. 
+
+![](https://files.readme.io/3bf1f32-Screenshot_2023-10-03_at_9.35.35_PM.png)
+
+After you see the green 'verified' checkmark ✅ appear, Claude will be
+activated and ready within your Google Sheet.
+
+###
+
+Permissions
+
+During installation, the Claude for Sheets extension will ask for a variety of
+permissions needed to function properly. Although the permissions requested to
+run Claude in Sheets are broad, please be assured that we only process the
+specific pieces of data that users ask Claude to run on. This data is never
+used to train our generative models.
+
+Extension permissions include:
+
+  * **Connect to an external service** \- needed in order to make calls to the Anthropic API
+  * **Allow this application to run when you are not present** \- needed to run cell recalculations without user intervention
+  * **See, edit, create, and delete all your Google Sheets spreadsheets** \- needed to perform batch cell updates when recalculating `#ERROR!` cells that have timed out or have been deferred due to API concurrency limits; this service cannot work with permissions given only for the current sheet
+
+> 🚧
+>
+> Cell Recalculation
+>
+> Note that you must still manually recalculate cells by selecting from the
+> recalculate options within the Claude for Sheets extension menu.
+>
+>
+> ![](https://files.readme.io/1066ed1-Screenshot_2023-10-12_at_10.06.42_PM.png)
+
+* * *
+
+##
+
+How to use Claude for Sheets
+
+###
+
+Claude functions
+
+There are two main functions you can use to call Claude using Claude for
+Sheets:
+
+  1. `=CLAUDE(prompt)` \- this function will automatically wrap your prompt in the proper formatting of `\n\nHuman: ${your_prompt}\n\nAssistant:` for you. To use this function, all you need is a plaintext prompt with no additional formatting. This is the function you'll probably want to use most of the time. This is identical to the Slackbot Claude interface and "Chat" mode on the console.
+
+####
+
+Here is an example CLAUDE prompt
+
+CLAUDE() Example
+
+    
+        In one sentence, what is good about the color blue?
+    
+
+  2. `=CLAUDEFREE(prompt, model, params...)` \- to use this function, you will have to manually sandwich your prompt between `\n\nHuman:` and `\n\nAssistant:`. Replace `\n\n` with two actual new lines when writing your prompt in a cell.
+
+This is identical to the raw API Claude interface and "Edit Chat" mode on the
+console. For more information on the special "Human:"/"Assistant:" formatting
+in CLAUDEFREE, see Introduction to Prompt Design.
+
+    1. To make new lines in a cell, do the following:  
+**Mac:** Cmd + Enter  
+**Windows:** Alt + Enter
+
+####
+
+Here is an example CLAUDEFREE prompt (notice the two new lines before
+"Human:")
+
+CLAUDEFREE() Example
+
+    
+        
+    Human: In one sentence, what is good about the color blue?
+      
+    Assistant:
+    
+
+###
+
+Optional function parameters
+
+If you want to specify API parameters, you can do so by listing "parameter
+name" (in quotation marks), "parameter value" at the end of the call. For
+example, if you want to set the max_tokens to 3, you can do it as follows:
+`=CLAUDE("[your prompt]", "claude-instant-1.2", "max_tokens_to_sample", 3)`.
+
+You can set multiple parameters. Simply list them one after another, each with
+a name and value pair separated by commas.  
+For example, this is valid CLAUDE function: `=CLAUDE("[your prompt]", "claude-
+instant-1.2", "max_tokens_to_sample", 3, "temperature", 0.5)`
+
+**The parameters you might care about most are:**
+
+  * `max_tokens_to_sample` \- the total number of tokens the model outputs before it is forced to stop. For yes/no or multiple choice answers, you probably want 1-2. Otherwise you'll want as many as 200 if you want a long answer.
+  * `temperature` \- the amount of randomness injected into results. For multiple-choice or analytical tasks, you'll want it close to 0. For idea generation, you'll want it set to 1.
+
+* * *
+
+##
+
+Claude for Sheets guides & examples
+
+> 💡
+>
+> Prompt Engineering Tutorial
+>
+> Visit our in-depth interactive prompt engineering tutorial utilizing the
+> Claude for Sheets add-on to learn or brush up on beginner to advanced prompt
+> engineering techniques.
+
+> ❗️
+>
+> Tutorial Access Note
+>
+> Note that just as with the rest of Claude for Sheets, **you will need an API
+> key** to interact with the tutorial.
+>
+> If you don't have an API key, see our static tutorial answer key instead.
+
+###
+
+Claude for Sheets Prompting Examples
+
+For further information, example prompts, and example Claude-powered
+workbooks, visit our Claude for Sheets prompting examples workbench or Claude
+for Sheets enterprise use-case examples, where you can find examples for tasks
+such as the following:
+
+  * Longform document Q&A
+  * Information extraction
+  * Removing PII
+  * Customer support chatbot using FAQ
+  * Academic tutor
+  * Prompt chaining
+  * Function calling
+  * And much more!
+
+###
+
+Claude for Sheets Workbook Template
+
+Make a copy of our Claude for Sheets workbook template to get started with
+your own Claude for Sheets work!
+
+ __Updated 18 days ago
+
+* * *
+
+  * __Table of Contents
+  *     * Installing Claude for Sheets
+      * Permissions
+    * How to use Claude for Sheets
+      * Claude functions
+      * Optional function parameters
+    * Claude for Sheets guides & examples
+      * Claude for Sheets Prompting Examples
+      * Claude for Sheets Workbook Template
+

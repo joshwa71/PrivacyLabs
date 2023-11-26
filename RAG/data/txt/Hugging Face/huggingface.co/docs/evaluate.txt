@@ -1,0 +1,113 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Evaluate documentation
+
+🤗 Evaluate
+
+#
+
+Evaluate
+
+Search documentation
+
+mainv0.4.0v0.3.0v0.2.3v0.1.2 EN
+
+Get started
+
+🤗 Evaluate
+
+Tutorials
+
+Installation A quick tour
+
+How-to guides
+
+Choosing the right metric Adding new evaluations Using the evaluator Using the
+evaluator with custom pipelines Creating an EvaluationSuite
+
+Using 🤗 Evaluate with other ML frameworks
+
+Transformers Keras and Tensorflow scikit-learn
+
+Conceptual guides
+
+Types of evaluations Considerations for model evaluation
+
+Reference
+
+Main classes Loading methods Saving methods Hub methods Evaluator classes
+Visualization methods Logging methods
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+  
+![](https://huggingface.co/datasets/evaluate/media/resolve/main/evaluate-
+banner.png)  
+
+#  🤗 Evaluate
+
+A library for easily evaluating machine learning models and datasets.
+
+With a single line of code, you get access to dozens of evaluation methods for
+different domains (NLP, Computer Vision, Reinforcement Learning, and more!).
+Be it on your local machine or in a distributed training setup, you can
+evaluate your models in a consistent and reproducible way!
+
+Visit the 🤗 Evaluate organization for a full list of available metrics. Each
+metric has a dedicated Space with an interactive demo for how to use the
+metric, and a documentation card detailing the metrics limitations and usage.
+
+Tutorials
+
+Learn the basics and become familiar with loading, computing, and saving with
+🤗 Evaluate. Start here if you are using 🤗 Evaluate for the first time!
+
+How-to guides
+
+Practical guides to help you achieve a specific goal. Take a look at these
+guides to learn how to use 🤗 Evaluate to solve real-world problems.
+
+Conceptual guides
+
+High-level explanations for building a better understanding of important
+topics such as considerations going into evaluating a model or dataset and the
+difference between metrics, measurements, and comparisons.
+
+Reference
+
+Technical descriptions of how 🤗 Evaluate classes and methods work.
+
+Installation→
+
+🤗 Evaluate
+

@@ -1,0 +1,188 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Troubleshooting checklist
+
+ __Suggest Edits
+
+Getting a prompt to act the way you want is a skill, much like learning to
+search the web well, or learning to code. If you're having trouble getting a
+prompt to work, here is a checklist you can follow. You should normally check
+the first boxes on the list (about formatting and task clarity), but you may
+not need to check all the other boxes — it depends on the difficulty of the
+task.
+
+Many of these items link to parts of our guide: we **highly** recommend
+reading through the prompt design section. It's written by experts who have
+spent a lot of time interacting with Claude, and contains many ideas on how to
+map different shapes of problems onto prompt language.
+
+#
+
+The prompt is formatted correctly
+
+The prompt is in the format:
+
+Correct Prompt Format
+
+    
+    
+    \n\nHuman: [HUMAN_TEXT]\n\nAssistant: [ASSISTANT_TEXT]\n\nHuman: [MORE HUMAN TEXT]\n\nAssistant:
+    
+
+  * It has the correct number of newlines before each human and assistant (including before the first Human:)
+  * The only speakers are Human: and Assistant:, the text starts with a human and ends with an assistant, and each speaker alternates (i.e. no Human: followed by Human:)
+  * It has a space between each `"Human:"` and the human text, as well as between each `"Assistant:"` and assistant text.
+  * If the prompt ends in `\n\nAssistant:`, it has no space after the final `"Assistant:"`
+  * The prompt does not contain “Human:” and “Assistant:” when giving examples. These are special tokens and using them in your illustrative examples will confuse Claude. You can use "H:" and "A:" instead if you want to provide examples of a back-and-forth. 
+
+#
+
+The task is explained simply and clearly
+
+  * It explains to Claude why I want the task done
+  * It contains as much context as I would to give an inexperienced person encountering the task for the first time (e.g. spelling out any key concepts clearly). For example:
+
+Bad Prompt
+
+    
+    
+    
+    Human: Tell someone how to improve their running training plan.
+    
+    Assistant:
+    
+
+Good Prompt
+
+    
+    
+    
+    Human: I’m trying to help people improve their running training plans given their overall running goals. I have asked people to send me a description of their current training plans, as well as their overall goals. I want to try to offer suggestions for ways they can improve their training plan or adjust it over time in ways that don’t deviate too much from what they’re currently doing. I also want to explain why this deviation from their existing plans is likely to be good for their goals.
+    
+    Assistant:
+    
+
+  * I’ve asked Claude to repeat back the instructions to me by giving it my instructions and adding “Do you understand?” and looking at its response. 
+    * If Claude doesn’t seem to understand the instructions, I’ve looked at the way in which Claude is mistaken and use this to clarify the instructions.
+    * If Claude does understand the instructions, I’ve added Claude’s response to my prompt (perhaps editing it to make it perfect). For example:
+
+Good Prompt
+
+    
+    
+    
+    Human: I’m trying to help people improve their running training plans given their overall running goals. I have asked people to send me a description of their current training plans, as well as their overall goals. I want to try to offer suggestions for ways they can improve their training plan or adjust it over time in ways that don’t deviate too much from what they’re currently doing. I also want to explain why this deviation from their existing plans is likely to be good for their goals. Do you understand?
+    
+    Assistant: Yes, I understand. It sounds like you want to offer suggestions for tweaking and improving someone’s training plan in a gradual way that helps them make progress towards their running goals. You want to be able to justify the suggestions by explaining why they are likely to be helpful for the runner in meeting their goals. Is that correct?
+    
+
+  * If my task is complex (involves doing two or more things) and Claude is struggling with it, I’ve tried breaking it down into substeps
+  * If I’m seeing errors that happen in edge cases, I’ve mentioned them in the instructions and told Claude what to do if they are encountered
+  * If my task would benefit from Claude doing additional work that the human doesn’t see (e.g. thinking about how to respond first or rewriting its response , I’ve tried letting it do this and used extraction patterns to get its final response
+  * If there is a long document for Claude to work with, the instructions come after the document.
+
+#
+
+I've tried adding a few examples of the task being completed perfectly
+
+  * I’ve tried adding 1-3 examples of the task being completed exactly as I would like it to be
+  * If there are common failure modes or hard cases, I’ve tried including examples of these cases being handled perfectly by Claude
+  * **I’ve tested my prompt with realistic examples**
+    * The examples and documents I’ve used in testing are as realistic as possible and include good variety of possible inputs (e.g. a human accidentally saying nothing or failing to send text, if this is possible)
+    * I’ve used the outputs of these test cases to identify any mistakes and clarify the instructions and/or add examples to my prompt before trying them again 
+      * _Tip: add an example of a case that Claude found hard and write a perfect response on Claude’s behalf so that it knows what to do in such cases_
+
+#
+
+I’ve checked the rest of the troubleshooting sections for advice pertinent to
+my task
+
+ __Updated 5 months ago
+
+* * *
+
+What’s Next
+
+Suggestions for if...
+
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+  *  __Table of Contents
+  *     * The prompt is formatted correctly
+    * The task is explained simply and clearly
+    * I've tried adding a few examples of the task being completed perfectly
+    * I’ve checked the rest of the troubleshooting sections for advice pertinent to my task
+

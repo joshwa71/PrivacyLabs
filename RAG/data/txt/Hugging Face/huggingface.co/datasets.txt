@@ -1,0 +1,271 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+### Edit Datasets filters
+
+  * Tasks 
+  * Sizes 
+  * Sub-tasks 
+  * Languages 
+  * Licenses 
+  * Other 
+
+Multimodal
+
+Feature Extraction
+
+Text-to-Image
+
+Image-to-Text
+
+Text-to-Video
+
+Visual Question Answering
+
+Graph Machine Learning
+
+Computer Vision
+
+Depth Estimation
+
+Image Classification
+
+Object Detection
+
+Image Segmentation
+
+Image-to-Image
+
+Unconditional Image Generation
+
+Video Classification
+
+Zero-Shot Image Classification
+
+Natural Language Processing
+
+Text Classification
+
+Token Classification
+
+Table Question Answering
+
+Question Answering
+
+Zero-Shot Classification
+
+Translation
+
+Summarization
+
+Conversational
+
+Text Generation
+
+Text2Text Generation
+
+Fill-Mask
+
+Sentence Similarity
+
+Table to Text
+
+Multiple Choice
+
+Text Retrieval
+
+Audio
+
+Text-to-Speech
+
+Text-to-Audio
+
+Automatic Speech Recognition
+
+Audio-to-Audio
+
+Audio Classification
+
+Voice Activity Detection
+
+Tabular
+
+Tabular Classification
+
+Tabular Regression
+
+Tabular to Text
+
+Time Series Forecasting
+
+Reinforcement Learning
+
+Reinforcement Learning
+
+Robotics
+
+Apply filters
+
+# Datasets
+
+80,009
+
+new Full-text search
+
+Add filters
+
+Sort: Trending
+
+#### vivym/midjourney-messages
+
+Viewer •  Updated Aug 29 •  104 •  112
+
+#### HuggingFaceH4/no_robots
+
+Viewer •  Updated 9 days ago •  1.11k •  159
+
+#### migtissera/Synthia-v1.3
+
+Viewer •  Updated 5 days ago •  190 •  47
+
+#### fka/awesome-chatgpt-prompts
+
+Viewer •  Updated Mar 7 •  1k •  3.78k
+
+#### X2FD/LVIS-Instruct4V
+
+Viewer •  Updated 8 days ago •  25 •  48
+
+#### nvidia/HelpSteer
+
+Viewer •  Updated 4 days ago •  209 •  33
+
+#### Open-Orca/OpenOrca
+
+Preview •  Updated Oct 21 •  27.6k •  900
+
+#### Open-Orca/SlimOrca
+
+Viewer •  Updated Oct 12 •  1.2k •  60
+
+#### PatronusAI/financebench
+
+Viewer •  Updated 5 days ago •  3 •  20
+
+#### HuggingFaceH4/ultrachat_200k
+
+Viewer •  Updated 25 days ago •  26.8k •  124
+
+#### allenai/WildChat
+
+Viewer •  Updated 6 days ago •  84 •  14
+
+#### facebook/emu_edit_test_set
+
+Viewer •  Updated 2 days ago •  7 •  14
+
+#### uonlp/CulturaX
+
+Viewer •  Updated Sep 25 •  51.8k •  239
+
+#### AI4Math/MathVista
+
+Viewer •  Updated 27 days ago •  3.94k •  35
+
+#### keirp/hungarian_national_hs_finals_exam
+
+Viewer •  Updated 6 days ago •  12
+
+#### openerotica/freedom-rp
+
+Viewer •  Updated 3 days ago •  2 •  12
+
+#### code_search_net
+
+Viewer •  Updated Jun 6 •  73.2k •  153
+
+#### kaist-ai/Feedback-Collection
+
+Viewer •  Updated Oct 14 •  50 •  29
+
+#### OpenAssistant/oasst1
+
+Viewer •  Updated May 2 •  7.96k •  1.1k
+
+#### yys/OpenOrca-Chinese
+
+Viewer •  Updated Sep 8 •  328 •  45
+
+#### togethercomputer/RedPajama-Data-V2
+
+Viewer •  Updated 5 days ago •  1.29M •  191
+
+#### ajibawa-2023/Python-Code-23k-ShareGPT
+
+Viewer •  Updated 10 days ago •  47 •  11
+
+#### stingning/ultrachat
+
+Viewer •  Updated Oct 12 •  22.9k •  285
+
+#### glaiveai/glaive-code-assistant
+
+Viewer •  Updated Sep 27 •  148 •  46
+
+#### knowrohit07/know-saraswati-cot
+
+Viewer •  Updated 4 days ago •  35 •  9
+
+#### anon8231489123/ShareGPT_Vicuna_unfiltered
+
+Updated Apr 12 •  240 •  603
+
+#### open-web-math/open-web-math
+
+Viewer •  Updated Oct 17 •  937 •  170
+
+#### lmsys/lmsys-chat-1m
+
+Viewer •  Updated Oct 4 •  1.87k •  279
+
+#### laion/dalle-3-dataset
+
+Preview •  Updated 29 minutes ago •  2.14k •  195
+
+#### HuggingFaceH4/ultrafeedback_binarized
+
+Viewer •  Updated 25 days ago •  18.4k •  55
+
+  * Previous
+  * 1
+  * 2
+  * 3
+  * ...
+  * 2,667
+  * Next 
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

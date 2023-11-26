@@ -1,0 +1,251 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Prompt Chaining
+
+ __Suggest Edits
+
+Another way to accomplish tasks with known and well-defined subtasks is to
+feed Claude's response to a prompt into the input for another prompt. This
+technique is called prompt chaining.
+
+Prompt chaining can allow you to accomplish a complex task by passing Claude
+multiple smaller and simpler prompts instead of a very long and detailed one.
+It can sometimes work better than putting all of a task's subtasks in a single
+prompt.
+
+Turning a long and complex prompt into a prompt chain can have a few
+advantages:
+
+  * You can write less complicated instructions.
+  * You can isolate parts of a problem that Claude is having trouble with to focus your troubleshooting efforts.
+  * You can check Claude's output in stages, instead of just at the end.
+
+Here are a few use cases for prompt chaining.
+
+#
+
+Answering a question using a document and quotes
+
+In this example, we will give Claude a document, and a question we want it to
+answer based on that document. Telling Claude to answer a question using both
+the document text _and_ relevant quotes can often be more accurate than text
+or quotes alone.
+
+With our first prompt we ask Claude to extract direct document quotes that are
+relevant to our question:
+
+Prompt 1: Extract Direct Document Quotes Relevant to a Question
+
+    
+    
+    
+    Human: Here is a document, in <document></document> XML tags:
+    
+    <document>
+    {{DOCUMENT}}
+    </document>
+    
+    Please extract, word-for-word, any quotes relevant to the question {{QUESTION}}. Please enclose the full list of quotes in <quotes></quotes> XML tags. If there are no quotes in this document that seem relevant to this question, please say "I can’t find any relevant quotes".
+    
+    Assistant:
+    
+
+We can then substitute the quotes Claude gives us (including the
+`<quotes></quotes>` XML tags) into another prompt:
+
+Prompt 2: Use Document and Quotes to Answer a Question
+
+    
+    
+    
+    Human: I want you to use a document and relevant quotes from the document to answer the question "{{QUESTION}}"
+    
+    Here is the document, in <document></document> XML tags:
+    <document>
+    {{DOCUMENT}}
+    </document>
+    
+    Here are direct quotes from the document that are most relevant to the question "{{QUESTION}}": {{QUOTES}}
+    
+    Please use these to construct an answer to the question "{{QUESTION}}" as though you were answering the question directly. Ensure that your answer is accurate and doesn’t contain any information not directly supported by the document or the quotes.
+    
+    Assistant:
+    
+
+#
+
+Response validation / extra diligence
+
+Prompt chaining is also handy for automatically asking Claude to re-check a
+previous response to a prompt.
+
+Using our example from Ask Claude to evaluate its outputs:
+
+Prompt 1: First Pass at Identifying Grammar Errors
+
+    
+    
+    
+    Human: Here is an article, contained in <article> tags:
+    
+    <article>
+    {{ARTICLE}}
+    </article>
+    
+    Please identify any grammatical errors in the article. Please only respond with the list of errors, and nothing else. If there are no grammatical errors, say "There are no errors."
+    
+    Assistant:
+    
+
+We can substitute Claude's response from Prompt 1 into the `{{ERRORS}}`
+placeholder in Prompt 2:
+
+Prompt 2: Second Pass, Passing in Errors Identified With Prompt 1
+
+    
+    
+    
+    Human: Here is an article, contained in <article> tags:
+    
+    <article>
+    {{ARTICLE}}
+    </article>
+    
+    Please identify any grammatical errors in the article that are missing from the following list:
+    <list>
+    {{ERRORS}}
+    </list>
+    
+    If there are no errors in the article that are missing from the list, say "There are no additional errors."
+    
+    Assistant:
+    
+
+#
+
+Parallel tasks
+
+Multi-step prompts can be run in parallel, in series, or a combination.
+
+Let's say we want to explain a certain concept to readers at three different
+levels: 1st graders, 8th graders, and college freshmen. Also, we want Claude
+to write an outline first, then expand that outline into a full explanation.
+
+We can start with the following prompt template:
+
+Prompt 1: Write an Outline About a Concept for a Specified Reading Level
+
+    
+    
+    
+    Human: Here is a concept: {{CONCEPT}}
+    
+    I want you to write a three sentence outline of an essay about this concept that is appropriate for this level of reader: {{LEVEL}}
+    
+    Please only respond with your outline, one sentence per line, in <outline></outline> XML tags. Don't say anything else.
+    
+    Assistant:
+    
+
+We already know the level of student we want to write explanations for, so we
+can create three different versions of this prompt (one for each reading
+level). We can then give Claude a concept and have the prompts for each
+reading level run in parallel to generate three outlines.
+
+Then we can pass each outline Claude generates (including the
+`<outline></outline>` XML tags) into another set of three prompts that differ
+by reading level. This second set of prompts can again run in parallel to
+expand each sentence in the outline into a paragraph.
+
+Prompt 2: Expanding the Outline Generated in Prompt 1
+
+    
+    
+    
+    Human: Here is an outline:
+    {{OUTLINE}}
+    
+    Please expand each sentence in the outline into a paragraph. Use each sentence word-for-word as the first sentence in its corresponding paragraph. Make sure to write at a level appropriate for this type of reader: {{TYPE}}
+    
+    Assistant:
+    
+
+__Updated 5 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Answering a question using a document and quotes
+    * Response validation / extra diligence
+    * Parallel tasks
+

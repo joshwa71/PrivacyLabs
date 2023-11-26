@@ -1,0 +1,103 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+text-embeddings-inference documentation
+
+Text Embeddings Inference
+
+#
+
+text-embeddings-inference
+
+Search documentation
+
+main EN
+
+Getting started
+
+Text Embeddings Inference Quick Tour Supported models and hardware
+
+Tutorials
+
+Using TEI locally with CPU Using TEI locally with GPU Serving private and
+gated models Build custom container for TEI
+
+Reference
+
+CLI arguments
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  Text Embeddings Inference
+
+Text Embeddings Inference (TEI) is a comprehensive toolkit designed for
+efficient deployment and serving of open source text embeddings models. It
+enables high-performance extraction for the most popular models, including
+FlagEmbedding, Ember, GTE, and E5.
+
+TEI offers multiple features tailored to optimize the deployment process and
+enhance overall performance.
+
+**Key Features:**
+
+  * **Streamlined Deployment:** TEI eliminates the need for a model graph compilation step for a more efficient deployment process.
+  * **Efficient Resource Utilization:** Benefit from small Docker images and rapid boot times, allowing for true serverless capabilities.
+  * **Dynamic Batching:** TEI incorporates token-based dynamic batching thus optimizing resource utilization during inference.
+  * **Optimized Inference:** TEI leverages Flash Attention, Candle, and cuBLASLt by using optimized transformers code for inference.
+  * **Safetensors weight loading:** TEI loads Safetensors weights to enable tensor parallelism.
+  * **Production-Ready:** TEI supports distributed tracing through Open Telemetry and Prometheus metrics.
+
+**Benchmarks**
+
+Benchmark for BAAI/bge-base-en-v1.5 on an NVIDIA A10 with a sequence length of
+512 tokens:
+
+![Latency comparison for batch size of
+1](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/tei/bs1-lat.png) ![Throughput comparison for batch size of
+1](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/tei/bs1-tp.png)
+
+![Latency comparison for batch size of
+32](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/tei/bs32-lat.png) ![Throughput comparison for batch size
+of 32](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/tei/bs32-tp.png)
+
+**Getting Started:**
+
+To start using TEI, check the Quick Tour guide.
+
+Quick Tour→
+
+Text Embeddings Inference
+

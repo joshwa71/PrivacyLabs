@@ -1,0 +1,99 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+text-generation-inference documentation
+
+Text Generation Inference
+
+#
+
+text-generation-inference
+
+Search documentation
+
+main EN
+
+Getting started
+
+Text Generation Inference Quick Tour Installation Supported Models and
+Hardware
+
+Tutorials
+
+Consuming TGI Preparing Model for Serving Serving Private & Gated Models Using
+TGI CLI All TGI CLI options Non-core Model Serving
+
+Conceptual Guides
+
+Streaming Quantization Tensor Parallelism PagedAttention Safetensors Flash
+Attention
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  Text Generation Inference
+
+Text Generation Inference (TGI) is a toolkit for deploying and serving Large
+Language Models (LLMs). TGI enables high-performance text generation for the
+most popular open-source LLMs, including Llama, Falcon, StarCoder, BLOOM, GPT-
+NeoX, and T5.
+
+![Text Generation
+Inference](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/TGI.png)
+
+Text Generation Inference implements many optimizations and features, such as:
+
+  * Simple launcher to serve most popular LLMs
+  * Production ready (distributed tracing with Open Telemetry, Prometheus metrics)
+  * Tensor Parallelism for faster inference on multiple GPUs
+  * Token streaming using Server-Sent Events (SSE)
+  * Continuous batching of incoming requests for increased total throughput
+  * Optimized transformers code for inference using Flash Attention and Paged Attention on the most popular architectures
+  * Quantization with bitsandbytes and GPT-Q
+  * Safetensors weight loading
+  * Watermarking with A Watermark for Large Language Models
+  * Logits warper (temperature scaling, top-p, top-k, repetition penalty)
+  * Stop sequences
+  * Log probabilities
+  * Custom Prompt Generation: Easily generate text by providing custom prompts to guide the model’s output.
+  * Fine-tuning Support: Utilize fine-tuned models for specific tasks to achieve higher accuracy and performance.
+
+Text Generation Inference is used in production by multiple projects, such as:
+
+  * Hugging Chat, an open-source interface for open-access models, such as Open Assistant and Llama
+  * OpenAssistant, an open-source community effort to train LLMs in the open
+  * nat.dev, a playground to explore and compare LLMs.
+
+Quick Tour→
+
+Text Generation Inference
+

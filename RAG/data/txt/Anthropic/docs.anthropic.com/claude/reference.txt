@@ -1,0 +1,124 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+JUMP TO
+
+## Using the API
+
+  * Getting started
+  * IP address allowlisting
+  * Versioning
+  * Errors and rate limits
+  * Prompt validation
+  * Client SDKs
+  * Selecting a model
+  * Streaming
+  * Supported regions
+  * Need support? Contact us
+
+## Anthropic API
+
+  *  __Completions
+    * Create a completionpost
+
+JUMP TO
+
+## Using the API
+
+  * Getting started
+  * IP address allowlisting
+  * Versioning
+  * Errors and rate limits
+  * Prompt validation
+  * Client SDKs
+  * Selecting a model
+  * Streaming
+  * Supported regions
+  * Need support? Contact us
+
+## Anthropic API
+
+  *  __Completions
+    * Create a completionpost
+
+# Getting started
+
+#
+
+Accessing the API
+
+The API is made available via our web Console. This gives you the opportunity
+to evaluate Claude's capabilities before starting a technical integration.
+
+First, please see Getting access to Claude for how to apply for access.
+
+Once you have access to Console, you can generate API keys via Account
+Settings.
+
+See IP Address Allowlisting for information on Anthropic's public IP ranges.
+
+##
+
+Evaluation & going live with the API
+
+Your initial access to the Claude API will be granted under our evaluation
+terms; this usage is **for evaluation and development purposes only**. Data
+may be retained as detailed in our privacy policy. Please do not send
+sensitive or confidential information during this period of evaluation.
+
+After evaluating Claude, you can Go Live by engaging in a commercial services
+agreement with us. This enables you to use Claude in your production
+environment with your own customers, and grants you access to much higher rate
+limits to meet the needs of your business.
+
+##
+
+Prompt formatting
+
+By default, Slack and our web interface will properly handle direct questions
+like "Why is the sky blue?". However, when using the API you must format the
+prompts like:
+
+    
+    
+    \n\nHuman: Why is the sky blue?\n\nAssistant:
+    
+
+Note the 2 newlines and the space after each `:` except the last one. For
+example, to use this in code:
+
+TypeScript
+
+    
+    
+    const userQuestion = "Why is the sky blue?";
+    const prompt = `\n\nHuman: ${userQuestion}\n\nAssistant:`;
+    
+    // Send prompt to Claude via API
+    
+
+  * __Table of Contents
+  *     * Accessing the API
+      * Evaluation & going live with the API
+      * Prompt formatting
+

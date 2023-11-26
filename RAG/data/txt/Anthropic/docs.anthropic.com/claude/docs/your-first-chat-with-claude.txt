@@ -1,0 +1,138 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Your first chat with Claude
+
+ __Suggest Edits
+
+Claude is capable of many things, and how well it responds to you can depend
+on how you ask it questions. Whether via Slack or our web interface, here is
+some general advice on your first few conversations.
+
+#
+
+Talk to Claude like a contractor
+
+Speak to Claude like a contractor you’ve hired, _not_ like a bare text
+completion API. For example:
+
+Bad Prompt
+
+    
+    
+    An ingenious researcher wrote a summary of laser optics technology, writing:
+    
+
+This will not work well to prompt Claude. Imagine you walked up to someone and
+said this. How might they respond? A little confused, perhaps.
+
+Instead, just directly ask Claude for what you want:
+
+Good Prompt
+
+    
+    
+    Write an expert-level summary of laser optics technology.
+    
+
+#
+
+Claude "remembers" entire threads
+
+When interacting with Claude through Slack or our web interface, it can see
+anything else you wrote in the thread.
+
+It can’t remember anything else you said prior to this thread (eg other
+threads, even if simultaneous). Its memory is cleared between threads.
+
+#
+
+Limitations to keep in mind
+
+  * 🎭 Claude is “playing a role” as a helpful assistant. It will often incorrectly report its own abilities, or claim to be “updating its memory”, when in fact it does not have any memory of prior conversations!
+  * ➗ Claude will often make mistakes with complicated arithmetic and reasoning, and sometimes with more basic tasks. If given a long list of instructions it will often make mistakes when attempting to comply with all of them, but see Break complex tasks into subtasks and Prompt Chaining for some workarounds.
+  * 👻 Claude still sometimes hallucinates or makes up information and details. It will sometimes fill in information from its memory that isn’t present in long documents it’s presented with when asked questions.
+  * 🌐 Claude has read a lot on the internet, so it knows things about the real world… but it does **not** have internet access.
+  * ⏳ Claude was trained on data that can be up to 2 years out of date.
+  * 📅 Similarly, Claude does not know today’s date, nor does it know about current events.
+  * 🔨 It cannot (yet!) take actions in the real world — _but it can suggest actions to take._
+  * 📇 It cannot (yet!) look things up — _but it can suggest what to look up._
+
+__Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Talk to Claude like a contractor
+    * Claude "remembers" entire threads
+    * Limitations to keep in mind
+

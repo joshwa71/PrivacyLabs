@@ -1,0 +1,354 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+### Edit Models filters
+
+  * Tasks 
+  * Libraries 
+  * Datasets 
+  * Languages 
+  * Licenses 
+  * Other 
+
+Multimodal
+
+Feature Extraction
+
+Text-to-Image
+
+Image-to-Text
+
+Text-to-Video
+
+Visual Question Answering
+
+Document Question Answering
+
+Graph Machine Learning
+
+Computer Vision
+
+Depth Estimation
+
+Image Classification
+
+Object Detection
+
+Image Segmentation
+
+Image-to-Image
+
+Unconditional Image Generation
+
+Video Classification
+
+Zero-Shot Image Classification
+
+Natural Language Processing
+
+Text Classification
+
+Token Classification
+
+Table Question Answering
+
+Question Answering
+
+Zero-Shot Classification
+
+Translation
+
+Summarization
+
+Conversational
+
+Text Generation
+
+Text2Text Generation
+
+Fill-Mask
+
+Sentence Similarity
+
+Audio
+
+Text-to-Speech
+
+Text-to-Audio
+
+Automatic Speech Recognition
+
+Audio-to-Audio
+
+Audio Classification
+
+Voice Activity Detection
+
+Tabular
+
+Tabular Classification
+
+Tabular Regression
+
+Reinforcement Learning
+
+Reinforcement Learning
+
+Robotics
+
+Apply filters
+
+# Models
+
+404,165
+
+new Full-text search
+
+Add filters
+
+Sort: Trending
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1620805164087-5ec0135ded25d76864d553f1.png?w=200&h=200&f=face)
+
+#### openai/whisper-large-v3
+
+Automatic Speech Recognition •  Updated 5 days ago •  73k •  753
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+
+#### latent-consistency/lcm-lora-sdxl
+
+Text-to-Image •  Updated 5 days ago •  35.8k •  320
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6536187279f1de44b5e02d0f/-T8Xw0mX67_R73b7Re1y-.png?w=200&h=200&f=face)
+
+#### 01-ai/Yi-34B
+
+Text Generation •  Updated about 12 hours ago •  44.3k •  950
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648459271425-61dbf25b99eac69222659467.png?w=200&h=200&f=face)
+
+#### coqui/XTTS-v2
+
+Text-to-Speech •  Updated 3 days ago •  47.3k •  229
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61b6cbbdbfb266841ec0f24a/e3K6T39zx6Pxjfww7DaSV.png?w=200&h=200&f=face)
+
+#### openchat/openchat_3.5
+
+Text Generation •  Updated 4 days ago •  19.2k •  624
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61f91cf54a8e5a275b2b3e7c/cUNzV7MAYi8lo9LsCYixp.png?w=200&h=200&f=face)
+
+#### distil-whisper/distil-large-v2
+
+Automatic Speech Recognition •  Updated 7 days ago •  50k •  333
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583646260758-5e64858c87403103f9f1055d.png?w=200&h=200&f=face)
+
+#### microsoft/Orca-2-13b
+
+Text Generation •  Updated about 12 hours ago •  30 •  104
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/62dac1c7a8ead43d20e3e17a/wrLf5yaGC6ng4XME70w6Z.png?w=200&h=200&f=face)
+
+#### mistralai/Mistral-7B-v0.1
+
+Text Generation •  Updated Oct 12 •  418k •  1.88k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face)
+
+#### google/switch-c-2048
+
+Text2Text Generation •  Updated 1 day ago •  38 •  137
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png?w=200&h=200&f=face)
+
+#### meta-llama/Llama-2-7b-chat-hf
+
+Text Generation •  Updated 8 days ago •  927k •  1.85k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/643feeb67bc3fbde1385cc25/7vmYr2XwVcPtkLzac_jxQ.png?w=200&h=200&f=face)
+
+#### stabilityai/stable-diffusion-xl-base-1.0
+
+Text-to-Image •  Updated 22 days ago •  9.84M •  3.56k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face)
+
+#### NousResearch/Nous-Capybara-34B
+
+Text Generation •  Updated 7 days ago •  496 •  99
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5f0c746619cb630495b814fd/j26aNEdiOgptZxJ6akGCC.png?w=200&h=200&f=face)
+
+#### HuggingFaceH4/zephyr-7b-beta
+
+Text Generation •  Updated about 20 hours ago •  144k •  842
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/ofYN04WWtD60oeDP45pQN.jpeg?w=200&h=200&f=face)
+
+#### SimianLuo/LCM_Dreamshaper_v7
+
+Text-to-Image •  Updated 13 days ago •  196k •  248
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/603bbad3fd770a9997b57cb6/-L2fZf-T4VV81Na2q8luu.png?w=200&h=200&f=face)
+
+#### defog/sqlcoder-34b-alpha
+
+Text Generation •  Updated 7 days ago •  946 •  65
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1616186257611-60104afcc75e19ac1738fe70.png?w=200&h=200&f=face)
+
+#### Intel/neural-chat-7b-v3-1
+
+Text Generation •  Updated about 3 hours ago •  1.65k •  64
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+
+#### latent-consistency/lcm-lora-sdv1-5
+
+Text-to-Image •  Updated 5 days ago •  60.7k •  127
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6335d72738e33ddc26527332/dMCE82gVz832ew-
+un3pqa.png?w=200&h=200&f=face)
+
+#### segmind/SSD-1B
+
+Text-to-Image •  Updated 11 days ago •  462k •  571
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/635567189c72a7e742f1419c/tbfBz0furS-y4ISgoe6j0.jpeg?w=200&h=200&f=face)
+
+#### alpindale/goliath-120b
+
+Conversational •  Updated 11 days ago •  1.25k •  96
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/646cf8084eefb026fb8fd8bc/oCTqufkdTkjyGodsx1vo1.png?w=200&h=200&f=face)
+
+#### meta-llama/Llama-2-7b
+
+Text Generation •  Updated 8 days ago •  3.02k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6317aade83d8d2fd903192d9/erOwgMXc_CZih3uMoyTAp.jpeg?w=200&h=200&f=face)
+
+#### teknium/OpenHermes-2.5-Mistral-7B
+
+Text Generation •  Updated 17 days ago •  14.4k •  165
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6426d3f3a7723d62b53c259b/tvPikpAzKTKGN5wrpadOJ.jpeg?w=200&h=200&f=face)
+
+#### TheBloke/Nous-Capybara-34B-GGUF
+
+Updated 3 days ago •  72 •  53
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/62fc06a221c444a56f7cc595/ngyQKdhaykfC8lN6Jfqlz.png?w=200&h=200&f=face)
+
+#### NousResearch/Yarn-Mistral-7b-128k
+
+Text Generation •  Updated 19 days ago •  42.5k •  456
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/62dac1c7a8ead43d20e3e17a/wrLf5yaGC6ng4XME70w6Z.png?w=200&h=200&f=face)
+
+#### mistralai/Mistral-7B-Instruct-v0.1
+
+Text Generation •  Updated Oct 11 •  262k •  1.04k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6426d3f3a7723d62b53c259b/tvPikpAzKTKGN5wrpadOJ.jpeg?w=200&h=200&f=face)
+
+#### TheBloke/goliath-120b-GGUF
+
+Conversational •  Updated 12 days ago •  818 •  53
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+
+#### latent-consistency/lcm-sdxl
+
+Text-to-Image •  Updated 9 days ago •  2.84k •  79
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583646260758-5e64858c87403103f9f1055d.png?w=200&h=200&f=face)
+
+#### microsoft/Orca-2-7b
+
+Text Generation •  Updated about 12 hours ago •  43 •  40
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1656000281669-60f1abe7544c2adfd699860c.png?w=200&h=200&f=face)
+
+#### THUDM/chatglm3-6b
+
+Updated 12 days ago •  79.3k •  423
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1665970599545-634cb15a4abe8405758d2e7e.jpeg?w=200&h=200&f=face)
+
+#### runwayml/stable-diffusion-v1-5
+
+Text-to-Image •  Updated Aug 23 •  7.8M •  9.61k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583646260758-5e64858c87403103f9f1055d.png?w=200&h=200&f=face)
+
+#### microsoft/phi-1_5
+
+Text Generation •  Updated about 20 hours ago •  80.3k •  1.06k
+
+  * Previous
+  * 1
+  * 2
+  * 3
+  * ...
+  * 13,473
+  * Next 
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

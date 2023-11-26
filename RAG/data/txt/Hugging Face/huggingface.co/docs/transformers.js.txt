@@ -1,0 +1,349 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Transformers.js documentation
+
+Transformers.js
+
+#
+
+Transformers.js
+
+Search documentation
+
+main EN
+
+🤗 Transformers.js
+
+Get started
+
+Installation The pipeline API Custom usage
+
+Tutorials
+
+Building a Vanilla JS Application Building a React Application Building a
+Next.js Application Building a Browser Extension Building an Electron
+Application Server-side Inference in Node.js
+
+Developer Guides
+
+Accessing Private/Gated Models Server-side Audio Processing in Node.js
+
+API Reference
+
+Index Pipelines Models Tokenizers Processors Configs Environment variables
+
+Backends
+
+Utilities
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  Transformers.js
+
+State-of-the-art Machine Learning for the web. Run 🤗 Transformers directly in
+your browser, with no need for a server!
+
+Transformers.js is designed to be functionally equivalent to Hugging Face’s
+transformers python library, meaning you can run the same pretrained models
+using a very similar API. These models support common tasks in different
+modalities, such as:
+
+  * 📝 **Natural Language Processing** : text classification, named entity recognition, question answering, language modeling, summarization, translation, multiple choice, and text generation.
+  * 🖼️ **Computer Vision** : image classification, object detection, and segmentation.
+  * 🗣️ **Audio** : automatic speech recognition and audio classification.
+  * 🐙 **Multimodal** : zero-shot image classification.
+
+Transformers.js uses ONNX Runtime to run models in the browser. The best part
+about it, is that you can easily convert your pretrained PyTorch, TensorFlow,
+or JAX models to ONNX using 🤗 Optimum.
+
+For more information, check out the full documentation.
+
+##  Quick tour
+
+It’s super simple to translate from existing code! Just like the python
+library, we support the `pipeline` API. Pipelines group together a pretrained
+model with preprocessing of inputs and postprocessing of outputs, making it
+the easiest way to run models with the library.
+
+**Python (original)** | **Javascript (ours)**  
+---|---  
+  
+Copied
+
+    
+    
+    from transformers import pipeline
+    
+    # Allocate a pipeline for sentiment-analysis
+    pipe = pipeline('sentiment-analysis')
+    
+    out = pipe('I love transformers!')
+    # [{'label': 'POSITIVE', 'score': 0.999806941}]
+
+|
+
+Copied
+
+    
+    
+    import { pipeline } from '@xenova/transformers';
+    
+    // Allocate a pipeline for sentiment-analysis
+    let pipe = await pipeline('sentiment-analysis');
+    
+    let out = await pipe('I love transformers!');
+    // [{'label': 'POSITIVE', 'score': 0.999817686}]  
+  
+You can also use a different model by specifying the model id or path as the
+second argument to the `pipeline` function. For example:
+
+Copied
+
+    
+    
+    // Use a different model for sentiment-analysis
+    let pipe = await pipeline('sentiment-analysis', 'nlptown/bert-base-multilingual-uncased-sentiment');
+
+##  Contents
+
+The documentation is organized into 4 sections:
+
+  1. **GET STARTED** provides a quick tour of the library and installation instructions to get up and running.
+  2. **TUTORIALS** are a great place to start if you’re a beginner! We also include sample applications for you to play around with!
+  3. **DEVELOPER GUIDES** show you how to use the library to achieve a specific goal.
+  4. **API REFERENCE** describes all classes and functions, as well as their available parameters and types.
+
+##  Supported tasks/models
+
+Here is the list of all tasks and architectures currently supported by
+Transformers.js. If you don’t see your task/model listed here or it is not yet
+supported, feel free to open up a feature request here.
+
+To find compatible models on the Hub, select the “transformers.js” library tag
+in the filter menu (or visit this link). You can refine your search by
+selecting the task you’re interested in (e.g., text-classification).
+
+###  Tasks
+
+####  Natural Language Processing
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Conversational | `conversational` | Generating conversational text that is
+relevant, coherent and knowledgable given a prompt. | ❌  
+Fill-Mask | `fill-mask` | Masking some of the words in a sentence and
+predicting which words should replace those masks. | ✅ (docs)  
+(models)  
+Question Answering | `question-answering` | Retrieve the answer to a question
+from a given text. | ✅ (docs)  
+(models)  
+Sentence Similarity | `sentence-similarity` | Determining how similar two
+texts are. | ✅ (docs)  
+(models)  
+Summarization | `summarization` | Producing a shorter version of a document
+while preserving its important information. | ✅ (docs)  
+(models)  
+Table Question Answering | `table-question-answering` | Answering a question
+about information from a given table. | ❌  
+Text Classification | `text-classification` or `sentiment-analysis` |
+Assigning a label or class to a given text. | ✅ (docs)  
+(models)  
+Text Generation | `text-generation` | Producing new text by predicting the
+next word in a sequence. | ✅ (docs)  
+(models)  
+Text-to-text Generation | `text2text-generation` | Converting one text
+sequence into another text sequence. | ✅ (docs)  
+(models)  
+Token Classification | `token-classification` or `ner` | Assigning a label to
+each token in a text. | ✅ (docs)  
+(models)  
+Translation | `translation` | Converting text from one language to another. |
+✅ (docs)  
+(models)  
+Zero-Shot Classification | `zero-shot-classification` | Classifying text into
+classes that are unseen during training. | ✅ (docs)  
+(models)  
+  
+####  Vision
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Depth Estimation | `depth-estimation` | Predicting the depth of objects
+present in an image. | ✅ (docs)  
+(models)  
+Image Classification | `image-classification` | Assigning a label or class to
+an entire image. | ✅ (docs)  
+(models)  
+Image Segmentation | `image-segmentation` | Divides an image into segments
+where each pixel is mapped to an object. This task has multiple variants such
+as instance segmentation, panoptic segmentation and semantic segmentation. | ✅
+(docs)  
+(models)  
+Image-to-Image | `image-to-image` | Transforming a source image to match the
+characteristics of a target image or a target image domain. | ✅ (docs)  
+(models)  
+Mask Generation | `mask-generation` | Generate masks for the objects in an
+image. | ❌  
+Object Detection | `object-detection` | Identify objects of certain defined
+classes within an image. | ✅ (docs)  
+(models)  
+Video Classification | n/a | Assigning a label or class to an entire video. |
+❌  
+Unconditional Image Generation | n/a | Generating images with no condition in
+any context (like a prompt text or another image). | ❌  
+  
+####  Audio
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Audio Classification | `audio-classification` | Assigning a label or class to
+a given audio. | ✅ (docs)  
+(models)  
+Audio-to-Audio | n/a | Generating audio from an input audio source. | ❌  
+Automatic Speech Recognition | `automatic-speech-recognition` | Transcribing a
+given audio into text. | ✅ (docs)  
+(models)  
+Text-to-Speech | `text-to-speech` or `text-to-audio` | Generating natural-
+sounding speech given text input. | ✅ (docs)  
+(models)  
+  
+####  Tabular
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Tabular Classification | n/a | Classifying a target category (a group) based
+on set of attributes. | ❌  
+Tabular Regression | n/a | Predicting a numerical value given a set of
+attributes. | ❌  
+  
+####  Multimodal
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Document Question Answering | `document-question-answering` | Answering
+questions on document images. | ✅ (docs)  
+(models)  
+Feature Extraction | `feature-extraction` | Transforming raw data into
+numerical features that can be processed while preserving the information in
+the original dataset. | ✅ (docs)  
+(models)  
+Image-to-Text | `image-to-text` | Output text from a given image. | ✅ (docs)  
+(models)  
+Text-to-Image | `text-to-image` | Generates images from input text. | ❌  
+Visual Question Answering | `visual-question-answering` | Answering open-ended
+questions based on an image. | ❌  
+Zero-Shot Image Classification | `zero-shot-image-classification` |
+Classifying images into classes that are unseen during training. | ✅ (docs)  
+(models)  
+Zero-Shot Object Detection | `zero-shot-object-detection` | Identify objects
+of classes that are unseen during training. | ✅ (docs)  
+(models)  
+  
+####  Reinforcement Learning
+
+Task | ID | Description | Supported?  
+---|---|---|---  
+Reinforcement Learning | n/a | Learning from actions by interacting with an
+environment through trial and error and receiving rewards (negative or
+positive) as feedback. | ❌  
+  
+###  Models
+
+  1. **ALBERT** (from Google Research and the Toyota Technological Institute at Chicago) released with the paper ALBERT: A Lite BERT for Self-supervised Learning of Language Representations, by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut.
+  2. **BART** (from Facebook) released with the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov and Luke Zettlemoyer.
+  3. **BEiT** (from Microsoft) released with the paper BEiT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong, Furu Wei.
+  4. **BERT** (from Google) released with the paper BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova.
+  5. **Blenderbot** (from Facebook) released with the paper Recipes for building an open-domain chatbot by Stephen Roller, Emily Dinan, Naman Goyal, Da Ju, Mary Williamson, Yinhan Liu, Jing Xu, Myle Ott, Kurt Shuster, Eric M. Smith, Y-Lan Boureau, Jason Weston.
+  6. **BlenderbotSmall** (from Facebook) released with the paper Recipes for building an open-domain chatbot by Stephen Roller, Emily Dinan, Naman Goyal, Da Ju, Mary Williamson, Yinhan Liu, Jing Xu, Myle Ott, Kurt Shuster, Eric M. Smith, Y-Lan Boureau, Jason Weston.
+  7. **BLOOM** (from BigScience workshop) released by the BigScience Workshop.
+  8. **CamemBERT** (from Inria/Facebook/Sorbonne) released with the paper CamemBERT: a Tasty French Language Model by Louis Martin _, Benjamin Muller_ , Pedro Javier Ortiz Suárez*, Yoann Dupont, Laurent Romary, Éric Villemonte de la Clergerie, Djamé Seddah and Benoît Sagot.
+  9. **CLIP** (from OpenAI) released with the paper Learning Transferable Visual Models From Natural Language Supervision by Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, Ilya Sutskever.
+  10. **CodeGen** (from Salesforce) released with the paper A Conversational Paradigm for Program Synthesis by Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, Caiming Xiong.
+  11. **CodeLlama** (from MetaAI) released with the paper Code Llama: Open Foundation Models for Code by Baptiste Rozière, Jonas Gehring, Fabian Gloeckle, Sten Sootla, Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, Jérémy Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, Wenhan Xiong, Alexandre Défossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve.
+  12. **DeBERTa** (from Microsoft) released with the paper DeBERTa: Decoding-enhanced BERT with Disentangled Attention by Pengcheng He, Xiaodong Liu, Jianfeng Gao, Weizhu Chen.
+  13. **DeBERTa-v2** (from Microsoft) released with the paper DeBERTa: Decoding-enhanced BERT with Disentangled Attention by Pengcheng He, Xiaodong Liu, Jianfeng Gao, Weizhu Chen.
+  14. **DeiT** (from Facebook) released with the paper Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou.
+  15. **DETR** (from Facebook) released with the paper End-to-End Object Detection with Transformers by Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, Sergey Zagoruyko.
+  16. **DistilBERT** (from HuggingFace), released together with the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter by Victor Sanh, Lysandre Debut and Thomas Wolf. The same method has been applied to compress GPT2 into DistilGPT2, RoBERTa into DistilRoBERTa, Multilingual BERT into DistilmBERT and a German version of DistilBERT.
+  17. **Donut** (from NAVER), released together with the paper OCR-free Document Understanding Transformer by Geewook Kim, Teakgyu Hong, Moonbin Yim, Jeongyeon Nam, Jinyoung Park, Jinyeong Yim, Wonseok Hwang, Sangdoo Yun, Dongyoon Han, Seunghyun Park.
+  18. **DPT** (from Intel Labs) released with the paper Vision Transformers for Dense Prediction by René Ranftl, Alexey Bochkovskiy, Vladlen Koltun.
+  19. **Falcon** (from Technology Innovation Institute) by Almazrouei, Ebtesam and Alobeidli, Hamza and Alshamsi, Abdulaziz and Cappelli, Alessandro and Cojocaru, Ruxandra and Debbah, Merouane and Goffinet, Etienne and Heslow, Daniel and Launay, Julien and Malartic, Quentin and Noune, Badreddine and Pannier, Baptiste and Penedo, Guilherme.
+  20. **FLAN-T5** (from Google AI) released in the repository google-research/t5x by Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Eric Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson, Shixiang Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen, Aakanksha Chowdhery, Sharan Narang, Gaurav Mishra, Adams Yu, Vincent Zhao, Yanping Huang, Andrew Dai, Hongkun Yu, Slav Petrov, Ed H. Chi, Jeff Dean, Jacob Devlin, Adam Roberts, Denny Zhou, Quoc V. Le, and Jason Wei
+  21. **GLPN** (from KAIST) released with the paper Global-Local Path Networks for Monocular Depth Estimation with Vertical CutDepth by Doyeon Kim, Woonghyun Ga, Pyungwhan Ahn, Donggyu Joo, Sehwan Chun, Junmo Kim.
+  22. **GPT Neo** (from EleutherAI) released in the repository EleutherAI/gpt-neo by Sid Black, Stella Biderman, Leo Gao, Phil Wang and Connor Leahy.
+  23. **GPT NeoX** (from EleutherAI) released with the paper GPT-NeoX-20B: An Open-Source Autoregressive Language Model by Sid Black, Stella Biderman, Eric Hallahan, Quentin Anthony, Leo Gao, Laurence Golding, Horace He, Connor Leahy, Kyle McDonell, Jason Phang, Michael Pieler, USVSN Sai Prashanth, Shivanshu Purohit, Laria Reynolds, Jonathan Tow, Ben Wang, Samuel Weinbach
+  24. **GPT-2** (from OpenAI) released with the paper Language Models are Unsupervised Multitask Learners by Alec Radford _, Jeffrey Wu_ , Rewon Child, David Luan, Dario Amodei **and Ilya Sutskever**.
+  25. **GPT-J** (from EleutherAI) released in the repository kingoflolz/mesh-transformer-jax by Ben Wang and Aran Komatsuzaki.
+  26. **GPTBigCode** (from BigCode) released with the paper SantaCoder: don’t reach for the stars! by Loubna Ben Allal, Raymond Li, Denis Kocetkov, Chenghao Mou, Christopher Akiki, Carlos Munoz Ferrandis, Niklas Muennighoff, Mayank Mishra, Alex Gu, Manan Dey, Logesh Kumar Umapathi, Carolyn Jane Anderson, Yangtian Zi, Joel Lamy Poirier, Hailey Schoelkopf, Sergey Troshin, Dmitry Abulkhanov, Manuel Romero, Michael Lappert, Francesco De Toni, Bernardo García del Río, Qian Liu, Shamik Bose, Urvashi Bhattacharyya, Terry Yue Zhuo, Ian Yu, Paulo Villegas, Marco Zocca, Sourab Mangrulkar, David Lansky, Huu Nguyen, Danish Contractor, Luis Villa, Jia Li, Dzmitry Bahdanau, Yacine Jernite, Sean Hughes, Daniel Fried, Arjun Guha, Harm de Vries, Leandro von Werra.
+  27. **HerBERT** (from Allegro.pl, AGH University of Science and Technology) released with the paper KLEJ: Comprehensive Benchmark for Polish Language Understanding by Piotr Rybak, Robert Mroczkowski, Janusz Tracz, Ireneusz Gawlik.
+  28. **LongT5** (from Google AI) released with the paper LongT5: Efficient Text-To-Text Transformer for Long Sequences by Mandy Guo, Joshua Ainslie, David Uthus, Santiago Ontanon, Jianmo Ni, Yun-Hsuan Sung, Yinfei Yang.
+  29. **LLaMA** (from The FAIR team of Meta AI) released with the paper LLaMA: Open and Efficient Foundation Language Models by Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample.
+  30. **Llama2** (from The FAIR team of Meta AI) released with the paper Llama2: Open Foundation and Fine-Tuned Chat Models by Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, Dan Bikel, Lukas Blecher, Cristian Canton Ferrer, Moya Chen, Guillem Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller, Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez Madian Khabsa, Isabel Kloumann, Artem Korenev, Punit Singh Koura, Marie-Anne Lachaux, Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier Martinet, Todor Mihaylov, Pushka rMishra, Igor Molybog, Yixin Nie, Andrew Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan Silva, Eric Michael Smith, Ranjan Subramanian, Xiaoqing EllenTan, Binh Tang, Ross Taylor, Adina Williams, Jian Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien Rodriguez, Robert Stojnic, Sergey Edunov, Thomas Scialom.
+  31. **M2M100** (from Facebook) released with the paper Beyond English-Centric Multilingual Machine Translation by Angela Fan, Shruti Bhosale, Holger Schwenk, Zhiyi Ma, Ahmed El-Kishky, Siddharth Goyal, Mandeep Baines, Onur Celebi, Guillaume Wenzek, Vishrav Chaudhary, Naman Goyal, Tom Birch, Vitaliy Liptchinsky, Sergey Edunov, Edouard Grave, Michael Auli, Armand Joulin.
+  32. **MarianMT** Machine translation models trained using OPUS data by Jörg Tiedemann. The Marian Framework is being developed by the Microsoft Translator Team.
+  33. **mBART** (from Facebook) released with the paper Multilingual Denoising Pre-training for Neural Machine Translation by Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov, Marjan Ghazvininejad, Mike Lewis, Luke Zettlemoyer.
+  34. **mBART-50** (from Facebook) released with the paper Multilingual Translation with Extensible Multilingual Pretraining and Finetuning by Yuqing Tang, Chau Tran, Xian Li, Peng-Jen Chen, Naman Goyal, Vishrav Chaudhary, Jiatao Gu, Angela Fan.
+  35. **Mistral** (from Mistral AI) by The Mistral AI team: Albert Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lélio Renard Lavaud, Lucile Saulnier, Marie-Anne Lachaux, Pierre Stock, Teven Le Scao, Thibaut Lavril, Thomas Wang, Timothée Lacroix, William El Sayed.
+  36. **MMS** (from Facebook) released with the paper Scaling Speech Technology to 1,000+ Languages by Vineel Pratap, Andros Tjandra, Bowen Shi, Paden Tomasello, Arun Babu, Sayani Kundu, Ali Elkahky, Zhaoheng Ni, Apoorv Vyas, Maryam Fazel-Zarandi, Alexei Baevski, Yossi Adi, Xiaohui Zhang, Wei-Ning Hsu, Alexis Conneau, Michael Auli.
+  37. **MobileBERT** (from CMU/Google Brain) released with the paper MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices by Zhiqing Sun, Hongkun Yu, Xiaodan Song, Renjie Liu, Yiming Yang, and Denny Zhou.
+  38. **MobileViT** (from Apple) released with the paper MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari.
+  39. **MPNet** (from Microsoft Research) released with the paper MPNet: Masked and Permuted Pre-training for Language Understanding by Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, Tie-Yan Liu.
+  40. **MPT** (from MosaiML) released with the repository llm-foundry by the MosaicML NLP Team.
+  41. **MT5** (from Google AI) released with the paper mT5: A massively multilingual pre-trained text-to-text transformer by Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, Colin Raffel.
+  42. **NLLB** (from Meta) released with the paper No Language Left Behind: Scaling Human-Centered Machine Translation by the NLLB team.
+  43. **Nougat** (from Meta AI) released with the paper Nougat: Neural Optical Understanding for Academic Documents by Lukas Blecher, Guillem Cucurull, Thomas Scialom, Robert Stojnic.
+  44. **OPT** (from Meta AI) released with the paper OPT: Open Pre-trained Transformer Language Models by Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen et al.
+  45. **OWL-ViT** (from Google AI) released with the paper Simple Open-Vocabulary Object Detection with Vision Transformers by Matthias Minderer, Alexey Gritsenko, Austin Stone, Maxim Neumann, Dirk Weissenborn, Alexey Dosovitskiy, Aravindh Mahendran, Anurag Arnab, Mostafa Dehghani, Zhuoran Shen, Xiao Wang, Xiaohua Zhai, Thomas Kipf, and Neil Houlsby.
+  46. **ResNet** (from Microsoft Research) released with the paper Deep Residual Learning for Image Recognition by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+  47. **RoBERTa** (from Facebook), released together with the paper RoBERTa: A Robustly Optimized BERT Pretraining Approach by Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov.
+  48. **SpeechT5** (from Microsoft Research) released with the paper SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing by Junyi Ao, Rui Wang, Long Zhou, Chengyi Wang, Shuo Ren, Yu Wu, Shujie Liu, Tom Ko, Qing Li, Yu Zhang, Zhihua Wei, Yao Qian, Jinyu Li, Furu Wei.
+  49. **SqueezeBERT** (from Berkeley) released with the paper SqueezeBERT: What can computer vision teach NLP about efficient neural networks? by Forrest N. Iandola, Albert E. Shaw, Ravi Krishna, and Kurt W. Keutzer.
+  50. **Swin Transformer** (from Microsoft) released with the paper Swin Transformer: Hierarchical Vision Transformer using Shifted Windows by Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, Baining Guo.
+  51. **Swin2SR** (from University of Würzburg) released with the paper Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration by Marcos V. Conde, Ui-Jin Choi, Maxime Burchi, Radu Timofte.
+  52. **T5** (from Google AI) released with the paper Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer by Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu.
+  53. **T5v1.1** (from Google AI) released in the repository google-research/text-to-text-transfer-transformer by Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu.
+  54. **TrOCR** (from Microsoft), released together with the paper TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models by Minghao Li, Tengchao Lv, Lei Cui, Yijuan Lu, Dinei Florencio, Cha Zhang, Zhoujun Li, Furu Wei.
+  55. **Vision Transformer (ViT)** (from Google AI) released with the paper An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale by Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby.
+  56. **Wav2Vec2** (from Facebook AI) released with the paper wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations by Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli.
+  57. **WavLM** (from Microsoft Research) released with the paper WavLM: Large-Scale Self-Supervised Pre-Training for Full Stack Speech Processing by Sanyuan Chen, Chengyi Wang, Zhengyang Chen, Yu Wu, Shujie Liu, Zhuo Chen, Jinyu Li, Naoyuki Kanda, Takuya Yoshioka, Xiong Xiao, Jian Wu, Long Zhou, Shuo Ren, Yanmin Qian, Yao Qian, Jian Wu, Michael Zeng, Furu Wei.
+  58. **Whisper** (from OpenAI) released with the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, Ilya Sutskever.
+  59. **XLM** (from Facebook) released together with the paper Cross-lingual Language Model Pretraining by Guillaume Lample and Alexis Conneau.
+  60. **XLM-RoBERTa** (from Facebook AI), released together with the paper Unsupervised Cross-lingual Representation Learning at Scale by Alexis Conneau _, Kartikay Khandelwal_ , Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer and Veselin Stoyanov.
+  61. **YOLOS** (from Huazhong University of Science & Technology) released with the paper You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection by Yuxin Fang, Bencheng Liao, Xinggang Wang, Jiemin Fang, Jiyang Qi, Rui Wu, Jianwei Niu, Wenyu Liu.
+
+Installation→
+
+Transformers.js Quick tour Contents Supported tasks/models Tasks Natural
+Language ProcessingVisionAudioTabularMultimodalReinforcement LearningModels
+

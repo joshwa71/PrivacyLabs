@@ -1,0 +1,317 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Claude on Amazon Bedrock
+
+ __Suggest Edits
+
+As we announced in our blog post, Anthropic’s Claude models are now generally
+available through Amazon Bedrock.
+
+Calling Claude through Bedrock slightly differs from how you would call Claude
+when using Anthropic’s client SDK’s. This guide will walk you through the
+process of completing an API call to Claude on Bedrock in Python.
+
+Note that this guide assumes you have already signed up for an AWS account and
+configured programmatic access.
+
+##
+
+Install and configure the AWS CLI
+
+  1. Install a version of the AWS CLI at or newer than version `2.13.23`
+  2. Configure your AWS credentials using the AWS configure command (see Configure the AWS CLI) or find your credentials by navigating to “Command line or programmatic access” within your AWS dashboard and following the directions in the popup modal.
+  3. Verify that your credentials are working: 
+
+Shell
+
+    
+        aws sts get-caller-identity
+    
+
+##
+
+Install an SDK for accessing Bedrock
+
+It is also possible to access Bedrock via the AWS CLI but we generally
+recommend using an official SDK.
+
+PythonTypescriptBoto3 (Python)
+
+    
+    
+    pip install anthropic-bedrock
+    
+    
+    
+    npm install @anthropic-ai/bedrock-sdk
+    
+    
+    
+    pip install boto3>=1.28.59
+    
+
+##
+
+Accessing Bedrock
+
+###
+
+List available models
+
+The following examples show how to print a list of all the Claude models
+available through Bedrock:
+
+AWS CLIBoto3 (Python)
+
+    
+    
+    aws bedrock list-foundation-models --by-provider anthropic --query "modelSummaries[*].modelId"
+    
+    
+    
+    import boto3
+    
+    bedrock = boto3.client(service_name="bedrock")
+    response = bedrock.list_foundation_models(byProvider="anthropic")
+    
+    for summary in response["modelSummaries"]:
+        print(summary["modelId"])
+    
+
+###
+
+Running inference
+
+The following examples shows how to generate text from Claude 2 on Bedrock:
+
+PythonTypescriptAWS CLIBoto3 (Python)
+
+    
+    
+    import anthropic_bedrock
+    from anthropic_bedrock import AnthropicBedrock
+    
+    client = AnthropicBedrock(
+        # Authenticate by either providing the keys below or use the default AWS credential providers, such as
+        # using ~/.aws/credentials or the "AWS_SECRET_ACCESS_KEY" and "AWS_ACCESS_KEY_ID" environment variables.
+        aws_access_key="<access key>",
+        aws_secret_key="<secret key>",
+        # Temporary credentials can be used with aws_session_token.
+        # Read more at https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html.
+        aws_session_token="<session_token>",
+        # aws_region changes the aws region to which the request is made. By default, we read AWS_REGION,
+        # and if that's not present, we default to us-east-1. Note that we do not read ~/.aws/config for the region.
+        aws_region="us-east-2",
+    )
+    
+    completion = client.completions.create(
+        model="anthropic.claude-v2",
+        max_tokens_to_sample=256,
+        prompt=f"{anthropic_bedrock.HUMAN_PROMPT} Tell me a funny joke about outer space! {anthropic_bedrock.AI_PROMPT}",
+    )
+    print(completion.completion)
+    
+    
+    
+    import AnthropicBedrock from '@anthropic-ai/bedrock-sdk';
+    
+    const client = new AnthropicBedrock({
+      // Authenticate by either providing the keys below or use the default AWS credential providers, such as
+      // using ~/.aws/credentials or the "AWS_SECRET_ACCESS_KEY" and "AWS_ACCESS_KEY_ID" environment variables.
+      awsAccessKey: '<access key>',
+      awsSecretKey: '<secret key>',
+    
+      // Temporary credentials can be used with awsSessionToken.
+      // Read more at https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html.
+      awsSessionToken: '<session_token>',
+    
+      // awsRegion changes the aws region to which the request is made. By default, we read AWS_REGION,
+      // and if that's not present, we default to us-east-1. Note that we do not read ~/.aws/config for the region.
+      awsRegion: 'us-east-2',
+    });
+    
+    async function main() {
+      const completion = await client.completions.create({
+        model: 'anthropic.claude-v2',
+        max_tokens_to_sample: 256,
+        prompt: `${AnthropicBedrock.HUMAN_PROMPT} Tell me a funny joke about outer space! ${AnthropicBedrock.AI_PROMPT}`,
+      });
+    }
+    main().catch(console.error);
+    
+    
+    
+    aws bedrock-runtime invoke-model \
+      --model-id anthropic.claude-v2 \
+      --cli-binary-format raw-in-base64-out \
+      --body '{"prompt": "Human: Tell me a funny joke about outer space!\n\nAssistant:", "max_tokens_to_sample": 50}'  \
+      /dev/stdout
+    
+    
+    
+    import boto3
+    import json
+    
+    bedrock = boto3.client(service_name="bedrock-runtime")
+    body = json.dumps(
+        {
+            "prompt": "\n\nHuman: Tell me a funny joke about outer space\n\nAssistant:",
+            "max_tokens_to_sample": 100,
+        }
+    )
+    
+    response = bedrock.invoke_model(body=body, modelId="anthropic.claude-v2")
+    
+    response_body = json.loads(response.get("body").read())
+    print(response_body.get("completion"))
+    
+
+###
+
+Running streaming inference
+
+The following examples shows how to generate text from Claude 2 on Bedrock via
+the streaming interface:
+
+PythonTypescriptBoto3 (Python)
+
+    
+    
+    from anthropic_bedrock import AnthropicBedrock, HUMAN_PROMPT, AI_PROMPT
+    
+    client = AnthropicBedrock()
+    
+    stream = client.completions.create(
+        prompt=f"{HUMAN_PROMPT} Write a very short essay about space travel to Mars{AI_PROMPT}",
+        max_tokens_to_sample=300,
+        model="anthropic.claude-v2",
+        stream=True,
+    )
+    for completion in stream:
+        print(completion.completion, end="", flush=True)
+    
+    
+    
+    import AnthropicBedrock from '@anthropic-ai/bedrock-sdk';
+    
+    const client = new AnthropicBedrock();
+    
+    const stream = await client.completions.create({
+      prompt: `${AnthropicBedrock.HUMAN_PROMPT} Write a very short essay about space travel to Mars${AnthropicBedrock.AI_PROMPT}`,
+      model: 'anthropic.claude-v2',
+      stream: true,
+      max_tokens_to_sample: 300,
+    });
+    for await (const completion of stream) {
+      console.log(completion.completion);
+    }
+    
+    
+    
+    import boto3
+    import json
+    
+    bedrock = boto3.client(service_name="bedrock-runtime")
+    body = json.dumps(
+        {
+            "prompt": "\n\nHuman: Write a very short essay about space travel to Mars\n\nAssistant:",
+            "max_tokens_to_sample": 200,
+        }
+    )
+    response = bedrock.invoke_model_with_response_stream(
+        modelId="anthropic.claude-v2", body=body
+    )
+    
+    stream = response.get("body")
+    
+    if stream:
+        for event in stream:
+            chunk = event.get("chunk")
+            if chunk:
+                print(json.loads(chunk.get("bytes").decode()))
+    
+
+You can view the official Bedrock docs here.
+
+ __Updated 26 days ago
+
+* * *
+
+  * __Table of Contents
+  *     * Install and configure the AWS CLI
+    * Install an SDK for accessing Bedrock
+    * Accessing Bedrock
+      * List available models
+      * Running inference
+      * Running streaming inference
+

@@ -1,0 +1,140 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Check Claude's comprehension
+
+ __Suggest Edits
+
+The best way to determine if Claude has understood your instructions is to ask
+Claude.
+
+Prompt
+
+    
+    
+    
+    Human: I am going to give you a sentence and you need to tell me how many times it contains the word “apple”. For example, if I say “I would like an apple” then the answer is “1” because the word “apple” is in the sentence once. You can reason through or explain anything you’d like before responding, but make sure at the very end, you end your answer with just the final answer in brackets, like this: [1].
+    
+    Do you understand the instructions?
+    
+    Assistant:
+    
+
+It will usually respond by explaining the task back to you.
+
+Output
+
+    
+    
+    Yes, I understand. For a given sentence, I should count how many times the word "apple" occurs in the sentence and provide the count as my response in brackets. For example, given the input "I would like an apple", my response should be "[1]".
+    
+
+#
+
+Bonus: Use Claude's explanation to expand your prompt
+
+If Claude responds with a correct explanation of the task, you can use the
+response to expand your prompt. Reiterating the instructions in this manner
+can improve Claude's performance.
+
+Prompt
+
+    
+    
+    
+    Human: I am going to give you a sentence and you need to tell me how many times it contains the word “apple”. For example, if I say “I would like an apple” then the answer is “1” because the word “apple” is in the sentence once. You can reason through or explain anything you’d like before responding, but make sure at the very end, you end your answer with just the final answer in brackets, like this: [1].
+    
+    Do you understand the instructions?
+    
+    Assistant: Yes, I understand. For a given sentence, I should count how many times the word "apple" occurs in the sentence and provide the count as my response in brackets. For example, given the input "I would like an apple", my response should be "[1]".
+    
+    Human: Correct. Here is the sentence: I need one apple to bake an apple pie, and another apple to keep for later.
+    
+    Assistant:
+    
+
+> 💡
+>
+> Referencing previous conversations
+>
+> Claude cannot remember previous conversations or see anything beyond the
+> current context window. You can provide the content of a prior conversation
+> by including it in your prompt using the `\n\nHuman:` and `\n\nAssistant:`
+> format.
+
+ __Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Bonus: Use Claude's explanation to expand your prompt
+

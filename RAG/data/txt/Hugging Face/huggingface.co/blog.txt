@@ -1,0 +1,467 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+# Posts, articles, and discussions
+
+Everything communityguideopen source
+collabpartnershipsresearchNLPAudioCVRLethicsDiffusionGame DevelopmentTime
+SeriesRLHFCase Studies
+
+![](/blog/assets/lcm_sdxl/lcm_thumbnail.png)
+
+## SDXL in 4 steps with Latent Consistency LoRAs
+
+By pcuenq November 9, 2023
+
+Community posts
+
+view all
+
+#### Explaining the SDXL latent space
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64e0903c4c78e1eba50b47fa/I-We-
+qSQY367KY2fL1_BR.png?w=200&h=200&f=face) TimothyAlexisVass •
+
+about 20 hours ago
+
+#### Does Sketching Work?
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/qnzIdgVr31gpSKCTaDCiH.jpeg?w=200&h=200&f=face)
+ethanepperly •
+
+1 day ago
+
+#### Understanding Zephyr
+
+By ![](/avatars/06b905545d18fffdecb6247d0740a759.svg) Isamu136 •
+
+4 days ago
+
+#### Are your NLP models deteriorating post-deployment? Let’s use unlabelled
+data to find out
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1657144463525-629a173153a72d997d3f57d0.jpeg?w=200&h=200&f=face)
+santiviquez •
+
+5 days ago
+
+#### Persistent Homology Alignment (PHA): Replacing Multiple Sequence
+Alignments using ESM-2 and Persistent Homology
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+6 days ago
+
+#### In Silico Directed Evolution of Protein Sequences with ESM-2 and
+EvoProtGrad
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+8 days ago
+
+#### QLoRA for ESM-2 and Post Translational Modification Site Prediction
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+10 days ago
+
+#### Automating Responsible AI: Integrating Hugging Face and LangTest for More
+Robust Models
+
+By ![](/avatars/5504d8926e1031d9df4128dbc45f5351.svg) alytarik •
+
+11 days ago
+
+#### Hugging Face accelerates distribution of models and datasets based on
+Dragonfly
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6502b4953e61bc01921457fc/6QDxlZOMisT7tjbt6jY8Z.jpeg?w=200&h=200&f=face)
+gaius-qi •
+
+13 days ago
+
+#### Introducing the Giskard Bot: Enhancing LLM Testing & Debugging on Hugging
+Face
+
+By ![](/avatars/6d1c3fe259f80bbefb48450309779f79.svg) JMJM •
+
+13 days ago
+
+#### Elevate Your NLP Models with Automated Data Augmentation for Enhanced
+Performance
+
+By ![](/avatars/228dfa1e03efbcd27b39845068475c51.svg) chakravarthik27 •
+
+14 days ago
+
+#### Goodbye Python, Hello Rust: Building a RAG CLI Application with Orca
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64f2c90c1ae35aedb8df2b27/ng37Jo7jZJ6Ze9JsY9PoN.jpeg?w=200&h=200&f=face)
+santiagomed •
+
+17 days ago
+
+#### StarCoder Memorization Experiment Highlights Privacy Risks of Fine-Tuning
+On Code
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1661497922734-62f4ac43567dbf9a39f75474.jpeg?w=200&h=200&f=face)
+dhuynh95 •
+
+19 days ago
+
+#### Scaling Self Supervised Learning for Histology: introducing Phikon
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/63af158607e3badf3976823e/8PBGbC-
+CenNgW0tBAdkGK.jpeg?w=200&h=200&f=face) EazyAl •
+
+21 days ago
+
+#### Unmasking Language Model Sensitivity in Negation and Toxicity Evaluations
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64671832696e7355f5d27be6/PX_fJhCEzDvo4EkNt5ar_.jpeg?w=200&h=200&f=face)
+Prikshit7766 •
+
+22 days ago
+
+#### Detecting and Evaluating Sycophancy Bias: An Analysis of LLM and AI
+Solutions
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6469dc79c37ca1e12307debf/tZPTgI8SJCnYsAes5xR7b.png?w=200&h=200&f=face)
+Rakshit122 •
+
+22 days ago
+
+#### After 500+ LoRAs made, here is the secret
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/632a0b93cf7d40df9b3cf674/mxRiCbPXNzTCu4cEIJO5X.png?w=200&h=200&f=face)
+FPHam •
+
+22 days ago
+
+#### Detecting the Deceptive: Unmasking Deep Fake Voices
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6290ec00a29097b211b94f0f/7OYU-
+yroOUxJryJkl33L6.png?w=200&h=200&f=face) Andyrasika •
+
+23 days ago
+
+#### AutoTrain Advanced now supports Experiment Tracking
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1677600539328-61030ed7d6edf00e0107a465.jpeg?w=200&h=200&f=face)
+rishiraj •
+
+27 days ago
+
+#### Hearing is Believing: Revolutionizing AI with Audio Classification via
+Computer Vision
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6290ec00a29097b211b94f0f/7OYU-
+yroOUxJryJkl33L6.png?w=200&h=200&f=face) Andyrasika •
+
+30 days ago
+
+![](/blog/assets/inferentia-llama2/thumbnail.png)
+
+## Make your llama generation time fly with AWS Inferentia2
+
+By dacorvo November 7, 2023
+
+![](/blog/assets/171_prodigy_hf/thumbnail.png)
+
+## Introducing Prodigy-HF: a direct integration with Hugging Face
+
+By koaning November 7, 2023
+
+![](/blog/assets/Lora-for-sequence-classification-with-Roberta-Llama-
+Mistral/Thumbnail.png)
+
+## Comparing the Performance of LLMs: A Deep Dive into Roberta, Llama 2, and
+Mistral for Disaster Tweets Analysis with Lora
+
+By mehdiiraqui November 7, 2023
+
+![](/blog/assets/172_regions/thumbnail.png)
+
+## Introducing Storage Regions on the HF Hub
+
+By julien-c November 3, 2023
+
+![](/blog/assets/researcher-dataset-sharing/thumbnail.png)
+
+## Creating open machine learning datasets? Share them on the Hugging Face
+Hub!
+
+By davanstrien October 30, 2023
+
+![](/blog/assets/170_personal_copilot/thumbnail.png)
+
+## Personal Copilot: Train Your Own Coding Assistant
+
+By smangrul October 27, 2023
+
+![](/blog/assets/scalable-data-inspection/thumbnail.png)
+
+## Interactively explore your Huggingface dataset with one line of code
+
+By sps44 October 25, 2023
+
+![](/blog/assets/168_inference_endpoints_embeddings/thumbnail.jpg)
+
+## Deploy Embedding Models with Hugging Face Inference Endpoints
+
+By philschmid October 24, 2023
+
+![](/blog/assets/167_the_n_implementation_details_of_rlhf_with_ppo/thumbnail.png)
+
+## The N Implementation Details of RLHF with PPO
+
+By vwxyzjn October 24, 2023
+
+![](/blog/assets/simple_sdxl_optimizations/thumbnail.png)
+
+## Exploring simple optimizations for SDXL
+
+By sayakpaul October 24, 2023
+
+![](/blog/assets/167_gradio_lite/thumbnail.png)
+
+## Gradio-Lite: Serverless Gradio Running Entirely in Your Browser
+
+By abidlabs October 19, 2023
+
+![](/blog/assets/ort_accelerating_hf_models/thumbnail.png)
+
+## Accelerating over 130,000 Hugging Face models with ONNX Runtime
+
+By sschoenmeyer October 4, 2023
+
+![](/blog/assets/sdxl-jax/thumbnail.jpg)
+
+## Accelerating Stable Diffusion XL Inference with JAX on Cloud TPU v5e
+
+By pcuenq October 3, 2023
+
+![](/blog/assets/chat-templates/thumbnail.png)
+
+## Chat Templates: An End to the Silent Performance Killer
+
+By rocketknight1 October 3, 2023
+
+  * Previous
+  * 1
+  * 2
+  * 3
+  * ...
+  * 23
+  * Next 
+
+Community posts
+
+view all
+
+#### Explaining the SDXL latent space
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64e0903c4c78e1eba50b47fa/I-We-
+qSQY367KY2fL1_BR.png?w=200&h=200&f=face) TimothyAlexisVass •
+
+about 20 hours ago
+
+#### Does Sketching Work?
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/qnzIdgVr31gpSKCTaDCiH.jpeg?w=200&h=200&f=face)
+ethanepperly •
+
+1 day ago
+
+#### Understanding Zephyr
+
+By ![](/avatars/06b905545d18fffdecb6247d0740a759.svg) Isamu136 •
+
+4 days ago
+
+#### Are your NLP models deteriorating post-deployment? Let’s use unlabelled
+data to find out
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1657144463525-629a173153a72d997d3f57d0.jpeg?w=200&h=200&f=face)
+santiviquez •
+
+5 days ago
+
+#### Persistent Homology Alignment (PHA): Replacing Multiple Sequence
+Alignments using ESM-2 and Persistent Homology
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+6 days ago
+
+#### In Silico Directed Evolution of Protein Sequences with ESM-2 and
+EvoProtGrad
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+8 days ago
+
+#### QLoRA for ESM-2 and Post Translational Modification Site Prediction
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64191ec8d459c9e7fbb0236b/7BeTgySZzmFCaVpntaYgP.jpeg?w=200&h=200&f=face)
+AmelieSchreiber •
+
+10 days ago
+
+#### Automating Responsible AI: Integrating Hugging Face and LangTest for More
+Robust Models
+
+By ![](/avatars/5504d8926e1031d9df4128dbc45f5351.svg) alytarik •
+
+11 days ago
+
+#### Hugging Face accelerates distribution of models and datasets based on
+Dragonfly
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6502b4953e61bc01921457fc/6QDxlZOMisT7tjbt6jY8Z.jpeg?w=200&h=200&f=face)
+gaius-qi •
+
+13 days ago
+
+#### Introducing the Giskard Bot: Enhancing LLM Testing & Debugging on Hugging
+Face
+
+By ![](/avatars/6d1c3fe259f80bbefb48450309779f79.svg) JMJM •
+
+13 days ago
+
+#### Elevate Your NLP Models with Automated Data Augmentation for Enhanced
+Performance
+
+By ![](/avatars/228dfa1e03efbcd27b39845068475c51.svg) chakravarthik27 •
+
+14 days ago
+
+#### Goodbye Python, Hello Rust: Building a RAG CLI Application with Orca
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64f2c90c1ae35aedb8df2b27/ng37Jo7jZJ6Ze9JsY9PoN.jpeg?w=200&h=200&f=face)
+santiagomed •
+
+17 days ago
+
+#### StarCoder Memorization Experiment Highlights Privacy Risks of Fine-Tuning
+On Code
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1661497922734-62f4ac43567dbf9a39f75474.jpeg?w=200&h=200&f=face)
+dhuynh95 •
+
+19 days ago
+
+#### Scaling Self Supervised Learning for Histology: introducing Phikon
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/63af158607e3badf3976823e/8PBGbC-
+CenNgW0tBAdkGK.jpeg?w=200&h=200&f=face) EazyAl •
+
+21 days ago
+
+#### Unmasking Language Model Sensitivity in Negation and Toxicity Evaluations
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/64671832696e7355f5d27be6/PX_fJhCEzDvo4EkNt5ar_.jpeg?w=200&h=200&f=face)
+Prikshit7766 •
+
+22 days ago
+
+#### Detecting and Evaluating Sycophancy Bias: An Analysis of LLM and AI
+Solutions
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6469dc79c37ca1e12307debf/tZPTgI8SJCnYsAes5xR7b.png?w=200&h=200&f=face)
+Rakshit122 •
+
+22 days ago
+
+#### After 500+ LoRAs made, here is the secret
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/632a0b93cf7d40df9b3cf674/mxRiCbPXNzTCu4cEIJO5X.png?w=200&h=200&f=face)
+FPHam •
+
+22 days ago
+
+#### Detecting the Deceptive: Unmasking Deep Fake Voices
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6290ec00a29097b211b94f0f/7OYU-
+yroOUxJryJkl33L6.png?w=200&h=200&f=face) Andyrasika •
+
+23 days ago
+
+#### AutoTrain Advanced now supports Experiment Tracking
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1677600539328-61030ed7d6edf00e0107a465.jpeg?w=200&h=200&f=face)
+rishiraj •
+
+27 days ago
+
+#### Hearing is Believing: Revolutionizing AI with Audio Classification via
+Computer Vision
+
+By ![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6290ec00a29097b211b94f0f/7OYU-
+yroOUxJryJkl33L6.png?w=200&h=200&f=face) Andyrasika •
+
+30 days ago
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

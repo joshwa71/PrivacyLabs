@@ -1,0 +1,30 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+![Hugging Face's logo](/front/assets/huggingface_logo.svg)
+
+# Log In
+
+Don't have an account? Sign Up
+
+Username or Email address  Password
+
+Login  Forgot your password?
+
+SSO is available for companies
+

@@ -1,0 +1,150 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Accelerate documentation
+
+Accelerate
+
+#
+
+Accelerate
+
+Search documentation
+
+mainv0.24.0v0.23.0v0.22.0v0.21.0v0.20.3v0.19.0v0.18.0v0.17.1v0.16.0v0.15.0v0.14.0v0.13.2v0.12.0v0.11.0v0.10.0v0.9.0v0.8.0v0.7.1v0.6.0v0.5.1v0.4.0v0.3.0v0.2.1v0.1.0
+EN
+
+Getting started
+
+🤗 Accelerate Installation Quicktour
+
+Tutorials
+
+Overview Migrating to 🤗 Accelerate Launching distributed code Launching
+distributed training from Jupyter Notebooks
+
+How-To Guides
+
+Start Here! Example Zoo How to perform inference on large models with small
+resources Knowing how big of a model you can fit into memory How to quantize
+model How to perform distributed inference with normal resources Performing
+gradient accumulation Accelerating training with local SGD Saving and loading
+training states Using experiment trackers Debugging timeout errors How to
+avoid CUDA Out-of-Memory How to use Apple Silicon M1 GPUs How to use DeepSpeed
+How to use Fully Sharded Data Parallelism How to use Megatron-LM How to use 🤗
+Accelerate with SageMaker How to use 🤗 Accelerate with Intel® Extension for
+PyTorch for cpu
+
+Concepts and fundamentals
+
+🤗 Accelerate's internal mechanism Loading big models into memory Comparing
+performance across distributed setups Executing and deferring jobs Gradient
+synchronization TPU best practices
+
+Reference
+
+Main Accelerator class Stateful configuration classes The Command Line Torch
+wrapper classes Experiment trackers Distributed launchers DeepSpeed utilities
+Logging Working with large models Kwargs handlers Utility functions and
+classes Megatron-LM Utilities Fully Sharded Data Parallelism Utilities
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  Accelerate
+
+🤗 Accelerate is a library that enables the same PyTorch code to be run across
+any distributed configuration by adding just four lines of code! In short,
+training and inference at scale made simple, efficient and adaptable.
+
+Copied
+
+    
+    
+    + from accelerate import Accelerator
+    + accelerator = Accelerator()
+    
+    + model, optimizer, training_dataloader, scheduler = accelerator.prepare(
+    +     model, optimizer, training_dataloader, scheduler
+    + )
+    
+      for batch in training_dataloader:
+          optimizer.zero_grad()
+          inputs, targets = batch
+          inputs = inputs.to(device)
+          targets = targets.to(device)
+          outputs = model(inputs)
+          loss = loss_function(outputs, targets)
+    +     accelerator.backward(loss)
+          optimizer.step()
+          scheduler.step()
+
+Built on `torch_xla` and `torch.distributed`, 🤗 Accelerate takes care of the
+heavy lifting, so you don’t have to write any custom code to adapt to these
+platforms. Convert existing codebases to utilize DeepSpeed, perform fully
+sharded data parallelism, and have automatic support for mixed-precision
+training!
+
+To get a better idea of this process, make sure to check out the Tutorials!
+
+This code can then be launched on any system through Accelerate’s CLI
+interface:
+
+Copied
+
+    
+    
+    accelerate launch {my_script.py}
+
+Tutorials
+
+Learn the basics and become familiar with using 🤗 Accelerate. Start here if
+you are using 🤗 Accelerate for the first time!
+
+How-to guides
+
+Practical guides to help you achieve a specific goal. Take a look at these
+guides to learn how to use 🤗 Accelerate to solve real-world problems.
+
+Conceptual guides
+
+High-level explanations for building a better understanding of important
+topics such as avoiding subtle nuances and pitfalls in distributed training
+and DeepSpeed.
+
+Reference
+
+Technical descriptions of how 🤗 Accelerate classes and methods work.
+
+Installation→
+
+Accelerate
+

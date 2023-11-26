@@ -1,0 +1,328 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Huggingface.js documentation
+
+Hugging Face JS libraries
+
+#
+
+Huggingface.js
+
+Search documentation
+
+main EN
+
+🤗 Hugging Face JS Libraries
+
+@huggingface/inference
+
+Use the Inference API API Reference
+
+Classes
+
+HfInference HfInferenceEndpoint InferenceOutputError
+
+Interfaces
+
+AudioClassificationOutputValue AudioToAudioOutputValue
+AutomaticSpeechRecognitionOutput BaseArgs ConversationalOutput
+DocumentQuestionAnsweringOutput ImageClassificationOutputValue
+ImageSegmentationOutputValue ImageToTextOutput ObjectDetectionOutputValue
+Options QuestionAnsweringOutput SummarizationOutput
+TableQuestionAnsweringOutput TextGenerationOutput
+TextGenerationStreamBestOfSequence TextGenerationStreamDetails
+TextGenerationStreamOutput TextGenerationStreamPrefillToken
+TextGenerationStreamToken TokenClassificationOutputValue
+TranslationOutputValue VisualQuestionAnsweringOutput
+ZeroShotClassificationOutputValue ZeroShotImageClassificationOutputValue
+
+@huggingface/agent
+
+Use Agents to run multi-modal workflows from a natural language API API
+Reference
+
+Classes
+
+HfAgent
+
+@huggingface/hub
+
+Interact with the Hub API Reference
+
+Classes
+
+HubApiError InvalidApiResponseFormatError
+
+Interfaces
+
+AuthInfo CommitDeletedEntry CommitFile CommitOutput CommitParams Credentials
+DatasetEntry FileDownloadInfoOutput ListFileEntry ModelEntry RepoId
+SafetensorsIndexJson SpaceResourceConfig SpaceResourceRequirement SpaceRuntime
+TensorInfo WhoAmIApp WhoAmIOrg WhoAmIUser
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+  
+![huggingface javascript library
+logo](https://huggingface.co/datasets/huggingface/documentation-
+images/raw/main/huggingfacejs-light.svg)  
+  
+
+Copied
+
+    
+    
+    await inference.translation({
+      model: 't5-base',
+      inputs: 'My name is Wolfgang and I live in Berlin'
+    })
+    
+    await hf.translation({
+      model: "facebook/nllb-200-distilled-600M",
+      inputs: "how is the weather like in Gaborone",
+      parameters : {
+        src_lang: "eng_Latn",
+        tgt_lang: "sot_Latn"
+      }
+    })
+    
+    await inference.textToImage({
+      model: 'stabilityai/stable-diffusion-2',
+      inputs: 'award winning high resolution photo of a giant tortoise/((ladybird)) hybrid, [trending on artstation]',
+      parameters: {
+        negative_prompt: 'blurry',
+      }
+    })
+
+#  Hugging Face JS libraries
+
+This is a collection of JS libraries to interact with the Hugging Face API,
+with TS types included.
+
+  * @huggingface/inference: Use the Inference API to make calls to 100,000+ Machine Learning models, or your own inference endpoints!
+  * @huggingface/agents: Interact with HF models through a natural language interface
+  * @huggingface/hub: Interact with huggingface.co to create or delete repos and commit / download files
+
+With more to come, like `@huggingface/endpoints` to manage your HF Endpoints!
+
+We use modern features to avoid polyfills and dependencies, so the libraries
+will only work on modern browsers / Node.js >= 18 / Bun / Deno.
+
+The libraries are still very young, please help us by opening issues!
+
+##  Installation
+
+###  From NPM
+
+To install via NPM, you can download the libraries as needed:
+
+Copied
+
+    
+    
+    npm install @huggingface/inference
+    npm install @huggingface/hub
+    npm install @huggingface/agents
+
+Then import the libraries in your code:
+
+Copied
+
+    
+    
+    import { HfInference } from "@huggingface/inference";
+    import { HfAgent } from "@huggingface/agents";
+    import { createRepo, commit, deleteRepo, listFiles } from "@huggingface/hub";
+    import type { RepoId, Credentials } from "@huggingface/hub";
+
+###  From CDN or Static hosting
+
+You can run our packages with vanilla JS, without any bundler, by using a CDN
+or static hosting. Using ES modules, i.e. `<script type="module">`, you can
+import the libraries in your code:
+
+Copied
+
+    
+    
+    <script type="module">
+        import { HfInference } from 'https://cdn.jsdelivr.net/npm/@huggingface/inference@2.6.4/+esm';
+        import { createRepo, commit, deleteRepo, listFiles } from "https://cdn.jsdelivr.net/npm/@huggingface/hub@0.12.2/+esm";
+    </script>
+
+###  Deno
+
+Copied
+
+    
+    
+    // esm.sh
+    import { HfInference } from "https://esm.sh/@huggingface/inference"
+    import { HfAgent } from "https://esm.sh/@huggingface/agents";
+    
+    import { createRepo, commit, deleteRepo, listFiles } from "https://esm.sh/@huggingface/hub"
+    // or npm:
+    import { HfInference } from "npm:@huggingface/inference"
+    import { HfAgent } from "npm:@huggingface/agents";
+    
+    import { createRepo, commit, deleteRepo, listFiles } from "npm:@huggingface/hub"
+
+##  Usage examples
+
+Get your HF access token in your account settings.
+
+###  @huggingface/inference examples
+
+Copied
+
+    
+    
+    import { HfInference } from "@huggingface/inference";
+    
+    const HF_ACCESS_TOKEN = "hf_...";
+    
+    const inference = new HfInference(HF_ACCESS_TOKEN);
+    
+    // You can also omit "model" to use the recommended model for the task
+    await inference.translation({
+      model: 't5-base',
+      inputs: 'My name is Wolfgang and I live in Amsterdam'
+    })
+    
+    await inference.textToImage({
+      model: 'stabilityai/stable-diffusion-2',
+      inputs: 'award winning high resolution photo of a giant tortoise/((ladybird)) hybrid, [trending on artstation]',
+      parameters: {
+        negative_prompt: 'blurry',
+      }
+    })
+    
+    await inference.imageToText({
+      data: await (await fetch('https://picsum.photos/300/300')).blob(),
+      model: 'nlpconnect/vit-gpt2-image-captioning',  
+    })
+    
+    // Using your own inference endpoint: https://hf.co/docs/inference-endpoints/
+    const gpt2 = inference.endpoint('https://xyz.eu-west-1.aws.endpoints.huggingface.cloud/gpt2');
+    const { generated_text } = await gpt2.textGeneration({inputs: 'The answer to the universe is'});
+
+###  @huggingface/agents example
+
+Copied
+
+    
+    
+    import {HfAgent, LLMFromHub, defaultTools} from '@huggingface/agents';
+    
+    const HF_ACCESS_TOKEN = "hf_...";
+    
+    const agent = new HfAgent(
+      HF_ACCESS_TOKEN,
+      LLMFromHub(HF_ACCESS_TOKEN),
+      [...defaultTools]
+    );
+    
+    
+    // you can generate the code, inspect it and then run it
+    const code = await agent.generateCode("Draw a picture of a cat wearing a top hat. Then caption the picture and read it out loud.");
+    console.log(code);
+    const messages = await agent.evaluateCode(code)
+    console.log(messages); // contains the data
+    
+    // or you can run the code directly, however you can't check that the code is safe to execute this way, use at your own risk.
+    const messages = await agent.run("Draw a picture of a cat wearing a top hat. Then caption the picture and read it out loud.")
+    console.log(messages); 
+
+###  @huggingface/hub examples
+
+Copied
+
+    
+    
+    import { createRepo, uploadFile, deleteFiles } from "@huggingface/hub";
+    
+    const HF_ACCESS_TOKEN = "hf_...";
+    
+    await createRepo({
+      repo: "my-user/nlp-model", // or {type: "model", name: "my-user/nlp-test"},
+      credentials: {accessToken: HF_ACCESS_TOKEN}
+    });
+    
+    await uploadFile({
+      repo: "my-user/nlp-model",
+      credentials: {accessToken: HF_ACCESS_TOKEN},
+      // Can work with native File in browsers
+      file: {
+        path: "pytorch_model.bin",
+        content: new Blob(...) 
+      }
+    });
+    
+    await deleteFiles({
+      repo: {type: "space", name: "my-user/my-space"}, // or "spaces/my-user/my-space"
+      credentials: {accessToken: HF_ACCESS_TOKEN},
+      paths: ["README.md", ".gitattributes"]
+    });
+
+There are more features of course, check each library’s README!
+
+##  Formatting & testing
+
+Copied
+
+    
+    
+    sudo corepack enable
+    pnpm install
+    
+    pnpm -r format:check
+    pnpm -r lint:check
+    pnpm -r test
+
+##  Building
+
+Copied
+
+    
+    
+    pnpm -r build
+
+This will generate ESM and CJS javascript files in `packages/*/dist`, eg
+`packages/inference/dist/index.mjs`.
+
+Use the Inference API→
+
+Hugging Face JS libraries Installation From NPM From CDN or Static hosting
+Deno Usage examples @huggingface/inference examples @huggingface/agents
+example @huggingface/hub examples Formatting & testing Building
+

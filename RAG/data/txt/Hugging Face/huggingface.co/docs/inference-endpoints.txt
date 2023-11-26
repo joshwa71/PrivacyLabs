@@ -1,0 +1,120 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Inference Endpoints documentation
+
+🤗 Inference Endpoints
+
+#
+
+Inference Endpoints
+
+Search documentation
+
+main EN
+
+Overview
+
+🤗 Inference Endpoints Security & Compliance Supported Tasks API Reference
+(Swagger) Autoscaling Pricing Help & Support FAQ
+
+Guides
+
+Access the solution (UI) Create your first Endpoint Send Requests to Endpoints
+Update your Endpoint Advanced Setup (Instance Types, Auto Scaling, Versioning)
+Create a Private Endpoint with AWS PrivateLink Add custom Dependencies Create
+custom Inference Handler Use a custom Container Image Access and read Logs
+Access and view Metrics Change Organization or Account Pause and Resume your
+Endpoint
+
+Others
+
+Inference Endpoints Version Serialization & Deserialization for Requests
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Inference Endpoints
+
+🤗 Inference Endpoints offers a secure production solution to easily deploy any
+🤗 Transformers, Sentence-Transformers and Diffusion models from the Hub on
+dedicated and autoscaling infrastructure managed by Hugging Face.
+
+A Hugging Face Endpoint is built from a Hugging Face Model Repository. When an
+Endpoint is created, the service creates image artifacts that are either built
+from the model you select or a custom-provided container image. The image
+artifacts are completely decoupled from the Hugging Face Hub source
+repositories to ensure the highest security and reliability levels.
+
+🤗 Inference Endpoints support all of the 🤗 Transformers, Sentence-Transformers
+and Diffusion tasks as well as custom tasks not supported by 🤗 Transformers
+yet like speaker diarization and diffusion.
+
+In addition, 🤗 Inference Endpoints gives you the option to use a custom
+container image managed on an external service, for instance, Docker Hub, AWS
+ECR, Azure ACR, or Google GCR.
+
+![creation-flow](https://raw.githubusercontent.com/huggingface/hf-endpoints-
+documentation/main/assets/creation_flow.png)
+
+##  Documentation and Examples
+
+  * Security & Compliance
+  * Supported Transformers Task
+  * API Reference
+  * Autoscaling
+  * FAQ
+  * Help & Support
+
+###  Guides
+
+  * Access the solution (UI)
+  * Create your first Endpoint
+  * Send Requests to Endpoints
+  * Update your Endpoint
+  * Advanced Setup (Instance Types, Auto Scaling, Versioning)
+  * Create a Private Endpoint with AWS PrivateLink
+  * Add custom Dependencies
+  * Create custom Inference Handler
+  * Use a custom Container Image
+  * Access and read Logs
+  * Access and view Metrics
+  * Change Organization or Account
+
+###  Others
+
+  * Inference Endpoints Versions
+  * Serialization & Deserialization for Requests
+
+Security & Compliance→
+
+🤗 Inference Endpoints Documentation and Examples Guides Others
+

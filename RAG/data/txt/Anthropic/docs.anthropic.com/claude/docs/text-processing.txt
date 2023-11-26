@@ -1,0 +1,151 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Text Processing
+
+ __Suggest Edits
+
+Claude can perform many kinds of text processing tasks such as:
+
+  * Summarization
+  * Editing and rewriting
+  * Sentiment recognition
+  * Information extraction and removal
+  * Translation
+
+Two simple examples are shown below. We have other pages of sample prompts for
+basic text Q&A, and advanced text Q&A with citations.
+
+* * *
+
+#
+
+Information Extraction
+
+Prompt for Email Address Extraction
+
+    
+    
+    
+    Human: Please precisely copy any email addresses from the following text and then write them, one per line. Only write an email address if it's precisely spelled out in the input text. If there are no email addresses in the text, write "N/A". Do not say anything else.
+    
+    {{TEXT}}
+    
+    Assistant:
+    
+
+Explicitly telling Claude not to say anything else is one way to cut out its
+natural chattiness.
+
+> 💡
+>
+> Note
+>
+> When calling the CLAUDE function with Claude in Sheets or chatting with
+> Claude in Slack, you may omit the `\n\nHuman:` and `\n\nAssistant`
+> formatting.
+
+* * *
+
+#
+
+PII Removal
+
+And here's an example prompt we can use to process the same kind of text, but
+this time _removing_ email addresses (and other personally identifiable
+information).
+
+Prompt for Removing PII
+
+    
+    
+    
+    Human: Here is some text. We want to remove all personally identifying information from this text and replace it with XXX. It's very important that names, phone numbers, and email addresses, gets replaced with XXX.
+    Here is the text, inside <text></text> XML tags
+    
+    <text>
+    {{TEXT}}
+    </text>
+    
+    Please put your sanitized version of the text with PII removed in <response></response> XML tags.
+    
+    Assistant:
+    
+
+__Updated 3 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Information Extraction
+    * PII Removal
+

@@ -1,0 +1,420 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+# Spaces
+
+Discover amazing ML apps made by the community!
+
+Create new Space
+
+or learn more about Spaces.
+
+new Full-text search
+
+Sort: Trending
+
+Spaces of the week 🔥
+
+Running ona10g
+
+54
+
+🐢
+
+#### Mustango
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1651162017521-5fb66a36e6ae537272bdeb1b.png?w=200&h=200&f=face)
+declare-lab 1 day ago
+
+140
+
+✍️🎥📄
+
+#### Edit Video By Editing Text
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648966381588-6064e095abd8d3692e3e2ed6.jpeg?w=200&h=200&f=face)
+radames 4 days ago
+
+Running ont4
+
+167
+
+🐸
+
+#### Coqui XTTS Voice Chat With Mistral or Zephyr
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648459271425-61dbf25b99eac69222659467.png?w=200&h=200&f=face)
+coqui 3 days ago
+
+Running oncpu upgrade
+
+109
+
+🧞
+
+#### AI Clip Factory
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/2RK8J_YSNAK2ob8XZH7w2.jpeg?w=200&h=200&f=face)
+jbilcke-hf 8 days ago
+
+Running oncpu upgrade
+
+179
+
+🏆
+
+#### Open ASR Leaderboard
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61b85ce86eb1f2c5e6233736/pCka87yd0Yvl2JzI5h2Oq.png?w=200&h=200&f=face)
+hf-audio Sep 7
+
+Running ona10g
+
+114
+
+📚
+
+#### Super Fast LCM-LoRA on SD1.5
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+latent-consistency 11 days ago
+
+Running ont4
+
+25
+
+🌖
+
+#### InstructCV
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1676953653027-6353668fc0b9d81cd2668a2c.png?w=200&h=200&f=face)
+alaa-lab Oct 3
+
+55
+
+👾👾👾
+
+#### Retro To 3D
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/636dfbe093d9a0c987d42895/5Fm9fKnH-74nqkL2lBuco.png?w=200&h=200&f=face)
+ilumine-AI 18 days ago
+
+# All running apps, trending first
+
+Running ona100
+
+402
+
+🖼️🖼️
+
+#### Real-Time Latent Consistency Model Image-to-Image ControlNet
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648966381588-6064e095abd8d3692e3e2ed6.jpeg?w=200&h=200&f=face)
+radames about 14 hours ago
+
+149
+
+🌌✍
+
+#### LCM Painter
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/636dfbe093d9a0c987d42895/5Fm9fKnH-74nqkL2lBuco.png?w=200&h=200&f=face)
+ilumine-AI 1 day ago
+
+Running oncpu upgrade
+
+2.98k
+
+👩‍🎨
+
+#### AI Comic Factory
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/2RK8J_YSNAK2ob8XZH7w2.jpeg?w=200&h=200&f=face)
+jbilcke-hf 40 minutes ago
+
+Running oncpu upgrade
+
+6.24k
+
+🏆
+
+#### Open LLM Leaderboard
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5f0c746619cb630495b814fd/j26aNEdiOgptZxJ6akGCC.png?w=200&h=200&f=face)
+HuggingFaceH4 about 4 hours ago
+
+Running ont4
+
+842
+
+🐸
+
+#### XTTS
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648459271425-61dbf25b99eac69222659467.png?w=200&h=200&f=face)
+coqui 3 days ago
+
+247
+
+💻
+
+#### ChatGPT Free
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/65126d4afdba96cc3c3e7498/Pj4FgV5l0HpB_yCiNjVwQ.png?w=200&h=200&f=face)
+ngoctuanai 26 days ago
+
+Running ona10g
+
+3.19k
+
+🎵
+
+#### MusicGen
+
+![](https://www.gravatar.com/avatar/38451dbb7aacb06f2d4908061b7a55b5?d=retro&size=100)
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1592839207516-noauth.png?w=200&h=200&f=face)
+facebook 13 days ago
+
+321
+
+⚡
+
+#### Face Recognition SDK
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/653a9d9b4d105d9696b6ec71/BIz2vJwVRJKV9SPQjbHpx.jpeg?w=200&h=200&f=face)
+FaceOnLive 3 days ago
+
+Running ont4
+
+201
+
+🤫
+
+#### Whisper Large V3
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1653243468328-61f91cf54a8e5a275b2b3e7c.jpeg?w=200&h=200&f=face)
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61b85ce86eb1f2c5e6233736/pCka87yd0Yvl2JzI5h2Oq.png?w=200&h=200&f=face)
+hf-audio 14 days ago
+
+256
+
+🚀
+
+#### ID Document Recognition SDK
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/653a9d9b4d105d9696b6ec71/BIz2vJwVRJKV9SPQjbHpx.jpeg?w=200&h=200&f=face)
+FaceOnLive 14 days ago
+
+231
+
+😻
+
+#### Face Liveness Detection SDK
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/653a9d9b4d105d9696b6ec71/BIz2vJwVRJKV9SPQjbHpx.jpeg?w=200&h=200&f=face)
+FaceOnLive 14 days ago
+
+146
+
+👀
+
+#### Distil Whisper Web
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61b253b7ac5ecaae3d1efe0c/hwiQ0uvz3t-L5a-NtBIO6.png?w=200&h=200&f=face)
+Xenova 18 days ago
+
+Running ona10g
+
+2.74k
+
+👁
+
+#### IllusionDiffusion
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/637bb1382d2d9c4f2486b458/eBV9PwY2Kxd6NsQjVqtzZ.jpeg?w=200&h=200&f=face)
+AP123 Oct 1
+
+Running ona10g
+
+54
+
+🐢
+
+#### Mustango
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1651162017521-5fb66a36e6ae537272bdeb1b.png?w=200&h=200&f=face)
+declare-lab 1 day ago
+
+Running oncpu upgrade
+
+825
+
+🏋️
+
+#### Stable Diffusion XL on TPUv5e
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png?w=200&h=200&f=face)
+google Oct 5
+
+Running ona100
+
+173
+
+👀
+
+#### Pixart-α
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/650c74e5d439bbbbadfcfbbe/A4HUNyWJSblicluNFTptt.jpeg?w=200&h=200&f=face)
+PixArt-alpha 4 days ago
+
+Running ona100
+
+87
+
+📚
+
+#### LCM-LoRA on SDXL
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dfcb1aada6d0311fd3d5448/uoglawGgkgjSg730Z-p5Y.png?w=200&h=200&f=face)
+latent-consistency 11 days ago
+
+Running ona10g
+
+262
+
+⚡️
+
+#### Latent Consistency Models
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/ofYN04WWtD60oeDP45pQN.jpeg?w=200&h=200&f=face)
+SimianLuo 14 days ago
+
+Runtime error
+
+1.38k
+
+🥇
+
+#### MTEB Leaderboard
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1664267264786-5f1eb362eec0ad2a071ad6e2.png?w=200&h=200&f=face)
+mteb 8 days ago
+
+48
+
+👀
+
+#### Real Time Latent Consistency Models
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6380ebb8471a4550ff255c62/It4qF5dZexwiAsrgGIM7S.png?w=200&h=200&f=face)
+fal-ai about 22 hours ago
+
+100
+
+👱🏻‍♀️
+
+#### Video Face Swap
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/648a824a8ca6cf9857d1349c/2Q2pJUg4R5C0qcUhvn0LN.jpeg?w=200&h=200&f=face)
+tonyassi 7 days ago
+
+Running oncpu upgrade
+
+605
+
+🔥
+
+#### Fast Stable Diffusion
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6387800488b39a64e1ec18c6/qJj3jej2snmkBy_4X2ZOc.png?w=200&h=200&f=face)
+prodia about 24 hours ago
+
+Paused
+
+108
+
+😻
+
+#### Ilaria RVC
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/noauth/tJN4LOEK6DPPDhEflbNIL.jpeg?w=200&h=200&f=face)
+TheStinger 9 days ago
+
+Running ona10g
+
+38
+
+📚
+
+#### Video LLaVA
+
+![](/avatars/e0527137d7cb649a96e9856940cf21a5.svg) LanguageBind about 11 hours
+ago
+
+  * Previous
+  * 1
+  * 2
+  * 3
+  * ...
+  * 5,998
+  * Next 
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

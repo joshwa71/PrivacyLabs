@@ -1,0 +1,538 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+![Hugging Face's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+# Hugging Face
+
+company
+
+Verified
+
+https://huggingface.co
+
+huggingface
+
+huggingface
+
+###  AI & ML interests
+
+The AI community building the future.
+
+###  Team members 156
+
+![Julien Chaumond's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/NQtzmrDdbG0H8qkZvRyGk.jpeg?w=200&h=200&f=face)
+![Clem 🤗's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583857146757-5e67bdd61009063689407479.jpeg?w=200&h=200&f=face)
+![Anthony Moi's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1623071455900-5e67c0e3100906368940747d.png?w=200&h=200&f=face)
+![Morgan Funtowicz's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583858935715-5e67c47c100906368940747e.jpeg?w=200&h=200&f=face)
+![Pierric Cistac's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1624630689857-5e67de201009063689407481.jpeg?w=200&h=200&f=face)
+![Sasha Rush's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://avatars0.githubusercontent.com/u/35882?w=200&h=200&f=face)
+![Patrick von Platen's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1584435275418-5dfcb1aada6d0311fd3d5448.jpeg?w=200&h=200&f=face)
+![Victor Sanh's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1619623771844-5ecea265968f6028e0559fa5.jpeg?w=200&h=200&f=face)
+![Yacine Jernite's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1594144055859-5ee3a7cd2a3eae3cbdad1305.jpeg?w=200&h=200&f=face)
+![Quentin Lhoest's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1594214747713-5e9ecfc04957053f60648a3e.png?w=200&h=200&f=face)
+![Victor Mustar's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1616001397867-5f17f0a0925b9863e28ad517.png?w=200&h=200&f=face)
+![Nicolas Patry's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1608285816082-5e2967b819407e3277369b95.png?w=200&h=200&f=face)
+![Jeff Boudier's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1605114051380-noauth.jpeg?w=200&h=200&f=face)
+![Abhishek Thakur's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1604427578240-noauth.png?w=200&h=200&f=face)
+![Suraj Patil's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1600014820272-5ec0135ded25d76864d553f1.jpeg?w=200&h=200&f=face)
+![Thibault Goehringer's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1607702307256-5fa56748a13e063b8b2b5f27.jpeg?w=200&h=200&f=face)
+![Simon Brandeis's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1608146735109-5fcfb7c407408029ba3577e2.png?w=200&h=200&f=face)
+![Philipp Schmid's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1624629516652-5ff5d596f244529b3ec0fb89.png?w=200&h=200&f=face)
+![AutoNLP Admin's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1614604843225-600825d4fe08b4e46dc74ce3.jpeg?w=200&h=200&f=face)
+![Michael Benayoun's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1615890856777-6047a3315da6ba4b1dfb9e18.png?w=200&h=200&f=face)
+![Ella Charlaix's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1615915889033-6050eb5aeb94f56898c08e57.jpeg?w=200&h=200&f=face)
+![Charles Bensimon's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1617550879179-noauth.jpeg?w=200&h=200&f=face)
+![Albert Villanova's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1606406298765-noauth.jpeg?w=200&h=200&f=face)
+![Lewis Tunstall's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1594651707950-noauth.jpeg?w=200&h=200&f=face)
+![Anna Tordjmann's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1621945665284-6090096d283d0a8d7be9d201.jpeg?w=200&h=200&f=face)
+![Sylvain Lesage's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/60a76b174e24361791fe822d/inEvYwrd4z0xvRQN3ikdE.jpeg?w=200&h=200&f=face)
+![Gloria Ndzila's profile
+picture](/avatars/914907cf6c460b690ecb415080afd581.svg) ![Mishig Davaadorj's
+profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1656492151842-60a551a34ecc5d054c8ad93e.jpeg?w=200&h=200&f=face)
+![Margaret Mitchell's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1626214544196-60c757ea5f9a76ab3f844f12.png?w=200&h=200&f=face)
+![Omar Sanseviero's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6032802e1f993496bc14d9e3/DKtVvJtfxjAMpMQ7itg_8.jpeg?w=200&h=200&f=face)
+![Niels Rogge's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg?w=200&h=200&f=face)
+![Sasha Luccioni's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1626198087984-60edd0133e2c73a9a21455f5.png?w=200&h=200&f=face)
+![Leandro von Werra's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/5e48005437cb5b49818287a5/4uCXGGui-9QifAT4qelxU.png?w=200&h=200&f=face)
+![Anton Lozhkov's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1613655355830-noauth.png?w=200&h=200&f=face)
+![Steven Liu's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1599079986463-noauth.jpeg?w=200&h=200&f=face)
+![Matthew Carrigan's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1660312628256-60ba519750effef3a58beac3.png?w=200&h=200&f=face)
+![Merve Noyan's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648113222875-6141a88b3a0ec78603c9e784.png?w=200&h=200&f=face)
+![Julien Simon's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1633343465505-noauth.jpeg?w=200&h=200&f=face)
+![Colin Raffel's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1618592397610-noauth.jpeg?w=200&h=200&f=face)
+![Mario Šaško's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1634594213419-605fee52a88baa3edbe43fce.jpeg?w=200&h=200&f=face)
+![Hugo Laurençon's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1635201569275-noauth.jpeg?w=200&h=200&f=face)
+![Luc Georges's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1666977434736-617bc8d1000dbbbf7c225eed.png?w=200&h=200&f=face)
+![Thomas Simonini's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1632748593235-60cae820b1c79a3e4b436664.jpeg?w=200&h=200&f=face)
+![Adrien's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1653491973883-61a5dcedf14aa6d7c74925f7.png?w=200&h=200&f=face)
+![Violette Lepercq's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1638698875017-noauth.jpeg?w=200&h=200&f=face)
+![Ali Abdalla's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1624476448363-60d38ae013f774189902f55e.jpeg?w=200&h=200&f=face)
+![Katia's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1639664417930-61bb4937c3da89f18e4ef6ff.jpeg?w=200&h=200&f=face)
+![Abubakar Abid's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1621947938344-noauth.png?w=200&h=200&f=face)
+![Clément ROMAC's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1626979464269-60e588cccabcce5da9337a5d.jpeg?w=200&h=200&f=face)
+![Joao Gante's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1641203017724-noauth.png?w=200&h=200&f=face)
+![Eliott Coyac's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1653578803493-61d2f90c3c2083e1c08af22d.png?w=200&h=200&f=face)
+![Emily Witko's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1671673568452-61d354424d8b92469b15345c.png?w=200&h=200&f=face)
+![Ali Abid's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1655236986178-61d7830bb77a8c48d48bc755.png?w=200&h=200&f=face)
+![Pete's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1641398053462-noauth.jpeg?w=200&h=200&f=face)
+![Polina Kazakova's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1645527878855-61dd9f18f187b39868bd157e.jpeg?w=200&h=200&f=face)
+![Corentin Regal's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1653372545620-61f00e8d303dca75b19ef47c.jpeg?w=200&h=200&f=face)
+![Sanchit Gandhi's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1653243468328-61f91cf54a8e5a275b2b3e7c.jpeg?w=200&h=200&f=face)
+![Test's profile picture](/avatars/39749b51db81d2ed3f1e24b52911a547.svg)
+![AK's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg?w=200&h=200&f=face)
+![dawood's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61fc476120c583345f868e83/wNKd3iNG8BbDcXGIf1k-T.jpeg?w=200&h=200&f=face)
+![Christophe Rannou's profile
+picture](/avatars/7b31b72ddb2d4c7159ebc2b9cd9c6fe9.svg) ![Edward Beeching's
+profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1644220542819-noauth.jpeg?w=200&h=200&f=face)
+![Florent Gbelidji's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1644853115901-noauth.jpeg?w=200&h=200&f=face)
+![Régis Pierrard's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1644920200150-620b7c408f5871b8a1a168a7.jpeg?w=200&h=200&f=face)
+![Madisen Taylor's profile
+picture](/avatars/5f90996e24713da8972e380cface6ecf.svg) ![Elizabeth
+Allendorf's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1668106271200-62152cbeffe47408514cb566.jpeg?w=200&h=200&f=face)
+![Michelle Habonneau's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1645798702024-62175099ae3a893ac7ce86a7.jpeg?w=200&h=200&f=face)
+![Yih-Dar SHIEH's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1625150194719-6058c8cbcbe9c7542f3501ff.png?w=200&h=200&f=face)
+![system's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1646125250765-61af81e7a7205fb7cc9ec0cb.png?w=200&h=200&f=face)
+![ChunTe  Lee's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1678826705670-61fd75b93c49561870461907.png?w=200&h=200&f=face)
+![Guillaume Salou's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1647451024146-62321b21301d852eabe3db79.png?w=200&h=200&f=face)
+![Radamés Ajna's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648966381588-6064e095abd8d3692e3e2ed6.jpeg?w=200&h=200&f=face)
+![Younes Belkada's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1648631057413-noauth.png?w=200&h=200&f=face)
+![Arthur Zucker's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1674683851722-62441cb7456803e95009a08f.jpeg?w=200&h=200&f=face)
+![Loubna Ben Allal's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1661636876373-61c141342aac764ce1654e43.png?w=200&h=200&f=face)
+![Sourab Mangrulkar's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1638132956881-5fca176d1d7a08cb34d79d5d.jpeg?w=200&h=200&f=face)
+![Dylan Ebert's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1672164046414-624b4a964056e2a6914a05c5.png?w=200&h=200&f=face)
+![Leo Tronchon's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1652185658647-6244866a456803e9500d0f6a.jpeg?w=200&h=200&f=face)
+![Félix Marty's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1651743336129-624c60cba8ec93a7ac188b56.png?w=200&h=200&f=face)
+![Carl Cochet's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1649663079617-noauth.png?w=200&h=200&f=face)
+![Irene Solaiman's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1658760912583-62543749b777cd32720675c2.jpeg?w=200&h=200&f=face)
+![Jingya Huang's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/61a50668cd3eb3043f38e445/E_M7m93Ou6d-XJij59VGF.jpeg?w=200&h=200&f=face)
+![Amy Roberts's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1650360288463-noauth.jpeg?w=200&h=200&f=face)
+![Ezi Ozoani's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/620be6cec33ca69c4c821404/gakBUuCi5YXJWG2hRIAEo.jpeg?w=200&h=200&f=face)
+![Taylor Linton's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/618d8bddb8de35a67a79d285/0xyW3jXCJNGcVwz5XgRUv.jpeg?w=200&h=200&f=face)
+![Giada Pistilli's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6051e59531c5be7f3dd5ebc9/VYTqIaU2E6aameZ8ZdrPl.jpeg?w=200&h=200&f=face)
+![Nouamane Tazi's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1652134289581-5ff8c9f4b2035d9a81a859f7.jpeg?w=200&h=200&f=face)
+![Rajiv Shah's profile picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1652986473945-60f2e74cadf471cbdf8bb663.jpeg?w=200&h=200&f=face)
+![Clémentine Fourrier's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1644340617257-noauth.png?w=200&h=200&f=face)
+![Evaluation Bot's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1654180084862-6297236d64501abb8dfde40d.png?w=200&h=200&f=face)
+![Carlos Muñoz Ferrandis's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1654588848873-noauth.jpeg?w=200&h=200&f=face)
+![Freddy Boulton's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1654278567459-626a9bfa03e2e2796f24ca11.jpeg?w=200&h=200&f=face)
+![Benjamin Bossan's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1656685953025-62bf03d1e80cec527083cd66.jpeg?w=200&h=200&f=face)
+![Apolinário from multimodal AI art's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1649143001781-624bebf604abc7ebb01789af.jpeg?w=200&h=200&f=face)
+![Lucain Pouget's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1659336880158-6273f303f6d63a28483fde12.png?w=200&h=200&f=face)
+![Pedro Cuenca's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1617264212503-603d25b75f9d390ab190b777.jpeg?w=200&h=200&f=face)
+![Sylvestre Bcht's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1665137450767-6258561f4d4291e8e63d8ae6.jpeg?w=200&h=200&f=face)
+![Bassem Asseh's profile
+picture](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/6282a5bf3e7734836f3422d0/67rJymOVB1imaypFPPCHN.jpeg?w=200&h=200&f=face)
++122 +109 +88 +78 +58
+
+Organization Card
+
+About org cards
+
+👋 Hi!
+
+We are on a mission to democratize _good_ machine learning, one commit at a
+time.
+
+If that sounds like something you should be doing, why don't you **_join
+us_**!
+
+For press enquiries, you can ✉️ contact our team here.
+
+###
+
+Collections 1
+
+DistilBERT release
+
+Original DistilBERT model, checkpoints obtained from using teacher-student
+learning from the original BERT checkpoints.
+
+  * #### distilbert-base-cased
+
+Fill-Mask •  Updated Sep 11 •  630k •  23
+
+  * #### distilbert-base-uncased
+
+Fill-Mask •  Updated Aug 18 •  10.2M •  302
+
+  * #### distilbert-base-multilingual-cased
+
+Fill-Mask •  Updated Apr 6 •  5.42M •  78
+
+  * #### distilbert-base-uncased-finetuned-sst-2-english
+
+Text Classification •  Updated 26 days ago •  44.1M •  347
+
+###
+
+spaces 18
+
+Sort: Recently updated
+
+1
+
+🤗
+
+#### Carbon Compare
+
+16
+
+🏢
+
+#### HuggingDiscussions
+
+17
+
+📊
+
+#### Transformer Stats
+
+72
+
+📈
+
+#### The 🤗 Speech Bench
+
+Runtime error
+
+31
+
+👁
+
+#### Text Data Filtering
+
+Runtime error
+
+58
+
+⚡
+
+#### Modelcard Creator
+
+Expand 18 spaces
+
+###
+
+models 15
+
+Sort: Recently updated
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/falcon-40b-gptq
+
+Text Generation •  Updated Jun 14 •  24 •  9
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/autoformer-tourism-monthly
+
+Updated May 24 •  1.67k •  1
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/distilbert-base-uncased-finetuned-mnli
+
+Text Classification •  Updated Mar 22 •  458 •  1
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/informer-tourism-monthly
+
+Updated Feb 24 •  1.15k
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/time-series-transformer-tourism-monthly
+
+Updated Feb 23 •  1.68k •  13
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/the-no-branch-repo
+
+Updated Feb 10 •  1 •  2
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/CodeBERTa-language-id
+
+Text Classification •  Updated Sep 9, 2022 •  53.7k •  27
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/CodeBERTa-small-v1
+
+Fill-Mask •  Updated Jun 27, 2022 •  51.4k •  53
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/test-model-repo
+
+Updated Nov 19, 2021
+
+![](https://aeiljuispo.cloudimg.io/v7/https://cdn-
+uploads.huggingface.co/production/uploads/1583856921041-5dd96eb166059660ed1ee413.png?w=200&h=200&f=face)
+
+#### huggingface/bert-base-cased-wikitext2
+
+Fill-Mask •  Updated Sep 26, 2021 •  7
+
+Expand 15 models
+
+###
+
+datasets 16
+
+Sort: Recently updated
+
+#### huggingface/transformers-metadata
+
+Preview •  Updated about 1 hour ago •  256 •  6
+
+#### huggingface/documentation-images
+
+Viewer •  Updated about 4 hours ago •  271 •  18
+
+#### huggingface/transformers-stats-space-data
+
+Preview •  Updated 1 day ago •  12
+
+#### huggingface/badges
+
+Viewer •  Updated 14 days ago •  22
+
+#### huggingface/site-images
+
+Viewer •  Updated Oct 5
+
+#### huggingface/moon-tests
+
+Updated Jun 9 •  1
+
+#### huggingface/label-files
+
+Updated Mar 15 •  246 •  12
+
+#### huggingface/map-test
+
+Viewer •  Updated Mar 1
+
+#### huggingface/brand-assets
+
+Viewer •  Updated Feb 1 •  4
+
+#### huggingface/adult-census-competition
+
+Viewer •  Updated Feb 1 •  3
+
+Expand 16 datasets
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

@@ -1,0 +1,94 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+AWS Trainium & Inferentia documentation
+
+🤗 Optimum Neuron
+
+#
+
+AWS Trainium & Inferentia
+
+Search documentation
+
+main EN
+
+Optimum Neuron
+
+🤗 Optimum Neuron Installation Quickstart
+
+Tutorials
+
+Overview Fine-tune BERT for Text Classification on AWS Trainium Generate
+images with Stable Diffusion models on AWS Inferentia Notebooks Create your
+own chatbot with llama-2-13B on AWS Inferentia
+
+How-To Guides
+
+Overview Set up AWS Trainium instance Neuron model cache Fine-tune
+Transformers with AWS Trainium Export a model to Inferentia Neuron models for
+inference Inference pipelines with AWS Neuron
+
+Reference
+
+Neuron Trainer Neuron Exporter Neuron Models
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Optimum Neuron
+
+🤗 Optimum Neuron is the interface between the 🤗 Transformers library and AWS
+Accelerators including AWS Trainium and AWS Inferentia. It provides a set of
+tools enabling easy model loading, training and inference on single- and
+multi-Accelerator settings for different downstream tasks. The list of
+officially validated models and tasks is available here.
+
+Tutorials
+
+Learn the basics and become familiar with training & deploying transformers on
+AWS Trainium and AWS Inferentia. Start here if you are using 🤗 Optimum Neuron
+for the first time!
+
+How-to guides
+
+Practical guides to help you achieve a specific goal. Take a look at these
+guides to learn how to use 🤗 Optimum Neuron to solve real-world problems.
+
+Reference
+
+Technical descriptions of how the classes and methods of 🤗 Optimum Neuron
+work.
+
+Installation→
+
+🤗 Optimum Neuron
+

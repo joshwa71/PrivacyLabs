@@ -1,0 +1,104 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Datasets-server documentation
+
+🤗 Datasets Server
+
+#
+
+Datasets-server
+
+Search documentation
+
+main EN
+
+Get Started
+
+🤗 Datasets server Quickstart Analyze a dataset on the Hub
+
+Guides
+
+Check dataset validity List splits and configurations Get dataset information
+Preview a dataset Download slices of rows Search text in a dataset Filter rows
+in a dataset List Parquet files Get the number of rows and the bytes size
+Explore dataset statistics
+
+Query datasets from Datasets Server
+
+Overview ClickHouse DuckDB Pandas Polars
+
+Conceptual Guides
+
+Splits and configurations Data types Server infrastructure
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Datasets Server
+
+Datasets Server is a lightweight web API for visualizing and exploring all
+types of datasets - computer vision, speech, text, and tabular - stored on the
+Hugging Face Hub.
+
+The main feature of the Datasets Server is to auto-convert all the Hub
+datasets to Parquet. Read more in the Parquet section.
+
+As datasets increase in size and data type richness, the cost of preprocessing
+(storage and compute) these datasets can be challenging and time-consuming. To
+help users access these modern datasets, Datasets Server runs a server behind
+the scenes to generate the API responses ahead of time and stores them in a
+database so they are instantly returned when you make a query through the API.
+
+Let Datasets Server take care of the heavy lifting so you can use a simple
+**REST API** on any of the **30,000+ datasets on Hugging Face** to:
+
+  * List the **dataset splits, column names and data types**
+  * Get the **dataset size** (in number of rows or bytes)
+  * Download and view **rows at any index** in the dataset
+  * **Search** a word in the dataset
+  * Get insightful **statistics** about the data
+  * Access the dataset as **parquet files** to use in your favorite **processing or analytics framework**
+
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/datasets-server/openbookqa_light.png)
+![](https://huggingface.co/datasets/huggingface/documentation-
+images/resolve/main/datasets-server/openbookqa_dark.png)
+
+Dataset viewer of the OpenBookQA dataset
+
+Join the growing community on the forum or Discord today, and give the
+Datasets Server repository a ⭐️ if you’re interested in the latest updates!
+
+Quickstart→
+
+🤗 Datasets Server
+

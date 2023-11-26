@@ -1,0 +1,449 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Transformers documentation
+
+🤗 Transformers
+
+#
+
+Transformers
+
+Search documentation
+
+mainv4.35.2v4.34.1v4.33.3v4.32.1v4.31.0v4.30.0v4.29.1v4.28.1v4.27.2v4.26.1v4.25.1v4.24.0v4.23.1v4.22.2v4.21.3v4.20.1v4.19.4v4.18.0v4.17.0v4.16.2v4.15.0v4.14.1v4.13.0v4.12.5v4.11.3v4.10.1v4.9.2v4.8.2v4.7.0v4.6.0v4.5.1v4.4.2v4.3.3v4.2.2v4.1.1v4.0.1v3.5.1v3.4.0v3.3.1v3.2.0v3.1.0v3.0.2v2.11.0v2.10.0v2.9.1v2.8.0v2.7.0v2.6.0v2.5.1v2.4.1v2.3.0v2.2.2v2.1.1v2.0.0v1.2.0v1.1.0v1.0.0doc-
+builder-html DEENESFRHIITJAKOPTTEZH
+
+Get started
+
+🤗 Transformers Quick tour Installation
+
+Tutorials
+
+Run inference with pipelines Write portable code with AutoClass Preprocess
+data Fine-tune a pretrained model Train with a script Set up distributed
+training with 🤗 Accelerate Load and train adapters with 🤗 PEFT Share your
+model Agents Generation with LLMs
+
+Task Guides
+
+Natural Language Processing
+
+Audio
+
+Computer Vision
+
+Multimodal
+
+Generation
+
+Prompting
+
+Developer guides
+
+Use fast tokenizers from 🤗 Tokenizers Run inference with multilingual models
+Use model-specific APIs Share a custom model Templates for chat models Run
+training on Amazon SageMaker Export to ONNX Export to TFLite Export to
+TorchScript Benchmarks Notebooks with examples Community resources Custom
+Tools and Prompts Troubleshoot
+
+Performance and scalability
+
+Overview
+
+Efficient training techniques
+
+Methods and tools for efficient training on a single GPU Multiple GPUs and
+parallelism Efficient training on CPU Distributed CPU training Training on
+TPUs Training on TPU with TensorFlow Training on Specialized Hardware Custom
+hardware for training Hyperparameter Search using Trainer API
+
+Optimizing inference
+
+CPU inference GPU inference
+
+Instantiating a big model Troubleshooting XLA Integration for TensorFlow
+Models Optimize inference using `torch.compile()`
+
+Contribute
+
+How to contribute to transformers? How to add a model to 🤗 Transformers? How
+to convert a 🤗 Transformers model to TensorFlow? How to add a pipeline to 🤗
+Transformers? Testing Checks on a Pull Request
+
+Conceptual guides
+
+Philosophy Glossary What 🤗 Transformers can do How 🤗 Transformers solve tasks
+The Transformer model family Summary of the tokenizers Attention mechanisms
+Padding and truncation BERTology Perplexity of fixed-length models Pipelines
+for webserver inference Model training anatomy Getting the most out of LLMs
+
+API
+
+Main Classes
+
+Agents and Tools Auto Classes Callbacks Configuration Data Collator Keras
+callbacks Logging Models Text Generation ONNX Optimization Model outputs
+Pipelines Processors Quantization Tokenizer Trainer DeepSpeed Integration
+Feature Extractor Image Processor
+
+Models
+
+Text models
+
+Vision models
+
+Audio models
+
+Multimodal models
+
+Reinforcement learning models
+
+Time series models
+
+Graph models
+
+Internal Helpers
+
+Custom Layers and Utilities Utilities for pipelines Utilities for Tokenizers
+Utilities for Trainer Utilities for Generation Utilities for Image Processors
+Utilities for Audio processing General Utilities Utilities for Time Series
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Transformers
+
+State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX.
+
+🤗 Transformers provides APIs and tools to easily download and train state-of-
+the-art pretrained models. Using pretrained models can reduce your compute
+costs, carbon footprint, and save you the time and resources required to train
+a model from scratch. These models support common tasks in different
+modalities, such as:
+
+📝 **Natural Language Processing** : text classification, named entity
+recognition, question answering, language modeling, summarization,
+translation, multiple choice, and text generation.  
+🖼️ **Computer Vision** : image classification, object detection, and
+segmentation.  
+🗣️ **Audio** : automatic speech recognition and audio classification.  
+🐙 **Multimodal** : table question answering, optical character recognition,
+information extraction from scanned documents, video classification, and
+visual question answering.
+
+🤗 Transformers support framework interoperability between PyTorch, TensorFlow,
+and JAX. This provides the flexibility to use a different framework at each
+stage of a model’s life; train a model in three lines of code in one
+framework, and load it for inference in another. Models can also be exported
+to a format like ONNX and TorchScript for deployment in production
+environments.
+
+Join the growing community on the Hub, forum, or Discord today!
+
+##  If you are looking for custom support from the Hugging Face team
+
+![HuggingFace Expert Acceleration Program](https://cdn-
+media.huggingface.co/marketing/transformers/new-support-improved.png)
+
+##  Contents
+
+The documentation is organized into five sections:
+
+  * **GET STARTED** provides a quick tour of the library and installation instructions to get up and running.
+
+  * **TUTORIALS** are a great place to start if you’re a beginner. This section will help you gain the basic skills you need to start using the library.
+
+  * **HOW-TO GUIDES** show you how to achieve a specific goal, like finetuning a pretrained model for language modeling or how to write and share a custom model.
+
+  * **CONCEPTUAL GUIDES** offers more discussion and explanation of the underlying concepts and ideas behind models, tasks, and the design philosophy of 🤗 Transformers.
+
+  * **API** describes all classes and functions:
+
+    * **MAIN CLASSES** details the most important classes like configuration, model, tokenizer, and pipeline.
+    * **MODELS** details the classes and functions related to each model implemented in the library.
+    * **INTERNAL HELPERS** details utility classes and functions used internally.
+
+##  Supported models and frameworks
+
+The table below represents the current support in the library for each of
+those models, whether they have a Python tokenizer (called “slow”). A “fast”
+tokenizer backed by the 🤗 Tokenizers library, whether they have support in Jax
+(via Flax), PyTorch, and/or TensorFlow.
+
+Model | PyTorch support | TensorFlow support | Flax Support  
+---|---|---|---  
+ALBERT | ✅ | ✅ | ✅  
+ALIGN | ✅ | ❌ | ❌  
+AltCLIP | ✅ | ❌ | ❌  
+Audio Spectrogram Transformer | ✅ | ❌ | ❌  
+Autoformer | ✅ | ❌ | ❌  
+Bark | ✅ | ❌ | ❌  
+BART | ✅ | ✅ | ✅  
+BARThez | ✅ | ✅ | ✅  
+BARTpho | ✅ | ✅ | ✅  
+BEiT | ✅ | ❌ | ✅  
+BERT | ✅ | ✅ | ✅  
+Bert Generation | ✅ | ❌ | ❌  
+BertJapanese | ✅ | ✅ | ✅  
+BERTweet | ✅ | ✅ | ✅  
+BigBird | ✅ | ❌ | ✅  
+BigBird-Pegasus | ✅ | ❌ | ❌  
+BioGpt | ✅ | ❌ | ❌  
+BiT | ✅ | ❌ | ❌  
+Blenderbot | ✅ | ✅ | ✅  
+BlenderbotSmall | ✅ | ✅ | ✅  
+BLIP | ✅ | ✅ | ❌  
+BLIP-2 | ✅ | ❌ | ❌  
+BLOOM | ✅ | ❌ | ✅  
+BORT | ✅ | ✅ | ✅  
+BridgeTower | ✅ | ❌ | ❌  
+BROS | ✅ | ❌ | ❌  
+ByT5 | ✅ | ✅ | ✅  
+CamemBERT | ✅ | ✅ | ❌  
+CANINE | ✅ | ❌ | ❌  
+Chinese-CLIP | ✅ | ❌ | ❌  
+CLAP | ✅ | ❌ | ❌  
+CLIP | ✅ | ✅ | ✅  
+CLIPSeg | ✅ | ❌ | ❌  
+CodeGen | ✅ | ❌ | ❌  
+CodeLlama | ✅ | ❌ | ❌  
+Conditional DETR | ✅ | ❌ | ❌  
+ConvBERT | ✅ | ✅ | ❌  
+ConvNeXT | ✅ | ✅ | ❌  
+ConvNeXTV2 | ✅ | ✅ | ❌  
+CPM | ✅ | ✅ | ✅  
+CPM-Ant | ✅ | ❌ | ❌  
+CTRL | ✅ | ✅ | ❌  
+CvT | ✅ | ✅ | ❌  
+Data2VecAudio | ✅ | ❌ | ❌  
+Data2VecText | ✅ | ❌ | ❌  
+Data2VecVision | ✅ | ✅ | ❌  
+DeBERTa | ✅ | ✅ | ❌  
+DeBERTa-v2 | ✅ | ✅ | ❌  
+Decision Transformer | ✅ | ❌ | ❌  
+Deformable DETR | ✅ | ❌ | ❌  
+DeiT | ✅ | ✅ | ❌  
+DePlot | ✅ | ❌ | ❌  
+DETA | ✅ | ❌ | ❌  
+DETR | ✅ | ❌ | ❌  
+DialoGPT | ✅ | ✅ | ✅  
+DiNAT | ✅ | ❌ | ❌  
+DINOv2 | ✅ | ❌ | ❌  
+DistilBERT | ✅ | ✅ | ✅  
+DiT | ✅ | ❌ | ✅  
+DonutSwin | ✅ | ❌ | ❌  
+DPR | ✅ | ✅ | ❌  
+DPT | ✅ | ❌ | ❌  
+EfficientFormer | ✅ | ✅ | ❌  
+EfficientNet | ✅ | ❌ | ❌  
+ELECTRA | ✅ | ✅ | ✅  
+EnCodec | ✅ | ❌ | ❌  
+Encoder decoder | ✅ | ✅ | ✅  
+ERNIE | ✅ | ❌ | ❌  
+ErnieM | ✅ | ❌ | ❌  
+ESM | ✅ | ✅ | ❌  
+FairSeq Machine-Translation | ✅ | ❌ | ❌  
+Falcon | ✅ | ❌ | ❌  
+FLAN-T5 | ✅ | ✅ | ✅  
+FLAN-UL2 | ✅ | ✅ | ✅  
+FlauBERT | ✅ | ✅ | ❌  
+FLAVA | ✅ | ❌ | ❌  
+FNet | ✅ | ❌ | ❌  
+FocalNet | ✅ | ❌ | ❌  
+Funnel Transformer | ✅ | ✅ | ❌  
+Fuyu | ✅ | ❌ | ❌  
+GIT | ✅ | ❌ | ❌  
+GLPN | ✅ | ❌ | ❌  
+GPT Neo | ✅ | ❌ | ✅  
+GPT NeoX | ✅ | ❌ | ❌  
+GPT NeoX Japanese | ✅ | ❌ | ❌  
+GPT-J | ✅ | ✅ | ✅  
+GPT-Sw3 | ✅ | ✅ | ✅  
+GPTBigCode | ✅ | ❌ | ❌  
+GPTSAN-japanese | ✅ | ❌ | ❌  
+Graphormer | ✅ | ❌ | ❌  
+GroupViT | ✅ | ✅ | ❌  
+HerBERT | ✅ | ✅ | ✅  
+Hubert | ✅ | ✅ | ❌  
+I-BERT | ✅ | ❌ | ❌  
+IDEFICS | ✅ | ❌ | ❌  
+ImageGPT | ✅ | ❌ | ❌  
+Informer | ✅ | ❌ | ❌  
+InstructBLIP | ✅ | ❌ | ❌  
+Jukebox | ✅ | ❌ | ❌  
+KOSMOS-2 | ✅ | ❌ | ❌  
+LayoutLM | ✅ | ✅ | ❌  
+LayoutLMv2 | ✅ | ❌ | ❌  
+LayoutLMv3 | ✅ | ✅ | ❌  
+LayoutXLM | ✅ | ❌ | ❌  
+LED | ✅ | ✅ | ❌  
+LeViT | ✅ | ❌ | ❌  
+LiLT | ✅ | ❌ | ❌  
+LLaMA | ✅ | ❌ | ❌  
+Llama2 | ✅ | ❌ | ❌  
+Longformer | ✅ | ✅ | ❌  
+LongT5 | ✅ | ❌ | ✅  
+LUKE | ✅ | ❌ | ❌  
+LXMERT | ✅ | ✅ | ❌  
+M-CTC-T | ✅ | ❌ | ❌  
+M2M100 | ✅ | ❌ | ❌  
+Marian | ✅ | ✅ | ✅  
+MarkupLM | ✅ | ❌ | ❌  
+Mask2Former | ✅ | ❌ | ❌  
+MaskFormer | ✅ | ❌ | ❌  
+MatCha | ✅ | ❌ | ❌  
+mBART | ✅ | ✅ | ✅  
+mBART-50 | ✅ | ✅ | ✅  
+MEGA | ✅ | ❌ | ❌  
+Megatron-BERT | ✅ | ❌ | ❌  
+Megatron-GPT2 | ✅ | ✅ | ✅  
+MGP-STR | ✅ | ❌ | ❌  
+Mistral | ✅ | ❌ | ❌  
+mLUKE | ✅ | ❌ | ❌  
+MMS | ✅ | ✅ | ✅  
+MobileBERT | ✅ | ✅ | ❌  
+MobileNetV1 | ✅ | ❌ | ❌  
+MobileNetV2 | ✅ | ❌ | ❌  
+MobileViT | ✅ | ✅ | ❌  
+MobileViTV2 | ✅ | ❌ | ❌  
+MPNet | ✅ | ✅ | ❌  
+MPT | ✅ | ❌ | ❌  
+MRA | ✅ | ❌ | ❌  
+MT5 | ✅ | ✅ | ✅  
+MusicGen | ✅ | ❌ | ❌  
+MVP | ✅ | ❌ | ❌  
+NAT | ✅ | ❌ | ❌  
+Nezha | ✅ | ❌ | ❌  
+NLLB | ✅ | ❌ | ❌  
+NLLB-MOE | ✅ | ❌ | ❌  
+Nougat | ✅ | ✅ | ✅  
+Nyströmformer | ✅ | ❌ | ❌  
+OneFormer | ✅ | ❌ | ❌  
+OpenAI GPT | ✅ | ✅ | ❌  
+OpenAI GPT-2 | ✅ | ✅ | ✅  
+OpenLlama | ✅ | ❌ | ❌  
+OPT | ✅ | ✅ | ✅  
+OWL-ViT | ✅ | ❌ | ❌  
+OWLv2 | ✅ | ❌ | ❌  
+Pegasus | ✅ | ✅ | ✅  
+PEGASUS-X | ✅ | ❌ | ❌  
+Perceiver | ✅ | ❌ | ❌  
+Persimmon | ✅ | ❌ | ❌  
+PhoBERT | ✅ | ✅ | ✅  
+Pix2Struct | ✅ | ❌ | ❌  
+PLBart | ✅ | ❌ | ❌  
+PoolFormer | ✅ | ❌ | ❌  
+Pop2Piano | ✅ | ❌ | ❌  
+ProphetNet | ✅ | ❌ | ❌  
+PVT | ✅ | ❌ | ❌  
+QDQBert | ✅ | ❌ | ❌  
+RAG | ✅ | ✅ | ❌  
+REALM | ✅ | ❌ | ❌  
+Reformer | ✅ | ❌ | ❌  
+RegNet | ✅ | ✅ | ✅  
+RemBERT | ✅ | ✅ | ❌  
+ResNet | ✅ | ✅ | ✅  
+RetriBERT | ✅ | ❌ | ❌  
+RoBERTa | ✅ | ✅ | ✅  
+RoBERTa-PreLayerNorm | ✅ | ✅ | ✅  
+RoCBert | ✅ | ❌ | ❌  
+RoFormer | ✅ | ✅ | ✅  
+RWKV | ✅ | ❌ | ❌  
+SAM | ✅ | ✅ | ❌  
+SeamlessM4T | ✅ | ❌ | ❌  
+SegFormer | ✅ | ✅ | ❌  
+SEW | ✅ | ❌ | ❌  
+SEW-D | ✅ | ❌ | ❌  
+Speech Encoder decoder | ✅ | ❌ | ✅  
+Speech2Text | ✅ | ✅ | ❌  
+SpeechT5 | ✅ | ❌ | ❌  
+Splinter | ✅ | ❌ | ❌  
+SqueezeBERT | ✅ | ❌ | ❌  
+SwiftFormer | ✅ | ❌ | ❌  
+Swin Transformer | ✅ | ✅ | ❌  
+Swin Transformer V2 | ✅ | ❌ | ❌  
+Swin2SR | ✅ | ❌ | ❌  
+SwitchTransformers | ✅ | ❌ | ❌  
+T5 | ✅ | ✅ | ✅  
+T5v1.1 | ✅ | ✅ | ✅  
+Table Transformer | ✅ | ❌ | ❌  
+TAPAS | ✅ | ✅ | ❌  
+TAPEX | ✅ | ✅ | ✅  
+Time Series Transformer | ✅ | ❌ | ❌  
+TimeSformer | ✅ | ❌ | ❌  
+Trajectory Transformer | ✅ | ❌ | ❌  
+Transformer-XL | ✅ | ✅ | ❌  
+TrOCR | ✅ | ❌ | ❌  
+TVLT | ✅ | ❌ | ❌  
+UL2 | ✅ | ✅ | ✅  
+UMT5 | ✅ | ❌ | ❌  
+UniSpeech | ✅ | ❌ | ❌  
+UniSpeechSat | ✅ | ❌ | ❌  
+UPerNet | ✅ | ❌ | ❌  
+VAN | ✅ | ❌ | ❌  
+VideoMAE | ✅ | ❌ | ❌  
+ViLT | ✅ | ❌ | ❌  
+Vision Encoder decoder | ✅ | ✅ | ✅  
+VisionTextDualEncoder | ✅ | ✅ | ✅  
+VisualBERT | ✅ | ❌ | ❌  
+ViT | ✅ | ✅ | ✅  
+ViT Hybrid | ✅ | ❌ | ❌  
+VitDet | ✅ | ❌ | ❌  
+ViTMAE | ✅ | ✅ | ❌  
+ViTMatte | ✅ | ❌ | ❌  
+ViTMSN | ✅ | ❌ | ❌  
+VITS | ✅ | ❌ | ❌  
+ViViT | ✅ | ❌ | ❌  
+Wav2Vec2 | ✅ | ✅ | ✅  
+Wav2Vec2-Conformer | ✅ | ❌ | ❌  
+Wav2Vec2Phoneme | ✅ | ✅ | ✅  
+WavLM | ✅ | ❌ | ❌  
+Whisper | ✅ | ✅ | ✅  
+X-CLIP | ✅ | ❌ | ❌  
+X-MOD | ✅ | ❌ | ❌  
+XGLM | ✅ | ✅ | ✅  
+XLM | ✅ | ✅ | ❌  
+XLM-ProphetNet | ✅ | ❌ | ❌  
+XLM-RoBERTa | ✅ | ✅ | ✅  
+XLM-RoBERTa-XL | ✅ | ❌ | ❌  
+XLM-V | ✅ | ✅ | ✅  
+XLNet | ✅ | ✅ | ❌  
+XLS-R | ✅ | ✅ | ✅  
+XLSR-Wav2Vec2 | ✅ | ✅ | ✅  
+YOLOS | ✅ | ❌ | ❌  
+YOSO | ✅ | ❌ | ❌  
+  
+Quick tour→
+
+🤗 Transformers If you are looking for custom support from the Hugging Face
+team Contents Supported models and frameworks
+

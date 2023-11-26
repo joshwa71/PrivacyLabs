@@ -1,0 +1,45 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+#  Learn
+
+## NLP Course
+
+This course will teach you about natural language processing using libraries
+from the HF ecosystem.
+
+## Deep RL Course
+
+This course will teach you about deep reinforcement learning using libraries
+from the HF ecosystem.
+
+## Audio Course
+
+Learn to apply transformers to audio data using libraries from the HF
+ecosystem.
+
+Company
+
+© Hugging Face
+
+TOS Privacy About Jobs
+
+Website
+
+Models Datasets Spaces Pricing Docs
+

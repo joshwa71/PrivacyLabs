@@ -1,0 +1,285 @@
+Stable Diffusion, Foundation models
+
+
+Launching Enterprise API Servers
+
+👉🏻 Try Now
+
+![Stable Diffusion API
+Logo](https://assets.modelslab.ai/themes/October2022/Kh4QdnAqdueh6PeJpCQD.png)
+
+Pricing  API Docs  Playground  Models  Enterprise
+
+New
+
+Product
+
+![](https://stablediffusionapi.com//storage/themes/October2022/Kh4QdnAqdueh6PeJpCQD.png)
+
+### Get Dedicated Server to server APIs at scale
+
+Get Enterprise Plan NEW
+
+Train Models
+
+Train models with your own data and use them in production in minutes.
+
+Uncensored Chat API
+
+Uncensored Chat API alows you to create chatbots that can talk about anything.
+Literally.
+
+Voice Cloning API
+
+Clone anyones voice with just a few lines of code in multiple languages.
+
+Text to Image
+
+Generate images from text using hundreds of pre-trained models.
+
+Interior Design API
+
+Create interior design using API.
+
+Image editing APIs
+
+Edit image API to edit images using AI in real-time.
+
+Enterprise APIs
+
+Get dedicated servers for your APIs with 99.99% uptime.
+
+View Showcase
+
+See what others have built with Stable Diffusion API.
+
+Book a Call  Sign up
+
+Home
+
+Pricing
+
+Models
+
+Enterprise
+
+Blog
+
+API Catalogue
+
+Book a Call
+
+Playground
+
+API Documentation
+
+Sign up
+
+Existing customer?  Sign in
+
+### Enterprise Plan
+
+Get Dedicated GPU to run your models with 800% faster speed 🚀
+
+What you get
+
+A dedicated GPU server with API, which can generate images in 0.5s 🤯, really
+fast speed and 100% full privacy.
+
+### Models
+
+Load any models from huggingface or from civitai using simple api call.
+
+  * Upload model in 3 minutes
+  * Generate image from any model
+  * CKPT, Lora, Embeddings, Diffusers, Controlnet Models
+
+  * Delete models using API call
+  * Compiled models for faster generation time
+  * Model switching in 0.5s
+
+* * *
+
+### Images
+
+Use controlnet, inpainting or text2img using custom trained models with ease.
+
+  * 0.5s to generate image
+  * img2img, text2img or inpainting with any models
+  * No NSFW filters
+
+  * Choose schedulers for each model
+  * 4K upscaling API
+  * upto 4 samples at the same time
+
+* * *
+
+### 100% Privacy
+
+Use your own S3 bucket to store images
+
+  * Use your own S3 bucket
+  * 100% full privacy
+  * Store images in your S3 bucket
+
+  * Private link protection
+  * No NSFW filter
+  * Faster loading of images
+
+Want to discuss in person?
+
+Book a call View API Docs
+
+## Enterprise Pricing
+
+Get ridiculously fast inference server with dedicated GPU
+
+  * Monthly
+  * Quarterly
+
+### Basic Enterprise
+
+For Moderate traffic conditions
+
+$499 / Month
+
+  * Unlimited Images 🚀
+  * No Rate Limiter 💥
+  * 24GB VRAM GPU 🆘
+  * RTX 3090 😀
+  * Best for Starters 🦋
+  * Generation time 2s ✈️
+  * 95% uptime Guarantee 🚀
+  * Load upto 50 Models 🐅
+
+Purchase Plan
+
+### Standard Enterprise
+
+For Startups who want to use ton of models
+
+$999 / Month
+
+  * Unlimited Images 🚀
+  * No Rate Limiter 💥
+  * 24GB VRAM GPU 🔥
+  * RTX 4090 😍
+  * Text 2 Video Models 📽️
+  * Generation time 1s ✈️
+  * 98% uptime Guarantee 🏎️
+  * Load 500 Models 📀
+
+Purchase Plan
+
+### Premium Enterprise
+
+For someone with some serious traffic
+
+$1,999 / Month
+
+  * Unlimited Images 💥
+  * No Rate Limiter 🔥
+  * 48GB VRAM GPU 🤯
+  * RTX A6000 😎
+  * Text 2 Video Models 🎬
+  * Generation time 0.5s ✈️
+  * 99.99% uptime 🧨
+  * Load 1000 Models ✈️
+
+Purchase Plan
+
+*For base model 512 x 512 px
+
+## FAQ
+
+The most common questions about Enterprise API and Dedicated GPU
+
+What is price of Dedicated GPU?
+
+Starts with $499 per month, you can pay yearly and get 20% discount.
+
+Is there any limit on image generation?
+
+No, There is no limit. You can generate as many images as you want.
+
+How much time it takes to generate images?
+
+It takes 1.2s second to generate a image on dedicated GPU. But depends on your
+image size and steps.
+
+Will i get images with my copyright?
+
+Yes, all images you generate have your copyright. Use it as you like or sell
+as you like.
+
+How to start after purchase?
+
+After purchase, you will get email with API key and documentation. You can
+start using API right away.
+
+Support after purchase?
+
+24X7 support team is available for any issues. Just drop message to support
+chat on website.
+
+How many and what kind of models i can use?
+
+You can upload .ckpt, lora, embeddings, controlnet and diffusers models. You
+can upload 100+ models.
+
+Is there a queue for API calls?
+
+Yes, there is a queue for API calls. If you make more than 100 API calls per
+second, it will be queued and processed in order. No API call will be lost.
+
+### SD API
+
+#### Resources
+
+  * Playground 
+  * Live Server 
+  * Enterprise Plan 
+  * Upload Model 
+
+#### Company
+
+  * Models List 
+  * API Catalogue 
+  * Documentation 
+  * Showcase 
+
+#### Quick Links
+
+  * Terms and Condition 
+  * Refund Policy 
+  * Privacy Policy 
+  * Testimonials 
+  * Faq 
+
+####  About
+
+  * About Us 
+  * Contact us 
+  * Pricing 
+  * Blog 
+  * Support 
+
+####  Services
+
+  * Text to Image API 
+  * Text to Video API 
+  * Train Model API 
+  * Uncensored Chat API 
+  * Image Editing API 
+  * Voice Cloning API 
+  * Fashion API (Beta) 
+
+  * (C) 2023 Stable Diffusion API. All rights reserved.
+
+  * Twitter
+  * Discord
+
+Notice Warning Success Something went wrong
+
+Click here 1 Click here
+

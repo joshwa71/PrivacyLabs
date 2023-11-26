@@ -1,0 +1,136 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Ask Claude for rewrites
+
+ __Suggest Edits
+
+If Claude gives a response that is close to, but not quite what you're looking
+for, you can ask Claude to rewrite it.
+
+* * *
+
+In Slack this can be as simple as telling Claude to "Try again" after it gives
+an unsatisfactory response. (It will of course perform better at the rewrite
+if you give it more direction like "Please rewrite that to include more
+detail.") Unless you send a `/reset` command first, your message is added to
+the existing context window. This allows Claude to process its previous answer
+as part of the prompt.
+
+> 💡
+>
+> Avoiding hallucinations
+>
+> When using Claude-in-Slack, don't send a `/reset` command before asking for
+> a rewrite unless you intend to explicitly pass Claude the previously
+> generated response in your prompt. Claude tends to make up irrelevant text
+> when it is asked to rewrite something but does not actually have text to
+> rewrite.
+
+You must always include the previously generated text in your prompt if you
+send it through the API (including calling the CLAUDE or CLAUDEFREE functions
+with Claude in Sheets). Here's an example prompt template:
+
+Good Prompt
+
+    
+    
+    
+    Human: Here's a paragraph:
+    <paragraph>
+    {{PARAGRAPH}}
+    </paragraph>
+    
+    I'd like you to rewrite it using the following instructions:
+    <instructions>
+    {{INSTRUCTIONS}}
+    </instructions>
+    
+    Please put your rewrite in <rewrite></rewrite> tags.
+    
+    Assistant: <rewrite>
+    
+
+For lower volume use cases the paragraph to be rewritten can just be pasted in
+place of `{{PARAGRAPH}}`. To automate this you can set up a prompt chain so
+that Claude's response to a previous prompt gets substituted for the
+{{PARAGRAPH}} placeholder in this prompt.
+
+If you are using Claude in Sheets it's possible to set up rows in your Sheet
+such that in each row a different set of instructions is substituted for the
+{{INSTRUCTIONS}} placeholder. You can generate multiple types of rewrites at
+once this way.
+
+ __Updated 6 months ago
+
+* * *
+

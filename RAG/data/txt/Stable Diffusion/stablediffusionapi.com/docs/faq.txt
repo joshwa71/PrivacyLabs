@@ -1,0 +1,106 @@
+Stable Diffusion, Foundation models
+
+
+Skip to main content
+
+![Stable Diffusion Logo](/docs/img/SD-logo.png)![Stable Diffusion
+Logo](/docs/img/SD-logo.png)
+
+ ****EnterprisePricingBlogDocsPlaygroundModelsAPI Catalogue
+
+  * Getting Started
+  * Stable Diffusion API
+
+  * Train Model
+
+  * Community Models API
+
+  * Text To Video
+
+  * Community Models API V4
+
+  * MISCS
+
+  * ControlNet
+
+  * Voice Cloning
+
+  * Enterprise Plan
+
+  * Dreambooth Sandbox
+
+  * Image Editing
+
+  * Text To 3D
+
+  * Uncensored Chat
+  * A1111 Schedulers
+  * FAQ
+  * Postman Collection
+  * Support
+  * 
+
+  *   * FAQ
+
+# Fequently Asked Questions
+
+ **What is the price of the DreamBooth API access?**
+
+Each DreamBooth model costs 3$, and you can also buy an API access credits
+plan. Currently we offer 3 plans for subscription:
+
+  * The Basic costs 9$ per month;
+  * The Standard costs 49$ per month;
+  * The Premium costs and 149$.
+
+The fees listed above are **only for API access** plans. There is no training
+fee included.
+
+ **Can I access all the public models?**
+
+Yes, you can generate images from all the public models. You can upload your
+own models as well.
+
+ **Do I need any GPU to use the Stable Diffusion API?**
+
+No, the Stable Diffusion API connects to our GPUs and we do all the processing
+for you. This way you can generate images in seconds.
+
+ **Can I use the generated images for commercial purposes?**
+
+Yes, all the images that you generate have your copyright. You are free to use
+or sell them.
+
+ **Will I gain API access immediately after payment?**
+
+Yes, right after the payment, you will get the API keys and everything
+necessary to start using our API.
+
+ **Will I get any support after the purchase?**
+
+Our support team is available 24/7 for any questions or issues. Just drop us a
+message in the support chat available on our website.
+
+ **Is base64 request and response supported?**
+
+Yes, base64 support and response is supported. Send "base64": "yes" in the
+request body to get base64 response.
+
+ **Is Clipskip supported?**
+
+Yes, Clipskip is supported. Send "clipskip": "2" in the request body. The
+default value is 1. Supported values are 1, 2, 4, 5, 6, 7, 8.
+
+ **Is Multi controlnet and multi lora supported?**
+
+Yes, Multi controlnet and multi lora is supported. Send comma separated model
+controlnet or lora model names in the request body to use them.
+
+Previous
+
+A1111 Schedulers
+
+Â· Â·
+
+Â© 2023 Stable Diffusion API. All rights reserved.
+

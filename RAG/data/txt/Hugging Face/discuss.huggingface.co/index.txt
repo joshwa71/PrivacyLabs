@@ -1,0 +1,243 @@
+Hugging Face, Foundation models
+Hugging Face Forums
+
+Category | Topics  
+---|---  
+  
+###  Beginners
+
+Use this category for any basic question you have on any of the Hugging Face
+library. Don’t moderate yourself, everyone has to begin somewhere and everyone
+on this forum is here to help!
+
+|
+
+4563  
+  
+###  Intermediate
+
+Use this category for any advanced question you have on any of the Hugging
+Face library or to share/coordinate with other users your projects using them.
+
+|
+
+706  
+  
+###  Course
+
+Use this category to ask any question related to the course or organize study
+groups.
+
+|
+
+87  
+  
+###  Research
+
+Use this category for any research question or to coordinate on a project with
+other users.
+
+|
+
+272  
+  
+###  Models
+
+Use this category for any question specific to a given model: questions not
+really related to the library per se and more research-like such as tips to
+fine-tune/train, where to use/not to use etc.
+
+|
+
+1260  
+  
+###  🤗Transformers
+
+This category is for any question related to the  Transformers library. You
+can also file an issue.
+
+|
+
+3085  
+  
+###  🤗Datasets
+
+This category is for any question related to the  datasets library. You can
+also file an issue.
+
+|
+
+903  
+  
+###  🤗Tokenizers
+
+This category is for any question related to the  Tokenizers library. You can
+also file an issue.
+
+|
+
+323  
+  
+###  🤗Accelerate
+
+This category is for any question related to the Accelerate library. You can
+also file an issue.
+
+|
+
+217  
+  
+###  🤗AutoTrain
+
+This category is for any question related to  AutoTrain. For advanced usage,
+you can also check the GitHub repo.
+
+|
+
+102  
+  
+###  🤗Hub
+
+This category is for any question related to the Hugging Face Hub (models or
+datasets) as well as the huggingface_hub library.
+
+|
+
+240  
+  
+###  🤗Optimum
+
+This category is for any discussion around the Optimum library.
+
+|
+
+78  
+  
+###  Gradio
+
+This category is for any question related to the Gradio library. You can also
+file an issue.
+
+|
+
+362  
+  
+###  🧨 Diffusers
+
+This category should be used for all comments / questions related to the
+Diffusers library: https://github.com/huggingface/diffusers
+
+|
+
+259  
+  
+###  Inference Endpoints on the Hub
+
+This category is to ask questions about Inference Endpoints, our production
+inference solution to easily deploy machine learning models hosted on the Hub.
+
+|
+
+138  
+  
+###  Amazon SageMaker
+
+This category is for any questions related to using Hugging Face Transformers
+with Amazon SageMaker. Don’t forget to check the announcement blogpost for
+more resources.
+
+|
+
+287  
+  
+###  Amazon Inferentia & Trainium
+
+This category is for any questions related to using Hugging Face Transformers
+and Diffusers models with AWS Inferentia and Trainium hardware accelerator
+instances.
+
+|
+
+4  
+  
+###  Azure ML Studio Model Catalog
+
+This category is to ask questions about deploying Hugging Face Hub models for
+real-time inference in Azure Machine Learning using the new Hugging Face model
+catalog.
+
+|
+
+4  
+  
+###  Spaces
+
+Use this category to ask any questions about Spaces or to share your work.
+
+|
+
+449  
+  
+###  Model cards
+
+All model cards now live inside huggingface.co model repos (see announcement).
+
+|
+
+32  
+  
+###  Languages at Hugging Face
+
+Use this category for any discussion of (human) language-specific topics and
+to chat about doing NLP in languages other than English.
+
+|
+
+81  
+  
+###  Flax/JAX Projects
+
+This category should be used to propose and join existing projects that make
+use of Flax/JAX and Transformers. Make sure that your project proposal
+includes all relevant information (as listed below) for people to
+join/comment/improve your idea.
+
+|
+
+132  
+  
+###  Community Calls
+
+This category is for call for helps to the community on specific projects.
+
+|
+
+75  
+  
+###  Show and Tell
+
+The Show and Tell category is a dedicated space for sharing and discussing
+your exciting projects. Showcase your Spaces, new Models, Datasets, etc., gain
+feedback and connect with peers.
+
+|
+
+30  
+  
+###  Site Feedback
+
+This category is for any feedback you have for the Hugging Face team about
+this forum or the website in general. Let us know how we can improve them!
+
+|
+
+137  
+  
+  * Home 
+  * Categories 
+  * FAQ/Guidelines 
+  * Terms of Service 
+  * Privacy Policy 
+
+Powered by Discourse, best viewed with JavaScript enabled
+

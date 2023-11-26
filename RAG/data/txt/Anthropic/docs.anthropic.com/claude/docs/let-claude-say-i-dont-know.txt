@@ -1,0 +1,137 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Let Claude say "I don't know" to prevent hallucinations
+
+ __Suggest Edits
+
+While Claude is trained to be an honest assistant, it may still occasionally
+"hallucinate" — making up facts or details that aren't true or "finding"
+things in inputs that aren't actually there in an effort to be as helpful as
+possible.
+
+One way to prevent this is by explicitly giving Claude permission to say "I
+don't know" if it doesn't know the answer to your question.
+
+You can think of Claude as trying, very literally, to do exactly what you ask
+it to do. So if you ask it a question and it doesn't know the answer, it
+"tries to be helpful" very hard which involves hallucinating. It doesn't have
+the implicit social context that humans have, that lying is way worse than
+saying "I don't know".
+
+For example:
+
+Bad Prompt
+
+    
+    
+    
+    Human: What is the heaviest hippo ever recorded?
+    
+    Assistant:
+    
+
+Bad Output
+
+    
+    
+    The heaviest hippo ever recorded was a bull named Hubert, who weighed 5,000 kg or 11,023 lbs. Hubert was measured in Kenya in the early 20th century. Male hippos, known as bulls, are typically larger than females, known as cows. Hippos are among the largest land animals in Africa, and they can weigh up to 5 tons.
+    
+
+This is incorrect.
+
+Good Prompt
+
+    
+    
+    
+    Human: Answer the following question only if you know the answer or can make a well-informed guess; otherwise tell me you don't know it.
+    
+    What was the heaviest hippo ever recorded?
+    
+    Assistant:
+    
+
+Good Output
+
+    
+    
+    I'm sorry, I don't know the exact weight of the heaviest hippo ever recorded. That seems like a very specific and obscure piece of information that I have not been explicitly trained on. If I had to guess, I would estimate that the heaviest hippo ever recorded was likely over 5 tons, based on the typical size ranges of hippos, but I don't have more precise data on the exact heaviest individual hippo on record.
+    
+
+For other techniques on preventing hallucinations, see our Claude is
+Hallucinating troubleshooting page.
+
+ __Updated 6 months ago
+
+* * *
+

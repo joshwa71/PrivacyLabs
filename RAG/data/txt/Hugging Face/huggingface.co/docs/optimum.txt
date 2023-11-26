@@ -1,0 +1,127 @@
+Hugging Face, Foundation models
+
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg) Hugging
+Face
+
+  * Models
+  * Datasets
+  * Spaces
+  * Docs
+  * Solutions 
+
+  * Pricing 
+  *   * * * *
+
+  * Log In 
+  * Sign Up 
+
+Optimum documentation
+
+🤗 Optimum
+
+#
+
+Optimum
+
+Search documentation
+
+mainv1.14.0v1.13.2v1.12.0v1.11.2v1.10.1v1.9.0v1.8.6v1.7.3v1.6.4v1.5.2v1.4.1v1.3.0v1.2.3v1.0.0
+EN
+
+Overview
+
+🤗 Optimum Installation Quick tour Notebooks
+
+Conceptual guides
+
+Quantization
+
+Habana
+
+Intel
+
+AWS Trainium/Inferentia
+
+Furiosa
+
+ONNX Runtime
+
+Exporters
+
+Torch FX
+
+BetterTransformer
+
+LLM quantization
+
+Utilities
+
+You are viewing main version, which requires installation from source. If
+you'd like regular pip install, checkout the latest stable version (v1.14.0).
+
+![Hugging Face's logo](/front/assets/huggingface_logo-noborder.svg)
+
+Join the Hugging Face community
+
+and get access to the augmented documentation experience
+
+Collaborate on models, datasets and Spaces
+
+Faster examples with accelerated inference
+
+Switch between documentation themes
+
+Sign Up
+
+to get started
+
+#  🤗 Optimum
+
+🤗 Optimum is an extension of Transformers that provides a set of performance
+optimization tools to train and run models on targeted hardware with maximum
+efficiency.
+
+The AI ecosystem evolves quickly, and more and more specialized hardware along
+with their own optimizations are emerging every day. As such, Optimum enables
+developers to efficiently use any of these platforms with the same ease
+inherent to Transformers.
+
+🤗 Optimum is distributed as a collection of packages - check out the links
+below for an in-depth look at each one.
+
+Habana
+
+Maximize training throughput and efficiency with Habana's Gaudi processor
+
+Intel
+
+Optimize your model to speedup inference with OpenVINO and Neural Compressor
+
+AWS Trainium/Inferentia
+
+Accelerate your training and inference workflows with AWS Trainium and AWS
+Inferentia
+
+AMD Instinct GPUs
+
+Available soon AMD Instinct GPUs
+
+FuriosaAI
+
+Fast and efficient inference on FuriosaAI WARBOY
+
+ONNX Runtime
+
+Apply quantization and graph optimization to accelerate Transformers models
+training and inference with ONNX Runtime
+
+BetterTransformer
+
+A one-liner integration to use PyTorch's BetterTransformer with Transformers
+models
+
+Installation→
+
+🤗 Optimum
+

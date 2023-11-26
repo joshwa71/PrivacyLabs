@@ -1,0 +1,241 @@
+Anthropic, Foundation models
+
+
+Jump to Content
+
+![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __Guides __API Reference
+
+* * *
+
+Log In![Claude](https://files.readme.io/22c44d1-ant_logo_full.svg)
+
+ __
+
+Log In
+
+Moon (Dark Mode)Sun (Light Mode)
+
+ __Guides __API Reference
+
+Search
+
+## Introduction
+
+  * Guide to Anthropic's prompt engineering resources
+  * Getting access to Claude
+  * Getting started with Claude
+  * Your first chat with Claude
+  * Configuring GPT prompts for Claude
+  * Claude for Google Sheets
+  * Glossary
+
+## Prompt Design
+
+  * Introduction to prompt design
+  * Constructing a prompt
+  * Optimizing your prompt
+
+## Useful Hacks
+
+  * Let Claude say "I don't know" to prevent hallucinations
+  * Give Claude room to "think" before responding
+  * Ask Claude to think step-by-step
+  * Break complex tasks into subtasks
+  * Prompt Chaining
+  * Check Claude's comprehension
+  * Ask Claude for rewrites
+
+## Use Cases
+
+  * Content Generation
+  * Multiple Choice and Classification
+  * Text Processing
+  * Basic Text Analysis
+  * Advanced Text Analysis
+  * Roleplay Dialogue
+  * Content Moderation
+
+## Troubleshooting
+
+  * Troubleshooting checklist
+  * Human: and Assistant: formatting
+  * Claude says it can't do something
+  * Claude misses nuance
+  * Claude responds in the wrong format
+  * Claude is hallucinating
+
+## Claude on Amazon Bedrock
+
+  * Claude on Amazon Bedrock
+
+# Optimizing your prompt
+
+ __Suggest Edits
+
+Once you have a prompt template you are happy with, it's time to start testing
+it. Then (if needed) you can improve your prompt based on how Claude performs
+on the tests.
+
+Here are recommended steps for testing and iterating on your prompt template.
+
+* * *
+
+#
+
+Gather a diverse set of example inputs
+
+It is good to test your prompt with sets of inputs that are representative of
+the real-world data you will be asking Claude to process. Be sure to include
+any difficult inputs or edge cases that Claude may encounter.
+
+Testing your prompt with these inputs can approximate how well Claude will
+perform "in the field". It can also help you see where Claude is having
+difficulties.
+
+It's good to get as many inputs as you're willing to read through when
+developing the prompt template; we recommend at least 20 or more, depending on
+the task.
+
+##
+
+Set aside ("hold out") a test set of inputs
+
+When coming up with inputs to test, we recommend having separate sets of
+"prompt development data" and "test data". Both (or more) sets should be
+representative of real inputs.
+
+Use your prompt development data to evaluate how well Claude is performing the
+task. Iterate on your prompt until Claude is consistently performing well with
+this data.
+
+Then, to ensure that you're not overfitting to just the prompt development
+data data, you can prompt Claude to complete the task with the test data that
+it has not yet encountered.
+
+##
+
+(Optional) Generate synthetic data
+
+If you want more input data but don't have a lot of it yet, you can prompt a
+separate instance of Claude to generate additional input text for you to test
+on! If you explain what good input data looks like and then give a few
+examples, you can often get more such examples from Claude.
+
+* * *
+
+#
+
+Experiment and iterate
+
+Refining a prompt can be a lot like performing a series of experiments. You
+run tests, interpret the results, then adjust a variable (your prompt, or the
+input) based on the results.
+
+When Claude fails a test, try to identify why it failed. Adjust your prompt to
+account for that failure point.
+
+Adjusting your prompt can involve:
+
+  * Writing rules more explicitly or adding new rules
+  * Showing Claude how to process your examples correctly in the prompt itself by adding similar examples and canonical outputs for them to the prompt.
+
+When Claude is doing consistently well at one type of input with the new
+prompt, try it with another input type. Make sure to try out edge cases.
+
+Add rules and examples to your prompt to until you get good performance on
+your representative set of inputs. We recommend also performing a "hold-out
+test".
+
+* * *
+
+#
+
+Bonus: Ask Claude to evaluate its outputs
+
+You can use Claude to "self-evaluate" answers it has previously given.
+
+For example, you can:
+
+  * Get the model to check its work if you think it might have made mistakes
+  * Add an extra diligence step to a task
+  * Classify responses as good or bad, or say which of two initial responses it prefers and why, given your instructions (e.g. so that you can decide which one to use)
+
+In the following example, we are asking Claude to find any grammar mistakes in
+a given text.
+
+Prompt
+
+    
+    
+    
+    Human: Here is an article, contained in <article> tags:
+    
+    <article>
+    {{ARTICLE}}
+    </article>
+    
+    Please identify any grammatical errors in the article.
+    
+    Assistant:
+    
+
+Here's a possible output:
+
+Output
+
+    
+    
+    1. There is a missing fullstop in the first sentence.
+    2. The word "their" is misspelled as "they're" in the third sentence.
+    
+
+In case Claude failed to identify some errors in the first attempt, you could
+try adding a second pass:
+
+Prompt
+
+    
+    
+    
+    Human: Here is an article, contained in <article> tags:
+    
+    <article>
+    {{ARTICLE}}
+    </article>
+    
+    Please identify any grammatical errors in the article that are missing from the following list:
+    <list>
+    1. There is a missing fullstop in the first sentence.
+    2. The word "their" is misspelled as "they're" in the third sentence.
+    </list>
+    
+    If there are no errors in the article that are missing from the list, say "There are no additional errors."
+    
+    Assistant:
+    
+
+You can perform "extra diligence" steps like this automatically by Prompt
+Chaining.
+
+> 💡
+>
+> Avoiding hallucinations
+>
+> When asking Claude to find something in a text, it's good practice to "give
+> it an out" by describing what to do if there's nothing matching the
+> description in the prompt. This can help prevent it from making something up
+> in order to give an answer.
+
+ __Updated 6 months ago
+
+* * *
+
+  * __Table of Contents
+  *     * Gather a diverse set of example inputs
+      * Set aside ("hold out") a test set of inputs
+      * (Optional) Generate synthetic data
+    * Experiment and iterate
+    * Bonus: Ask Claude to evaluate its outputs
+
