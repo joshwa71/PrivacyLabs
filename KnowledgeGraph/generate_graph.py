@@ -11,8 +11,8 @@ from pyvis.network import Network
 from helpers.df_helpers import documents2Dataframe, df2Graph, graph2Df
 
 # Constants
-DATA_DIR = "cureus"
-INPUT_DIRECTORY = Path(f"./data_input/{DATA_DIR}")
+DATA_DIR = "Anthropic"
+INPUT_DIRECTORY = Path(f"../RAG/data/txt/{DATA_DIR}")
 OUTPUT_DIRECTORY = Path(f"./data_output/{DATA_DIR}")
 GRAPH_OUTPUT_DIRECTORY = "./docs/index.html"
 

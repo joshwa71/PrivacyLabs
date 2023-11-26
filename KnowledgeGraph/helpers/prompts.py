@@ -6,6 +6,19 @@ import json
 import ollama.client as client
 from openai import OpenAI
 
+def clean_json_data(raw_data):
+    # Find the index of the first occurrence of '['
+    start_index = raw_data.find('[')
+
+    # Find the index of the last occurrence of ']'
+    end_index = raw_data.rfind(']')
+
+    # Extract the JSON string
+    json_data = raw_data[start_index:end_index+1]
+
+    return json_data
+
+
 
 def extractConcepts(prompt: str, metadata={}, model="mistral-openorca:latest"):
     SYS_PROMPT = (
@@ -96,22 +109,25 @@ def extractConceptsOAI(prompt: str, metadata={}, model="gpt-3.5-turbo-1106", cli
     full_prompt = sys_prompt + "Context: " + prompt
 
     # Call the OpenAI API
-    client = OpenAI()
+    
     try:
         response = client.chat.completions.create(
             model=model,
+            #response_format={ "type": "json_object" },
             messages=[
                 {"role": "system", "content": sys_prompt},
-                {"role": "user", "content": prompt}
+                {"role": "user", "content": user_prompt}
                 ]
         )
         #print(response.choices[0].message.content)
-        result = json.loads(response.choices[0].message.content)
+        result = clean_json_data(response.choices[0].message.content)
+        result = json.loads(result)
+        #print(result)
         result = [dict(item, **metadata) for item in result]
         print("Called OpenAI API")
 
     except Exception as e:
-        print("\n\nERROR ### Here is the buggy response: ", str(e), "\n\n")
+        print("\n\nERROR ### Here is the buggy response: ", str(e), response.choices[0].message.content, "\n\n")
         result = None
     
     return result
@@ -139,6 +155,7 @@ def graphPromptOAI(input: str, metadata={}, model="gpt-3.5-turbo-1106", client=O
         '       "edge": "relationship between the two concepts, node_1 and node_2 in one or two sentences"\n'
         "   }, {...}\n"
         "]"
+        "Respond only with list of JSON!! i.e. [ { }, { }, ... ], no other syntax or words!"
     )
 
     user_prompt = f"context: ```{input}``` \n\n output: "
@@ -148,18 +165,21 @@ def graphPromptOAI(input: str, metadata={}, model="gpt-3.5-turbo-1106", client=O
     try:
         response = client.chat.completions.create(
             model=model,
+            #response_format={ "type": "json_object" },
             messages=[
                 {"role": "system", "content": sys_prompt},
                 {"role": "user", "content": user_prompt}
                 ]
         )
-        result = json.loads(response.choices[0].message.content)
+        #print(response.choices[0].message.content)
+        result = clean_json_data(response.choices[0].message.content)
+        result = json.loads(result)
         #print(result)
         result = [dict(item, **metadata) for item in result]
         print("Called OpenAI API")
 
     except Exception as e:
-        print("\n\nERROR ### Here is the buggy response: ", str(e), "\n\n")
+        print("\n\nERROR ### Here is the buggy response: ", str(e), response.choices[0].message.content, "\n\n")
         result = None
     
     return result

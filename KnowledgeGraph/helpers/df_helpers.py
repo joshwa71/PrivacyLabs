@@ -23,7 +23,7 @@ def documents2Dataframe(documents) -> pd.DataFrame:
 def df2ConceptsList(dataframe: pd.DataFrame, OAI=False) -> list:
     # dataframe.reset_index(inplace=True)
     if OAI:
-        model = "gpt-3.5-turbo-1106"
+        model = "gpt-4-1106-preview"
         print("Parsing ", dataframe.shape[0], " rows to OpenAI API")
         results = dataframe.apply(
             lambda row: extractConceptsOAI(
@@ -62,9 +62,9 @@ def df2Graph(dataframe: pd.DataFrame, model="mistral-openorca:latest", OAI=False
     # dataframe.reset_index(inplace=True)
     client = OpenAI()
     if OAI:
-        model = "gpt-3.5-turbo-1106"
+        model = "gpt-4-1106-preview"
         print("Parsing", dataframe.shape[0], "rows to OpenAI API")
-        dataframe = dataframe.head(5)
+        #dataframe = dataframe.head(10)
         results = dataframe.apply(
             lambda row: graphPromptOAI(row.text, {"chunk_id": row.chunk_id}, model, client), axis=1
         )
